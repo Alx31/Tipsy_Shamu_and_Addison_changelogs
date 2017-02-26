@@ -1,0 +1,149 @@
+====================
+     02-26-2017
+====================
+
+   * device/moto/shamu/
+1ba17e3  Merge tag 'android-7.1.1_r6' into n7.1  [Alx31]
+9099398  switch to GzR moto vendors  [Alx31]
+359502b  Path fix for backend connection to FE upon call disconnection  [Alx31]
+8bc8e09  shamu: fix speakerphone echo problem  [Alx31]
+a02b909  audio: fix headset + speaker path  [Alx31]
+d161e0e  Fix support for UNPROCESSED audio sources  [Alx31]
+d2d8bff  give another try to 6.x toolchainz  [Alx31]
+   * frameworks/base/
+d1940ca  Ticker: Center Ticker layout horizontally in statusbar view  [Alx31]
+304a8f3  PhoneWindowManager: add mTopFullscreenOpaqueWindowState null check to fix exception  [Alx31]
+   * frameworks/opt/slim/
+0eba426  Remove any tasks greater then our task limit and some cleanup  [Alx31]
+eed8afc  Fix SlimRecents tasks order  [Alx31]
+3783c30  SlimPreferenceFragment: Use a more generic reset message for color picker  [Alx31]
+   * kernel/moto/shamu/
+cf01216  ARM: 7789/1: Do not run dummy_flush_tlb_a15_erratum() on non-Cortex-A15  [Alx31]
+72bbee0  ARM: fix debug prints relevant to PCI devices  [Alx31]
+c5ea9bf  arm: idle: add missing need_resched check  [Alx31]
+3ecd96c  ARM: make kernel oops easier to read  [Alx31]
+62a0dc2  arm: smp: Update the topology masks before calling CPU_STARTING notifiers  [Alx31]
+e562f72  ARM: 8171/1: Use current_stack_pointer for return_address  [Alx31]
+03578a8  debug: remove: arm unwind: remove logspam while in debug mode  [Alx31]
+b6220a3  ARM: 8287/1: add bitrev.h file to support rbit instruction  [Alx31]
+1538294  ARM: introduce common set_auxcr/get_auxcr functions  [Alx31]
+9d5c330  ARM: arch_timer: add support to configure and enable event stream  [Alx31]
+2f19193  ARM/ARM64: arch_timer: add macros for bits in control register  [Alx31]
+cbef629  cpufreq: stats: Print error messages if table initialization fails  [Alx31]
+d7bbcb4  cpufreq: stats: Don't update cpufreq_stats_table if it's NULL  [Alx31]
+364c510  sched_clock: Make ARM's sched_clock generic for all architectures  [Alx31]
+3711fc9  msm: platsmp: Fix few data and pointer handling issues  [Alx31]
+c817c28  msm: mpm: disable debugging  [Alx31]
+28d08bf  soc: qcom: smd: Fix SMD packet sync loss issue  [Alx31]
+995a1e0  soc: qcom: smd: Register SMD & SMSM IRQs with IRQF_NO_SUSPEND flag  [Alx31]
+b63693d  mach: msm: fix mismatch.  [Alx31]
+5bd9b6d  shut up unwind  [Alx31]
+f1928ca  insert missing space in printk line of root_delay  [Alx31]
+7576a3a  Makefile: sort list of defconfig targets in make help output  [Alx31]
+43c7473  regenerate configs after updates.  [Alx31]
+f754bd1  ARM: 8158/1: LLVMLinux: use static inline in ARM ftrace.h  [Alx31]
+561f12b  arm:lib: Correct Neon Flags  [Alx31]
+880ba67  Support GCC 6.0  [Alx31]
+2b099c1  GCC 5.0 cleanup  [Alx31]
+6a987d5  kernel: add support for gcc 5  [Alx31]
+9d28be9  Bring Drunk Kernel back.  [Alx31]
+a49443d  Defconfigs: add a defconfig build script  [Alx31]
+e5c4627  Merge remote-tracking branch 'android.googlesource/android-msm-shamu-3.10-nougat-mr1.2' into N  [Alx31]
+354423d  makefile: remove graphite flags and add a few more  [Alx31]
+0d7832f  makefile: add cache info  [Alx31]
+0610be6  makefile: optimize like despair 5.0 kernel  [Alx31]
+14243e5  keep only shamu configs  [Alx31]
+   * manifest/
+08a9fc6  update subs masquerade  [GitHub]
+   * packages/apps/Tavern/
+f09b7e0  Fix notif vector themeing  [Alx31]
+   * prebuilts/gcc/linux-x86/arm/arm-eabi-6.x/
+547dea3  Initial commit  [DespairFactor]
+   * vendor/tipsy/
+9f1eef5  Update Nova 5.0.2  [Prema Chand Alugu]
+379d1be  fix bootzip generation.  [Alx31]
+8051469  Update Magisk Manager 4.2.6  [Alx31]
+1567102  v4.7 Delirium  [GitHub]
+
+====================
+     02-25-2017
+====================
+
+
+====================
+     02-24-2017
+====================
+
+
+====================
+     02-23-2017
+====================
+
+   * hardware/qcom/audio-caf/msm8916/
+2f664a8  Merge remote-tracking branch 'caf/LA.BR.1.2.9_rb1.12' into HEAD  [Josue Rivera]
+   * hardware/qcom/display-caf/msm8916/
+b34a4a7  Merge remote-tracking branch 'caf/LA.BR.1.2.9_rb1.12' into HEAD  [Josue Rivera]
+   * hardware/qcom/media/
+4d390e4  media: add missing 8952 symlink  [Josue Rivera]
+   * hardware/qcom/media-caf/msm8974/
+f25a369  media-caf msm8974: Fix typo in video decoder error check for debug output  [Josue Rivera]
+   * libcore/
+13a9a6d  Revert "IDN: Fix handling of long domain names."  [Josue Rivera]
+1a97ae3  Revert "Fix URL parser may return wrong host name"  [Josue Rivera]
+69e794e  Revert "Remove support for reading mime types from property files."  [Josue Rivera]
+24a4262  Modify j.t.DateFormat.set24HourTimePref() to take a Boolean  [Josue Rivera]
+
+====================
+     02-22-2017
+====================
+   * OTA_config/
+ef5d3ac  Add clark  [GitHub]
+
+====================
+     02-21-2017
+====================
+
+   * device/moto/shamu/
+cce87aa  build GzR ka  [GitHub]
+   * hardware/qcom/audio-caf/msm8952/
+0e65385  Merge remote-tracking branch 'los/cm-14.1-caf-8952' into ng7.1-caf-8952  [Umang Leekha]
+
+====================
+     02-20-2017
+====================
+   * OTA_config/
+2838ca1  Update TipsyOTA.xml  [GitHub]
+25abd37  Add flo  [GitHub]
+   * device/moto/shamu/
+77383cd  shamu: Update fingerprint to N6F26R  [Alx31]
+21454bc  BC: no BLOCK_BASED_OTA builds  [Alx31]
+   * hardware/qcom/audio-caf/msm8952/
+037f6e8  Merge remote-tracking branch 'caf/LA.BR.1.3.6_rb1.12' into cm-14.1-caf-8952  [Umang Leekha]
+6361a38  hal: Shush some debug logging  [Umang Leekha]
+   * hardware/qcom/bootctrl/
+61f074e  bootctl: use TARGET_RECOVERY_UPDATER_LIBS macro for linking  [Martinusbe]
+   * hardware/qcom/display-caf/msm8952/
+c6b5918  Merge remote-tracking branch 'caf/LA.BR.1.3.6_rb1.12' into cm-14.1-caf-8952  [umang96]
+0dea60d  gralloc: allow forcing old pixel alignment  [umang96]
+1234e2f  Fix duplicate copy file rules  [umang96]
+   * manifest/
+309ef71  track our qcom bootctrl  [Martinusbe]
+   * vendor/tipsy/
+0dc1164  overlay: Enable Visual Voicemail for Verizon devices  [Dustin Rinne]
+
+====================
+     02-19-2017
+====================
+
+   * packages/apps/Snap/
+47a666a  Snap: CaptureModule: fix preview being invisible on first start  [Josue Rivera]
+4fddc91  CaptureModule: Fix UI.  [Josue Rivera]
+7f084ad  Snap: CaptureModule: re-apply flash setting when disabling manual iso  [Josue Rivera]
+98c334d  Snap: CaptureModule: check if ZSL is supported before using it  [Josue Rivera]
+c949875  Snap: CaptureModule: enable noise reduction  [Josue Rivera]
+0f79754  Snap: CaptureModule: enable redeye reduction  [Josue Rivera]
+dd5bd1b  Snap: CaptureModule: enable and fix manual iso control  [Josue Rivera]
+60e930c  Snap: CaptureUI: remove camera2 option  [Josue Rivera]
+f4fbf7f  Snap: detect and use Camera2 if available  [Josue Rivera]
+   * system/extras/
+a426928  Revert "Add back aosp SU"  [Josue Rivera]

@@ -1,0 +1,243 @@
+====================
+     03-05-2017
+====================
+
+   * frameworks/base/
+53fedd7  OmniJaws: Fix More Settings Intent  [Alx31]
+a52bb445  base: qs weather: be nice to people without OmniJaws  [Alx31]
+359d46c  Add QSDetailItems  [Alx31]
+6d75798  [1/2] base: SystemUI: OmniJaws qs tile integration  [Alx31]
+8682001  OMS: Add hide annotation to MODIFY_OVERLAYS permission  [Alx31]
+   * frameworks/native/
+15c3f2a  native: Inline to Lineage fixup  [Alx31]
+75efe3c  surfaceflinger1: Add support for getHdrCapabilities  [Alx31]
+196ee52  sf: Fix to allow hwc composition through property  [Alx31]
+1bf9189  sf: fixes for HWC2  [Alx31]
+9e8831e  surfaceflinger: Compile QC addons with USE_HWC2  [Alx31]
+e654ec0  Revert "surfaceflinger: Fix build for HWC2"  [Alx31]
+35f810c  SurfaceFlinger: Use TARGET_OUT_HEADERS  [Alx31]
+dd21824  gui: Send layer color over binder  [Alx31]
+   * frameworks/opt/slim/
+e1b527e  Slim recents: avoid crashes due to different drawable types  [Alx31]
+d26dfe4  Slim Recent: fix scroll lag when Auto Expand and improve RecyclerView performances  [Alx31]
+b3af584  Slim recents: make longpress options size better when small  [Alx31]
+1e22006  Slim Recent: materialoze card text font  [Alx31]
+   * manifest/
+94d6de6  track OmniJaws: 	default.xml  [Alx31]
+05e7466  track SlimRoms/vendor_qcom_opensource_cryptfs_hw  [Alx31]
+   * packages/apps/Settings/
+6bb6e13  [2/2] Settings: add OmniJaws settings  [Alx31]
+   * packages/apps/Tavern/
+8f2da1c  [2/2] Tavern: add OmniJaws config  [Alx31]
+   * vendor/tipsy/
+339c92a  Dumb#ss me forgot to build OmniJaws  [Alx31]
+f5b73f6  v4.8 Equinox week it is.  [Alx31]
+22ec7e0  common: this is Tipsy  [Alx31]
+ef1d5e1  overlay: enable productivity_device for DocumentsUI  [Alx31]
+04b63a8  vendor: support more text types  [Alx31]
+e0e4a82  Missed Capital Letter  [Alx31]
+d71b8f0  Fix MimeType Case  [Alx31]
+914f487  Add libcore.net.MimeUtils Overrides  [Alx31]
+4b115a8  backuptool: Preserve symlinks  [Alx31]
+4aa9e98  build: Pass path into grep instead of using cat  [Alx31]
+2fd32f7  apn: Updating Movistar Argentina APN  [Alx31]
+0db0c7b  tasks: dt: add flag to optionally compress dt with lz4  [Alx31]
+6c6d4d9  qcom: Permit dumpstate to run "ip xfrm policy"  [Alx31]
+2af7eb4  apns: Add SingTel hi!card sim APN  [Alx31]
+fbc6d0b  apns: Update H2O Wireless for LTE  [Alx31]
+2509429  apns: Update H2O Wireless  [Alx31]
+5465802  apns: Update hollandsnieuwe's (NL) APN  [Alx31]
+
+====================
+     03-04-2017
+====================
+
+
+====================
+     03-03-2017
+====================
+
+
+====================
+     03-02-2017
+====================
+   * OTA_config/
+966fb34  Clark 03/02  [GitHub]
+   * device/qcom/common/
+54b2e9c  power: replace strncpy with strlcpy  [Martinusbe]
+45d612b  power: Use POWER_HINT_LAUNCH for launch boosts  [Martinusbe]
+842c60f  Revert "Revert "extractors: Add msm8996 32bit libmm-disp-apis and libmm-qdcm""  [Martinusbe]
+404614b  extractors: Update msm8996 graphics blobs info  [Martinusbe]
+abf8e46  cryptfs_hw: Move to vendor/qcom/opensource/cryptfs_hw  [Martinusbe]
+8a26967  Revert "extractors: Add aptX & aptXHD to confirmed platforms"  [Martinusbe]
+   * device/qcom/sepolicy/
+cc1fe94  Merge pull request #2 from SlimRoms/ng7.1  [GitHub]
+   * frameworks/av/
+fb7df92  av: Inline to Lineage fixup  [Martinusbe]
+52e18ec  Partially Revert "IMediaSource: add check before calling readMultiple"  [Martinusbe]
+8d85088  APM: Avoid invalidation of music stream if not required.  [Martinusbe]
+5190af7  audio: Disable a2dp support on FM active  [Martinusbe]
+7d22012  audiopolicy: Add support for 384kHz audio playback  [Martinusbe]
+b351cbd  audioflinger: fix for playback paused during track transition  [Martinusbe]
+fe64688  AudioFlinger: increase size of client heap  [Martinusbe]
+7224001  libstagefright: omx: Prevent assertion due to state mismatches  [Martinusbe]
+d70f6fa  Fixup acceptable extensions  [Martinusbe]
+daf81fd  Fix 64-bit comparison  [Martinusbe]
+82e510e  libstagefright: Avoid negative values for cttsOffsetTimeUs  [Martinusbe]
+84a73b2  libstagefright: update cttsOffsetTimeUs for video track  [Martinusbe]
+6005ec8  stagefright: Support MP3 in MPEG4 containers  [Martinusbe]
+1b2f1e9  Revert "stagefright: Enhance MPEG4 writer/extractor to store/retrieve layer info"  [Martinusbe]
+8b6c4e1  Stagefright: Do not skip frames in time-lapse-source for high-speed  [Martinusbe]
+e012876  ACodec: Fix video autoscaling on old OMX decoders  [Martinusbe]
+04c131b  stagefright: ACodec: Selectively call VQZIP Info  [Martinusbe]
+ae911ae  libstagefright: Use proper ctts offset  [Martinusbe]
+19fc028  IMediaSource: add check before calling readMultiple  [Martinusbe]
+ddf755b  MediaPlayerService: Clear the vector holding tracks  [Martinusbe]
+66fea7f  StagefrightRecorder: add null check for recording source  [Martinusbe]
+29498cb  Compilation fix: N-MR1 merge.  [Martinusbe]
+8f85b1a  MediaPlayerService: Fix binder dereference while connecting to media services  [Martinusbe]
+d570b66  AudioTrack: Don't tear down sink for invalid offload track  [Martinusbe]
+ec13f88  audio: Don't update the audio_output flag with track flags  [Martinusbe]
+c8fcbae  stagefright: add handling for Large metadata across binder  [Martinusbe]
+2d12492  Stagefright: Addition of DS capability  [Martinusbe]
+0b9b570  audio: prohibit track reusing if effect chain moves  [Martinusbe]
+d818d18  Merge DAX changes  [Martinusbe]
+44dab92  libstagefright: Restore AOSP's handling of 24/32-bit wav files  [Martinusbe]
+   * packages/apps/Snap/
+947a023  Update Snap to latest Lineage rebase  [Josue Rivera]
+   * system/extras/
+37b0824  Revert "Revert "Revert "make_ext4fs: write out super blocks at last for block devices".""  [Josue Rivera]
+   * system/sepolicy/
+27010ac  Permit dumpstate to run "ip xfrm policy".  [Martinusbe]
+b238972  Compilation fix: N-MR1 merge.  [Martinusbe]
+
+====================
+     03-01-2017
+====================
+   * OTA_config/
+c27f408  Flounder 01/03  [GitHub]
+
+====================
+     02-28-2017
+====================
+   * OTA_config/
+e65f0cc  Flo 02/28  [GitHub]
+   * hardware/qcom/audio-caf/msm8974/
+c38589f  Fix potential overflow in Visualizer effect  [Josue Rivera]
+af7e833  hal: Update active input stream for Voip when voip input started  [Josue Rivera]
+70b5f9e  audio: acquire lock for compress voip close input/output stream  [Josue Rivera]
+
+====================
+     02-27-2017
+====================
+
+   * device/moto/shamu/
+1ba17e3  Merge tag 'android-7.1.1_r6' into n7.1  [Alx31]
+9099398  switch to GzR moto vendors  [Alx31]
+359502b  Path fix for backend connection to FE upon call disconnection  [Alx31]
+   * device/qcom/sepolicy/
+b523e8a  Merge tag 'LA.UM.5.5.r1-02200-8x96.0' of https://source.codeaurora.org/quic/la/device/qcom/sepolicy into cm-14.1  [Josue Rivera]
+6b908b2  Sepolicy: Allow mediaserver to access media_msm8956_version_prop  [Josue Rivera]
+1f121dd  wfd: Add access to gpu device for wfdservice  [Josue Rivera]
+81759ea  Bluetooth: Remove stray characters  [Josue Rivera]
+8482d99  Bluetooth: Add permission for filter.  [Josue Rivera]
+636f4f8  sepolicy: Update the rmt_stroage and rfs_access policies  [Josue Rivera]
+694b468  recovery: Allow recovery to set up adb in configfs based builds  [Josue Rivera]
+a1249d1  sepolicy: Add support to access sysfs entries  [Josue Rivera]
+b8d3084  common: Need SELinux policy to set FFBM mode  [Josue Rivera]
+c3ab580  common: Add policy for bluetooth on FFBM  [Josue Rivera]
+1fe10a4  USB: dontaudit init to write to sysfs directory  [Josue Rivera]
+4131795  Sepolicy:: Policies are added for nqnfcinfo daemon  [Josue Rivera]
+9e366e7  common: Add wcd dsp device node to policy  [Josue Rivera]
+4c032d5  Rename msmcobalt to msm8998  [Josue Rivera]
+63936a2  sepolicy: msmcobalt: add missing line for VR service  [Josue Rivera]
+4a2423f  sepolicy: msmcobalt: Add policy for VR service  [Josue Rivera]
+59f2dbb  sepolicy: secure_touch: enable secure touch for qseecomd  [Josue Rivera]
+38ab436  device: sepolicy: Fix MDTP device support for msmcobalt.  [Josue Rivera]
+ac0a7be  sepolicy: Set the context for the frp partition  [Josue Rivera]
+fad54ef  sepolicy: added policy fixes for FBE to work properly  [Josue Rivera]
+93a8650  sepolicy:allow dataservices to set dpm_persist_property  [Josue Rivera]
+8127933  Add permissions to access bt device node  [Josue Rivera]
+1b9dcf7  Bluetooth: Adding entry for Bluetooth Logger Process  [Josue Rivera]
+   * kernel/moto/shamu/
+cf01216  ARM: 7789/1: Do not run dummy_flush_tlb_a15_erratum() on non-Cortex-A15  [Alx31]
+72bbee0  ARM: fix debug prints relevant to PCI devices  [Alx31]
+c5ea9bf  arm: idle: add missing need_resched check  [Alx31]
+3ecd96c  ARM: make kernel oops easier to read  [Alx31]
+62a0dc2  arm: smp: Update the topology masks before calling CPU_STARTING notifiers  [Alx31]
+e562f72  ARM: 8171/1: Use current_stack_pointer for return_address  [Alx31]
+03578a8  debug: remove: arm unwind: remove logspam while in debug mode  [Alx31]
+b6220a3  ARM: 8287/1: add bitrev.h file to support rbit instruction  [Alx31]
+1538294  ARM: introduce common set_auxcr/get_auxcr functions  [Alx31]
+9d5c330  ARM: arch_timer: add support to configure and enable event stream  [Alx31]
+2f19193  ARM/ARM64: arch_timer: add macros for bits in control register  [Alx31]
+cbef629  cpufreq: stats: Print error messages if table initialization fails  [Alx31]
+d7bbcb4  cpufreq: stats: Don't update cpufreq_stats_table if it's NULL  [Alx31]
+364c510  sched_clock: Make ARM's sched_clock generic for all architectures  [Alx31]
+3711fc9  msm: platsmp: Fix few data and pointer handling issues  [Alx31]
+c817c28  msm: mpm: disable debugging  [Alx31]
+28d08bf  soc: qcom: smd: Fix SMD packet sync loss issue  [Alx31]
+995a1e0  soc: qcom: smd: Register SMD & SMSM IRQs with IRQF_NO_SUSPEND flag  [Alx31]
+b63693d  mach: msm: fix mismatch.  [Alx31]
+5bd9b6d  shut up unwind  [Alx31]
+f1928ca  insert missing space in printk line of root_delay  [Alx31]
+7576a3a  Makefile: sort list of defconfig targets in make help output  [Alx31]
+   * libcore/
+70fdb79  Fix URL parser may return wrong host name  [Josue Rivera]
+   * packages/apps/Snap/
+08ac589  Focus only when tapping the preview  [Josue Rivera]
+3680923  Allow to re-open Snap from recent menu  [Josue Rivera]
+6b281b4  Automatic translation import  [Josue Rivera]
+a42e55a  Snap: CaptureModule: lock exposure also when precapture trigger is started  [Josue Rivera]
+3f0bc1a  Automatic translation import  [Josue Rivera]
+315206b  Snap: Allow switching beyond just 2 cameras  [Josue Rivera]
+f75f929  Automatic translation import  [Josue Rivera]
+   * system/sepolicy/
+941b520  sepolicy: allow masquerade to read and write theme assets  [Martinusbe]
+92d0875  sepolicy: rename masquerade domain and allow JobService in system_server  [Martinusbe]
+723d81a  initial policy edits for masquerade to operate rootless  [Martinusbe]
+   * system/vold/
+2709385  vold: Update path to cryptfs_hw  [Josue Rivera]
+84a17a0  cryptfs: fix wrong password set by user during bootup  [Josue Rivera]
+
+====================
+     02-26-2017
+====================
+
+   * device/moto/shamu/
+8bc8e09  shamu: fix speakerphone echo problem  [Alx31]
+a02b909  audio: fix headset + speaker path  [Alx31]
+d161e0e  Fix support for UNPROCESSED audio sources  [Alx31]
+d2d8bff  give another try to 6.x toolchainz  [Alx31]
+   * frameworks/base/
+d1940ca  Ticker: Center Ticker layout horizontally in statusbar view  [Alx31]
+304a8f3  PhoneWindowManager: add mTopFullscreenOpaqueWindowState null check to fix exception  [Alx31]
+   * frameworks/opt/slim/
+0eba426  Remove any tasks greater then our task limit and some cleanup  [Alx31]
+eed8afc  Fix SlimRecents tasks order  [Alx31]
+3783c30  SlimPreferenceFragment: Use a more generic reset message for color picker  [Alx31]
+   * kernel/moto/shamu/
+43c7473  regenerate configs after updates.  [Alx31]
+f754bd1  ARM: 8158/1: LLVMLinux: use static inline in ARM ftrace.h  [Alx31]
+561f12b  arm:lib: Correct Neon Flags  [Alx31]
+880ba67  Support GCC 6.0  [Alx31]
+2b099c1  GCC 5.0 cleanup  [Alx31]
+6a987d5  kernel: add support for gcc 5  [Alx31]
+9d28be9  Bring Drunk Kernel back.  [Alx31]
+a49443d  Defconfigs: add a defconfig build script  [Alx31]
+e5c4627  Merge remote-tracking branch 'android.googlesource/android-msm-shamu-3.10-nougat-mr1.2' into N  [Alx31]
+354423d  makefile: remove graphite flags and add a few more  [Alx31]
+0d7832f  makefile: add cache info  [Alx31]
+0610be6  makefile: optimize like despair 5.0 kernel  [Alx31]
+14243e5  keep only shamu configs  [Alx31]
+   * manifest/
+08a9fc6  update subs masquerade  [GitHub]
+   * packages/apps/Tavern/
+f09b7e0  Fix notif vector themeing  [Alx31]
+   * prebuilts/gcc/linux-x86/arm/arm-eabi-6.x/
+547dea3  Initial commit  [DespairFactor]
+   * vendor/tipsy/
+9f1eef5  Update Nova 5.0.2  [Prema Chand Alugu]
+379d1be  fix bootzip generation.  [Alx31]
+8051469  Update Magisk Manager 4.2.6  [Alx31]
+1567102  v4.7 Delirium  [GitHub]

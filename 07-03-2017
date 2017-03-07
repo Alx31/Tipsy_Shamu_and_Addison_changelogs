@@ -1,0 +1,164 @@
+====================
+     03-07-2017
+====================
+
+   * frameworks/base/
+54c961f  base: Force authorize all calling packages by Masquerade (2/3)  [Martinusbe]
+64014a6  FWB: Give power dialogs own set of volume icons for themes  [Martinusbe]
+9da314a  Revert "Add a protected broadcast for Masquerade events"  [Martinusbe]
+08aac56  OMS7: Rootless Security Update Preparation for March 2017  [Martinusbe]
+   * manifest/
+68d0177  track our masquerade  [GitHub]
+   * packages/apps/Settings/
+70d243a  Development: Allow all Masquerade calling packages for debugging (3/3)  [Martinusbe]
+   * packages/apps/masquerade/
+2cfc08a  Welcome to Theme Interfacer! [1/2]  [Martinusbe]
+   * system/sepolicy/
+306eb46  Welcome to Theme Interfacer! [2/2]  [Martinusbe]
+   * vendor/tipsy/
+a2f391e  masquerade < ThemeInterfacer  [Martinusbe]
+
+====================
+     03-06-2017
+====================
+
+
+====================
+     03-05-2017
+====================
+
+   * frameworks/base/
+53fedd7  OmniJaws: Fix More Settings Intent  [Alx31]
+a52bb445  base: qs weather: be nice to people without OmniJaws  [Alx31]
+359d46c  Add QSDetailItems  [Alx31]
+6d75798  [1/2] base: SystemUI: OmniJaws qs tile integration  [Alx31]
+8682001  OMS: Add hide annotation to MODIFY_OVERLAYS permission  [Alx31]
+   * frameworks/native/
+15c3f2a  native: Inline to Lineage fixup  [Alx31]
+75efe3c  surfaceflinger1: Add support for getHdrCapabilities  [Alx31]
+196ee52  sf: Fix to allow hwc composition through property  [Alx31]
+1bf9189  sf: fixes for HWC2  [Alx31]
+9e8831e  surfaceflinger: Compile QC addons with USE_HWC2  [Alx31]
+e654ec0  Revert "surfaceflinger: Fix build for HWC2"  [Alx31]
+35f810c  SurfaceFlinger: Use TARGET_OUT_HEADERS  [Alx31]
+dd21824  gui: Send layer color over binder  [Alx31]
+   * frameworks/opt/slim/
+e1b527e  Slim recents: avoid crashes due to different drawable types  [Alx31]
+d26dfe4  Slim Recent: fix scroll lag when Auto Expand and improve RecyclerView performances  [Alx31]
+b3af584  Slim recents: make longpress options size better when small  [Alx31]
+1e22006  Slim Recent: materialoze card text font  [Alx31]
+   * manifest/
+94d6de6  track OmniJaws Conflicts: 	default.xml  [Alx31]
+05e7466  track SlimRoms/vendor_qcom_opensource_cryptfs_hw  [Alx31]
+   * packages/apps/Settings/
+6bb6e13  [2/2] Settings: add OmniJaws settings  [Alx31]
+   * packages/apps/Tavern/
+8f2da1c  [2/2] Tavern: add OmniJaws config  [Alx31]
+   * packages/apps/masquerade/
+e53b8a3  AndroidManifest: Add protected broadcasts  [Martinusbe]
+b4209f4  JobService: new RestartService job  [Martinusbe]
+6908eeb  Broadcast authorization result  [Martinusbe]
+18088b2  Introducing Signature check in Masquerade (1/3)  [Martinusbe]
+3e03b70  Add missing exception handling in setDefaultAudible  [Martinusbe]
+78904e0  Rewrite the way we handle sound overlays  [Martinusbe]
+4703986  This is not how you convert long to String ;_;  [Martinusbe]
+70756e4  Improve code style  [Martinusbe]
+7b11e11  Unify logging  [Martinusbe]
+05236d2  Use Log.e() instead of printStackTrace();  [Martinusbe]
+6ffc059  Masquerade: Update README with new org/branch  [Martinusbe]
+   * system/sepolicy/
+5b29616  sepolicy: Redo masquerade rules  [Martinusbe]
+ea4e6b7  sepolicy: Fix application of bootanimation  [Martinusbe]
+   * vendor/tipsy/
+339c92a  Dumb#ss me forgot to build OmniJaws  [Alx31]
+f5b73f6  v4.8 Equinox week it is.  [Alx31]
+22ec7e0  common: this is Tipsy  [Alx31]
+ef1d5e1  overlay: enable productivity_device for DocumentsUI  [Alx31]
+04b63a8  vendor: support more text types  [Alx31]
+e0e4a82  Missed Capital Letter  [Alx31]
+d71b8f0  Fix MimeType Case  [Alx31]
+914f487  Add libcore.net.MimeUtils Overrides  [Alx31]
+4b115a8  backuptool: Preserve symlinks  [Alx31]
+4aa9e98  build: Pass path into grep instead of using cat  [Alx31]
+2fd32f7  apn: Updating Movistar Argentina APN  [Alx31]
+0db0c7b  tasks: dt: add flag to optionally compress dt with lz4  [Alx31]
+6c6d4d9  qcom: Permit dumpstate to run "ip xfrm policy"  [Alx31]
+2af7eb4  apns: Add SingTel hi!card sim APN  [Alx31]
+fbc6d0b  apns: Update H2O Wireless for LTE  [Alx31]
+2509429  apns: Update H2O Wireless  [Alx31]
+5465802  apns: Update hollandsnieuwe's (NL) APN  [Alx31]
+
+====================
+     03-04-2017
+====================
+
+
+====================
+     03-03-2017
+====================
+
+
+====================
+     03-02-2017
+====================
+   * OTA_config/
+966fb34  Clark 03/02  [GitHub]
+   * device/qcom/common/
+54b2e9c  power: replace strncpy with strlcpy  [Martinusbe]
+45d612b  power: Use POWER_HINT_LAUNCH for launch boosts  [Martinusbe]
+842c60f  Revert "Revert "extractors: Add msm8996 32bit libmm-disp-apis and libmm-qdcm""  [Martinusbe]
+404614b  extractors: Update msm8996 graphics blobs info  [Martinusbe]
+abf8e46  cryptfs_hw: Move to vendor/qcom/opensource/cryptfs_hw  [Martinusbe]
+8a26967  Revert "extractors: Add aptX & aptXHD to confirmed platforms"  [Martinusbe]
+   * device/qcom/sepolicy/
+cc1fe94  Merge pull request #2 from SlimRoms/ng7.1  [GitHub]
+   * frameworks/av/
+fb7df92  av: Inline to Lineage fixup  [Martinusbe]
+52e18ec  Partially Revert "IMediaSource: add check before calling readMultiple"  [Martinusbe]
+8d85088  APM: Avoid invalidation of music stream if not required.  [Martinusbe]
+5190af7  audio: Disable a2dp support on FM active  [Martinusbe]
+7d22012  audiopolicy: Add support for 384kHz audio playback  [Martinusbe]
+b351cbd  audioflinger: fix for playback paused during track transition  [Martinusbe]
+fe64688  AudioFlinger: increase size of client heap  [Martinusbe]
+7224001  libstagefright: omx: Prevent assertion due to state mismatches  [Martinusbe]
+d70f6fa  Fixup acceptable extensions  [Martinusbe]
+daf81fd  Fix 64-bit comparison  [Martinusbe]
+82e510e  libstagefright: Avoid negative values for cttsOffsetTimeUs  [Martinusbe]
+84a73b2  libstagefright: update cttsOffsetTimeUs for video track  [Martinusbe]
+6005ec8  stagefright: Support MP3 in MPEG4 containers  [Martinusbe]
+1b2f1e9  Revert "stagefright: Enhance MPEG4 writer/extractor to store/retrieve layer info"  [Martinusbe]
+8b6c4e1  Stagefright: Do not skip frames in time-lapse-source for high-speed  [Martinusbe]
+e012876  ACodec: Fix video autoscaling on old OMX decoders  [Martinusbe]
+04c131b  stagefright: ACodec: Selectively call VQZIP Info  [Martinusbe]
+ae911ae  libstagefright: Use proper ctts offset  [Martinusbe]
+19fc028  IMediaSource: add check before calling readMultiple  [Martinusbe]
+ddf755b  MediaPlayerService: Clear the vector holding tracks  [Martinusbe]
+66fea7f  StagefrightRecorder: add null check for recording source  [Martinusbe]
+29498cb  Compilation fix: N-MR1 merge.  [Martinusbe]
+8f85b1a  MediaPlayerService: Fix binder dereference while connecting to media services  [Martinusbe]
+d570b66  AudioTrack: Don't tear down sink for invalid offload track  [Martinusbe]
+ec13f88  audio: Don't update the audio_output flag with track flags  [Martinusbe]
+c8fcbae  stagefright: add handling for Large metadata across binder  [Martinusbe]
+2d12492  Stagefright: Addition of DS capability  [Martinusbe]
+0b9b570  audio: prohibit track reusing if effect chain moves  [Martinusbe]
+d818d18  Merge DAX changes  [Martinusbe]
+44dab92  libstagefright: Restore AOSP's handling of 24/32-bit wav files  [Martinusbe]
+   * packages/apps/Snap/
+947a023  Update Snap to latest Lineage rebase  [Josue Rivera]
+   * system/extras/
+37b0824  Revert "Revert "Revert "make_ext4fs: write out super blocks at last for block devices".""  [Josue Rivera]
+   * system/sepolicy/
+27010ac  Permit dumpstate to run "ip xfrm policy".  [Martinusbe]
+b238972  Compilation fix: N-MR1 merge.  [Martinusbe]
+
+====================
+     03-01-2017
+====================
+   * OTA_config/
+c27f408  Flounder 01/03  [GitHub]
+
+====================
+     02-28-2017
+====================
+   * OTA_config/
+e65f0cc  Flo 02/28  [GitHub]

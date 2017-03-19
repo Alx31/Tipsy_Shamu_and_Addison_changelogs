@@ -1,0 +1,245 @@
+====================
+     03-19-2017
+====================
+   * OTA_config/
+b52cbdf  ota: update Redmi2 03/19  [Prema Chand Alugu]
+ecbd506  ota: update 03/19  [Prema Chand Alugu]
+f638bad  Revert "op3: remove one - to fix it"  [Martinusbe]
+9d26df6  Clark 03/19  [GitHub]
+836cbd0  op3: remove one - to fix it  [GitHub]
+06b0417  wtf  [GitHub]
+d064753  op3 03/19  [Martinusbe]
+   * frameworks/base/
+1c6a5c4  SystemUI: Grant READ_PHONE_STATE permission  [Martinusbe]
+5378a70  camera: Make secondary camera package list opt out  [Martinusbe]
+ad28963  Camera: Expose dual camera for whitelist app  [Martinusbe]
+0cfdf84  camera: Tolerate errors in getHorizontal/VerticalViewAngle  [Martinusbe]
+a93d1ac  Guard in short-circuit evaluations for stringSplit methods.  [Martinusbe]
+8d2dcbf  Camera: Don't throw exceptions when value pairs have spaces in them  [Martinusbe]
+9038cf1  New easter egg designs  [Martinusbe]
+0d550a9  Expose temperature text in DetailedWeatherView  [Martinusbe]
+33033ce  ThemeSafety: Introduce App Crash Intent  [Martinusbe]
+30c2994  SubscriptionManager: remove unprovisioned sims from the list of active subscriptions  [Martinusbe]
+739bc8f  Fix update of brightness mode in QS slider  [Martinusbe]
+c1d323d  Revert "Brightness slider: only enable auto brightness toggle when also enabed for QS"  [Martinusbe]
+8976e99  Revert "QS auto brightness toggle rework"  [Martinusbe]
+f8535c2  fix build  [Martinusbe]
+ec84996  Notification Ticker: add darkintensity support  [Martinusbe]
+   * kernel/moto/shamu/
+9875ae6  regenerate configs for 3.10.42  [Alx31]
+eef119f  Linux 3.10.42  [Alx31]
+a6722b0  futex: Make lookup_pi_state more robust  [Alx31]
+262a0de  futex: Always cleanup owner tid in unlock_pi  [Alx31]
+d3e17ee  futex: Validate atomic acquisition in futex_lock_pi_atomic()  [Alx31]
+35a8b86  ath9k: protect tid->sched check  [Alx31]
+3dbb88b  media: V4L2: fix VIDIOC_CREATE_BUFS in 64- / 32-bit compatibility mode  [Alx31]
+932d694  media: V4L2: ov7670: fix a wrong index, potentially Oopsing the kernel from user-space  [Alx31]
+1289f33  media: fc2580: fix tuning failure on 32-bit arch  [Alx31]
+8e2ce4f9c  iommu/amd: Fix interrupt remapping for aliased devices  [Alx31]
+65f2e17  libceph: fix corruption when using page_count 0 page in rbd  [Alx31]
+dcbf15e  powerpc: Fix 64 bit builds with binutils 2.24  [Alx31]
+0ef2832f  crypto: s390 - fix aes,des ctr mode concurrency finding.  [Alx31]
+832b3b6  crypto: caam - add allocation failure handling in SPRINTFCAT macro  [Alx31]
+b22b3cb  i2c: s3c2410: resume race fix  [Alx31]
+d737daa  i2c: designware: Mask all interrupts during i2c controller enable  [Alx31]
+1168e52  i2c: rcar: bail out on zero length transfers  [Alx31]
+fe2ab5b  ACPI / blacklist: Add dmi_enable_osi_linux quirk for Asus EEE PC 1015PX  [Alx31]
+95341e5  libata: clean up ZPODD when a port is detached  [Alx31]
+e8c4d5a  powerpc/tm: Fix crash when forking inside a transaction  [Alx31]
+74aca41  target: Don't allow setting WC emulation if device doesn't support  [Alx31]
+b54bc25  Target/iser: Fix iscsit_accept_np and rdma_cm racy flow  [Alx31]
+2108d45  Target/iser: Fix wrong connection requests list addition  [Alx31]
+eda6895  PCI: shpchp: Check bridge's secondary (not primary) bus speed  [Alx31]
+f9fd1cf  genirq: Provide irq_force_affinity fallback for non-SMP  [Alx31]
+52cb663  x86-64, modify_ldt: Make support for 16-bit segments a runtime option  [Alx31]
+e385b4c  metag: Reduce maximum stack size to 256MB  [Alx31]
+e757c69  metag: fix memory barriers  [Alx31]
+af6c0c2  ASoC: wm8962: Update register CLASS_D_CONTROL_1 to be non-volatile  [Alx31]
+eb994c0  xen-blkfront: restore the non-persistent data path  [Alx31]
+152ce1a  xen-blkfront: revoke foreign access for grants not mapped by the backend  [Alx31]
+631a520  percpu: make pcpu_alloc_chunk() use pcpu_mem_free() instead of kfree()  [Alx31]
+96ebc00  bus: mvebu-mbus: allow several windows with the same target/attribute  [Alx31]
+7bf2099  workqueue: make rescuer_thread() empty wq->maydays list before exiting  [Alx31]
+04c3c46  workqueue: fix a possible race condition between rescuer and pwq-release  [Alx31]
+71a0f7f  workqueue: fix bugs in wq_update_unbound_numa() failure path  [Alx31]
+d89b9a7  nfsd4: remove lockowner when removing lock stateid  [Alx31]
+3486adc  nfsd4: warn on finding lockowner without stateid's  [Alx31]
+55b2876  NFSD: Call ->set_acl with a NULL ACL structure if no entries  [Alx31]
+332f85eb  NFSd: call rpc_destroy_wait_queue() from free_client()  [Alx31]
+bed23cb  NFSd: Move default initialisers from create_client() to alloc_client()  [Alx31]
+a32fe70  ALSA: hda - Fix onboard audio on Intel H97/Z97 chipsets  [Alx31]
+93f43d1  Input: synaptics - T540p - unify with other LEN0034 models  [Alx31]
+8d91af3  Input: synaptics - add min/max quirk for the ThinkPad W540  [Alx31]
+0379ffe  Input: elantech - fix touchpad initialization on Gigabyte U2442  [Alx31]
+b7f8351  Input: atkbd - fix keyboard not working on some LG laptops  [Alx31]
+cb83c51  trace: module: Maintain a valid user count  [Alx31]
+f4549ac  Drivers: hv: vmbus: Negotiate version 3.0 when running on ws2012r2 hosts  [Alx31]
+d6d315f  i2c: i801: enable Intel BayTrail SMBUS  [Alx31]
+7547957  i2c: i801: Add Device IDs for Intel Wildcat Point-LP PCH  [Alx31]
+418e329  media: media-device: fix infoleak in ioctl media_enum_entities()  [Alx31]
+900d8d3  clk: vexpress: NULL dereference on error path  [Alx31]
+e72453e  crypto: crypto_wq - Fix late crypto work queue initialization  [Alx31]
+80c8726  Documentation: Update stable address in Chinese and Japanese translations  [Alx31]
+27fe8f1  brcmsmac: fix deadlock on missing firmware  [Alx31]
+5b98fb3  leds: leds-pwm: properly clean up after probe failure  [Alx31]
+843bfe3  drm/nouveau/pm/fan: drop the fan lock in fan_update() before rescheduling  [Alx31]
+bb9b50d  drm/nouveau/acpi: allow non-optimus setups to load vbios from acpi  [Alx31]
+833244b  rtl8192cu: Fix unbalanced irq enable in error path of rtl92cu_hw_init()  [Alx31]
+584144c  ARM: 8012/1: kdump: Avoid overflow when converting pfn to physaddr  [Alx31]
+6f975db  ARM: dts: i.MX53: Fix ipu register space size  [Alx31]
+36b8577  omap3isp: Defer probe when the IOMMU is not available  [Alx31]
+89770cd  posix_acl: handle NULL ACL in posix_acl_equiv_mode  [Alx31]
+5204344  Bluetooth: Add support for Lite-on [04ca:3007]  [Alx31]
+4b5998d  Bluetooth: Fix redundant encryption request for reauthentication  [Alx31]
+0ee283f  Bluetooth: Fix triggering BR/EDR L2CAP Connect too early  [Alx31]
+16f4c11  ALSA: usb-audio: work around corrupted TEAC UD-H01 feedback data  [Alx31]
+627e003  rt2x00: fix beaconing on USB  [Alx31]
+3a26b20  USB: Nokia 5300 should be treated as unusual dev  [Alx31]
+1dc3309  USB: Nokia 305 should be treated as unusual dev  [Alx31]
+b0154ad  usb: storage: shuttle_usbat: fix discs being detected twice  [Alx31]
+458b4e7  usb: qcserial: add a number of Dell devices  [Alx31]
+4e7544c  USB: OHCI: fix problem with global suspend on ATI controllers  [Alx31]
+3d78e48  usb: gadget: at91-udc: fix irq and iomem resource retrieval  [Alx31]
+80e7595  fsl-usb: do not test for PHY_CLK_VALID bit on controller version 1.6  [Alx31]
+c8cc694  iio:imu:mpu6050: Fixed segfault in Invensens MPU driver due to null dereference  [Alx31]
+c1f326b  drm/tegra: Remove gratuitous pad field  [Alx31]
+270ae99  drm/radeon: check buffer relocation offset  [Alx31]
+ec85f5e  drm/radeon: fix ATPX detection on non-VGA GPUs  [Alx31]
+bcd8e33  drm/i915: Break encoder->crtc link separately in intel_sanitize_crtc()  [Alx31]
+235127a  md: avoid possible spinning md thread at shutdown.  [Alx31]
+1fec7da  hrtimer: Set expiry time before switch_hrtimer_base()  [Alx31]
+7672c05  hrtimer: Prevent remote enqueue of leftmost timers  [Alx31]
+2a30eeb  hrtimer: Prevent all reprogramming if hang detected  [Alx31]
+77939ab  hwmon: (emc1403) Support full range of known chip revision numbers  [Alx31]
+df2d78d  hwmon: (emc1403) fix inverted store_hyst()  [Alx31]
+f0f78fe  mac80211: fix on-channel remain-on-channel  [Alx31]
+2acff5d  hwpoison, hugetlb: lock_page/unlock_page does not match for handling a free hugepage  [Alx31]
+31bfa00  x86, mm, hugetlb: Add missing TLB page invalidation for hugetlb_cow()  [Alx31]
+8c94b07  mm, thp: close race between mremap() and split_huge_page()  [Alx31]
+c262412  mac80211: fix suspend vs. authentication race  [Alx31]
+8ffa6b5  ipmi: Reset the KCS timeout when starting error recovery  [Alx31]
+32350b2  ipmi: Fix a race restarting the timer  [Alx31]
+4f677d7  timer: Prevent overflow in apply_slack  [Alx31]
+a79a8a6  gpu: host1x: handle the correct # of syncpt regs  [Alx31]
+d6357e7  8250_core: Fix unwanted TX chars write  [Alx31]
+52e3088  serial: 8250: Fix thread unsafe __dma_tx_complete function  [Alx31]
+ad63725  mm: make fixup_user_fault() check the vma access rights too  [Alx31]
+87a0907  topology: Fix compilation warning when not in SMP  [Alx31]
+c6c6ff0  pata_at91: fix ata_host_activate() failure handling  [Alx31]
+94c28ed  clocksource: Exynos_mct: Register clock event after request_irq()  [Alx31]
+1a02755  genirq: Allow forcing cpu affinity of interrupts  [Alx31]
+a6d6642  irqchip: Gic: Support forced affinity setting  [Alx31]
+c7bf28d  ftrace/module: Hardcode ftrace_module_init() call into load_module()  [Alx31]
+dd03fff  mips: dts: Fix missing device_type="memory" property in memory nodes  [Alx31]
+3f1f1b0  futex: Prevent attaching to kernel threads  [Alx31]
+5f9b411  futex: Add another early deadlock detection check  [Alx31]
+779e96a  Linux 3.10.41  [Alx31]
+56c9381  Revert "futex: Validate atomic acquisition in futex_lock_pi_atomic()"  [Alx31]
+cf5c60b  Revert "futex: Always cleanup owner tid in unlock_pi"  [Alx31]
+f3af9a3  Revert "futex: Make lookup_pi_state more robust"  [Alx31]
+b3305ff  Revert "futex: Add another early deadlock detection check"  [Alx31]
+279e470  Revert "futexes: Increase hash table size for better performance"  [Alx31]
+42cc4ef  Revert "futex-prevent-requeue-pi-on-same-futex.patch futex: Forbid uaddr == u…"  [Alx31]
+f8ceb51  Merge branch 'android-msm-shamu-3.10-nougat-mr1.5' of https://github.com/android/kernel_msm  [Alx31]
+   * manifest/
+04d4f4c  Change github to track https  [Martinusbe]
+   * packages/apps/Settings/
+2a4c0aa  Fix possible NPE on SIM settings shutdown.  [Martinusbe]
+28a3c9d  Clean up SIM enable toggle implementation  [Martinusbe]
+4ad9e18  Settings: port manual provisiong support  [Martinusbe]
+   * packages/apps/Tavern/
+6e24675  Remove overlay added for gesturesAnywhere  [Martinusbe]
+7bd1db1  Let brightness icon use System switch preference  [Martinusbe]
+   * vendor/tipsy/
+21cdd67  Prema likes Gildenbier  [GitHub]
+b26562d  v5.0 Geuze  [Martinusbe]
+219f463  qcom: Automatically set TARGET_USES_COLOR_METADATA for msm8996/8  [Martinusbe]
+
+====================
+     03-18-2017
+====================
+
+
+====================
+     03-17-2017
+====================
+   * OTA_config/
+49af2cc  Flo 03/17  [GitHub]
+   * frameworks/av/
+c981a70  Conditionally revert "CameraService: Allow HAL to handle video buffer duped FD's."  [Martinusbe]
+   * frameworks/opt/slim/
+bc857e1  SlimRecents: Fix potential SystemUI NPE  [Martinusbe]
+c8b3f26  Slim Recents: don't show panel if app pinning is currently active  [Martinusbe]
+72c33db  SlimRecents: add killapp button to toptask card  [Martinusbe]
+cc2beae  Slim Recents: make multiwindow more robust  [Martinusbe]
+e1b53f9  Slim Recents: fix toptask header layout and other ui improvements  [Martinusbe]
+3f49494  Slim Recent: scale apps thumbnails according to the panel size  [Martinusbe]
+   * packages/apps/DeskClock/
+f20b203  DeskClock: grant READ_PHONE_STATE and READ_PRIVILEGED_PHONE_STATE  [Martinusbe]
+8c44708  Black and Yellow please!  [Martinusbe]
+c2d47fc   DeskClock night mode  [Martinusbe]
+   * packages/apps/OmniStyle/
+faf258e  Fix: Are you kidding, Syed?  [Prema Chand Alugu]
+
+====================
+     03-16-2017
+====================
+
+   * packages/providers/MediaProvider/
+7107407  MediaProvider: Fix possible NPE  [Martinusbe]
+6696944  MediaProvider: Add read storage permission  [Martinusbe]
+9b16f95  Screenshots info is not updated when device is plugged in MTP mode  [Martinusbe]
+
+====================
+     03-15-2017
+====================
+
+
+====================
+     03-14-2017
+====================
+
+   * hardware/qcom/media-caf/msm8974/
+26cc5da  mm-video-v4l2: vdec: Fix makefile derp introduced in d443c0d  [Josue Rivera]
+
+====================
+     03-13-2017
+====================
+   * OTA_config/
+f4c2ef5  Add bullhead to TipsyOTA  [GitHub]
+
+====================
+     03-12-2017
+====================
+   * OTA_config/
+01906bb  Flounder 03/12  [GitHub]
+fe595ca  Clark 03/12  [GitHub]
+aa3269f  ota: update Redmi2 03/12  [Prema Chand Alugu]
+fb8cd51  update op3  [Martinusbe]
+d9e83d6  ota: update Bacon 03/12  [Prema Chand Alugu]
+   * device/moto/shamu/
+c4dfec4  test 5.x kernel toolchain for baterylife  [GitHub]
+   * kernel/moto/shamu/
+5da110c  netfilter: makefile: no unsafe math optimizations  [Alx31]
+53a9b5f  selinux: just shut up  [Alx31]
+8810846  arm: makefile: enable pipe  [Alx31]
+a8881f6  cpufreq: interactive: Remove unnecessary cpu_online() check  [Alx31]
+0987a65  scripts: recordmcount: break hardlinks  [Alx31]
+8420aaf  scripts/bloat-o-meter: fix python3 syntax error  [Alx31]
+8a6e2a7  recordmcount: Fix endianness handling bug for nop_mcount  [Alx31]
+b9c733f  scripts/recordmcount.pl: support data in text section on powerpc  [Alx31]
+d3c29ff  scripts: remove unused function in sortextable.c  [Alx31]
+21ed7f6  scripts/sortextable: support objects with more than 64K sections.  [Alx31]
+2c5d3a5  xz: Optimize Sfck Compression  [Alx31]
+10eed51  usb: gadget: add audio dependencies to USB_G_ANDROID  [Alx31]
+31fc927  usb: gadget: f_fs: fix NULL pointer dereference when there are no strings  [Alx31]
+fc664c1  USB: android: Fail ffs_ready (i.e. start adbd) if ADB not enabled  [Alx31]
+7d33840  USB: android: Fix mutex issue if ffs_close runs after ADB disable  [Alx31]
+bbaead5  USB: android: Fix synchronization between ffs_enable and ffs_close  [Alx31]
+2532da8  USB: gadeget: ci13xxx: Fix warning for debug usage  [Alx31]
+5937382  cpufreq: remove unused notifier: CPUFREQ_{SUSPENDCHANGE|RESUMECHANGE}  [Alx31]
+   * packages/services/OmniJaws/
+614ed6c  OmniJaws: Clean up unused imports, simpify few things  [Alx31]
+ac5d22a  OmniJaws: Add menu item to search for Chronus icons  [Alx31]
+77ee9d1  Fix potential actionbar npe  [Alx31]
+ea3de8b  OmniJaws: manifest add DEFAULT category to activities  [Alx31]

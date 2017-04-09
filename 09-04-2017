@@ -1,0 +1,247 @@
+====================
+     04-09-2017
+====================
+   * OTA_config/
+57d693f  op3: update xda link  [Martinusbe]
+ec84e0e  fix xml in onyx ota  [Martinusbe]
+3573c0c  op3 v5.3 Jupiler  [Martinusbe]
+   * build/
+26e9c2c  NOF27D  [Martinusbe]
+7bfdbb2  Update Security String to 2017-04-01 on nyc-dev  [Martinusbe]
+   * device/moto/shamu/
+787917f  power: Update for PerformanceManager changes  [Alx31]
+d3c2f7a  shamu: update build fingerprint & description to N6F26Y  [Alx31]
+4cde815  shamu: sepolicy: Remove usage of deprecated unix_socket_connect for properties  [Alx31]
+80b6f09  overlay: Enable the Pinner Service for pinning files into memory  [Alx31]
+b68dc0e  shamu: Allow system_server to search persist_file  [Alx31]
+17b4e0c  shamu: Remove deprecated storage_list.xml  [Alx31]
+eaa470e  shamu: power: dereference data pointer  [Alx31]
+   * device/motorola/addison/
+7a43858  disable hardwarekeys and wakekeys overlays  [Alx31]
+69fc7d3  update deps again  [Alx31]
+8bea285  update deps  [Alx31]
+23e8fd3  Tipsy plz.  [Alx31]
+   * frameworks/base/
+09ea7bc  Revert "Emergency call button on Swipe lock Screen."  [Martinusbe]
+124454d  base: add TYPE_PHONE to excludeWindowTypeFromTapOutTask  [Martinusbe]
+523c220  base: OmniSwitch: add hook to handle multi window dock events better  [Martinusbe]
+e4753ae  Fix OmniSwitch non-protected broadcast logspam  [Martinusbe]
+0392086  Add OmniSwitch toggle to protected broadcasts  [Martinusbe]
+9864ee5  Add OmniSwitch as option for default recents [1/2]  [Martinusbe]
+7696776  KeyguardSimPinView: don't send dummy request to get remaining pin  [Martinusbe]
+8c45cbf  keyguard: Allow disabling fingerprint wake-and-unlock  [Martinusbe]
+fdfcd49  PowerProfile: allow overriding battery capacity defined in power profile using a property  [Martinusbe]
+   * manifest/
+5a0a9bf  7.1.1_r38  [Martinusbe]
+4705fe9  track our ExactCalculator  [Martinusbe]
+00c46db  track omniswitch  [Martinusbe]
+c91208e  Track SnapdragonGallery from slim  [Martinusbe]
+99a6c91  add slim's external_bson  [GitHub]
+   * packages/apps/Settings/
+caab34c  Expose dashboard category padding bottom  [Martinusbe]
+f4052bd  Settings: Guard against themes without colorAccent defined  [Martinusbe]
+571b6c7  Settings: Expose "ALL" hardcoded and @android colors  [Martinusbe]
+25027fa  Settings: Expose and add tint mode to custom icons  [Martinusbe]
+7ecc2e5  Settings: Expose styles in the manifest for themes  [Martinusbe]
+   * packages/apps/Tavern/
+61eab04  Add OmniSwitch as option for default recents [2/2] *DU Edits*  [Martinusbe]
+   * vendor/moto/
+0896653  shamu: proprietary blobs for 7.1.1 (N6F26Y)  [Alx31]
+d8ef43c  addison: Rename HAL for camera wrapper  [Alx31]
+93bdee2  addison: Additional RIL blobs  [Alx31]
+3bac386  addison: Regenerate makefile  [Alx31]
+28113e9  addison: Move qdcm configuration to device tree  [Alx31]
+5a88bcc  addison: Drop qcom audio effects libs  [Alx31]
+b409660  addison: Drop hardware revisions  [Alx31]
+9edcbd0  addison: Update for NPN25.137-24-1  [Alx31]
+6e59903  addison: Update Adreno blobs  [Alx31]
+0ff8abf  addison: Add IMS and aptX blobs  [Alx31]
+b6c3410  addison: Add back soundfx libs  [Alx31]
+eb15939  addison: Update proprietary blobs (NPN25.137-15-2)  [Alx31]
+bc8ed12  addison: Update GPS blobs  [Alx31]
+ea1ec5d  addison: Update Camera blobs  [Alx31]
+572b471  Add Qcom Display Color Modes support  [Alx31]
+e70300b  addison: Update from Potter (NPN25.115)  [Alx31]
+07a95bf  Drop irqbalance  [Alx31]
+2de7f52  addison: Update to MPNS24.104-44-7  [Alx31]
+a839942  addison: Get rid of Potter libs  [Alx31]
+23c06d2  addison: Fix fingerprint  [Alx31]
+357e7dc  addison: ims biatch!  [Alx31]
+9328fd5  addison: Import athene libjustshoot  [Alx31]
+341e329  addison: Add IPA support  [Alx31]
+f0d1662  addison: Remove perfd for now  [Alx31]
+d7f13f7  addison: Switch to athene DRM blobs  [Alx31]
+cc7cd49  Add Moto Z Play (addison)  [Alx31]
+   * vendor/tipsy/
+c47f2b6  v5.3 Jupiler  [Martinusbe]
+e4ce986  Build OmniSwitch  [Martinusbe]
+a684af1  addison comes in  [GitHub]
+af3bb7a  add back mako for Dani  [GitHub]
+
+====================
+     04-08-2017
+====================
+
+   * packages/apps/ExactCalculator/
+2bd6ec1  Themes: Expose all elevations  [Martinusbe]
+d1d6e41  Themes: Expose hard coded background in java  [Martinusbe]
+
+====================
+     04-07-2017
+====================
+
+   * frameworks/av/
+b49ce01  camera: Ensure native handle isn't null before closing it.  [Martinusbe]
+
+====================
+     04-06-2017
+====================
+
+
+====================
+     04-05-2017
+====================
+
+
+====================
+     04-04-2017
+====================
+
+   * kernel/motorola/msm8953/
+b921c2f  scsi: sg: check length passed to SG_NEXT_CMD_LEN  [Alberto97]
+5a9dee6  FROMLIST: CHROMIUM: usb: gadget: configfs: Fix KASAN use-after-free  [Alberto97]
+d04cd11  ANDROID: ion: Protect kref from userspace manipulation  [Alberto97]
+f55d198  usb: gadget: f_mbim: Release lock in mbim_ioctl upon disconnect  [Alberto97]
+9232e50  ASoC: msm: qdsp6v2: Fix out-of-bounds access in put functions  [Alberto97]
+27de1d8  mdss: Validate cursor image size  [Alberto97]
+6d01254  soc: qcom: rpm: Change driver memory allocation to use GFP_NOIO  [Alberto97]
+9d4ef08  power: qpnp-fg: Return error properly when IMA read/write fails  [Alberto97]
+f711164  platform: msm: spmi: Fix possible race condition in debugfs  [Alberto97]
+a1778c6  platform: msm: spmi: Add flag to make SPMI debugfs write optional  [Alberto97]
+dedde2d  USB: gadget: mbim: Avoid copying uninitialized data to userspace  [Alberto97]
+1892901  drivers: soc: qcom: Add error handling in function avtimer_ioctl  [Alberto97]
+bb57de8b  qseecom: whitelist support for kernel client and listener  [Alberto97]
+d288e38  qseecom: fix incomplete error handling for several functions  [Alberto97]
+7f54264  msm-3.18: drivers : added validation of input/output buffer sizes  [Alberto97]
+1c95cd8  qseecom: check buffer size when loading firmware images  [Alberto97]
+f135c41  qseecom: improve error checks in qseecom_probe()  [Alberto97]
+3afd589  qseecom: check error return value of ion_map_kernel  [Alberto97]
+bc11293  qseecom: configurable encryption key size  [Alberto97]
+a8b5716  seemp: use local stack mem when encoding params  [Alberto97]
+240bc4e  ASoC: wcd9335: Fix out of bounds for mad input value  [Alberto97]
+8990814  crypto: msm: check integer overflow on total data len in qcedev.c  [Alberto97]
+151e519  ASoC: msm: qdspv2: add mutex lock when access output buffer length  [Alberto97]
+437e860  qcrypto: protect potential integer overflow.  [Alberto97]
+
+====================
+     04-03-2017
+====================
+   * OTA_config/
+693f9c2  ota: update Redmi2 04/02  [Prema Chand Alugu]
+402e702  ota: update bacon 04/02  [Prema Chand Alugu]
+1a5e62a  Bullhead 04/02  [GitHub]
+   * device/motorola/addison/
+3d22b17  Missing copyrights  [Alberto97]
+8529bd4  We don't have a FM Radio  [Alberto97]
+   * kernel/moto/shamu/
+6e2cafe  fix compilation warnings  [Alx31]
+4feeb35  input: make get_input_time global  [Alx31]
+d599fb7  input: touchboost: conservative samples every 10ms, no point in limiting input_time to update its value in 50ms intervals  [Alx31]
+ca379bd  input: add generic touch event listener  [Alx31]
+96f3c87  defconfigs: enable new govs  [Alx31]
+f0abd52  defconfigs: regenerate for elementalx gov  [Alx31]
+cd941a9  cpufreq: despair: tweak the values a bit  [Alx31]
+77e0db0  cpufreq: despair: fix a few mistakes  [Alx31]
+315016e  cpufreq_elementalx: pick next freq from freq tables  [Alx31]
+1838505  cpufreq_elementalx: tune and make less aggressive  [Alx31]
+6c5c8c1  cpufreq_elementalx: replace input boost with down factor and floor frequency  [Alx31]
+dd300f5  cpufreq_elementalx: disable input boost  [Alx31]
+f3df5c6  cpufreq_elementalx: let input boost drop to lower frequency  [Alx31]
+c93da4b  cpufreq_elementalx: increase max screen off freq  [Alx31]
+358a4fa  cpufreq_elementalx: apply input boost per-cpu  [Alx31]
+24bdda5  cpufreq_elementalx: refactor and adjust  [Alx31]
+133aec5  ElementalX governor version 2  [Alx31]
+65b1ff1  defconfigs: regenerate for new govs  [Alx31]
+aaefe20  bludgeon the qualcomm kernel until it builds on i386 for qemu testing  [Alx31]
+3a3c181  IKSWL-14278 cpufreq: set policy with user_policy data  [Alx31]
+e56a968  cpufreq: hellsactive: fix compile  [Alx31]
+cff044c  cpufreq: hellsactive: Add input boost logic  [Alx31]
+6cbad5f  cpufreq: hellsactive: This doesn't belong here  [Alx31]
+a383116  cpufreq: hellsactive: Modify closest_freq_selection to not only select closest_freq on speedchange tasks  [Alx31]
+5be105b  cpufreq: hellsactive: Add closest_freq_selection  [Alx31]
+d572133  cpufreq: hellsactive: make freq calculation switchable  [Alx31]
+45f6ff6  cpufreq: hellsactive: don't boost cpu if the source load is low  [Alx31]
+722f7ce  cpufreq: Add hellsactive  [Alx31]
+94da197  cpufreq: Introduce despair cpufreq governor  [Alx31]
+5ca5d43  defconfigs: regenerate for barry_allen gov  [Alx31]
+cbd9807  Barry_Allen Version 1.0  [Alx31]
+131fe60  Update Barry Allen 0.9 Fix for revert (add calculate load before freq change)  [Alx31]
+5a64dc7  Update Barry Allen 0.7  [Alx31]
+79a17c1  Update Barry Allen 0.6  [Alx31]
+72ac0cc  Update Barry Allen 0.5  [Alx31]
+ffc00c7  Barry_Allen Version 0.4  [Alx31]
+a3de07f  cpufreq: Barry_Allen 0.3  [Alx31]
+e6492e9  cpufreq: Barry_Allen 0.2  [Alx31]
+2e61893  cpufreq: Adjusting the governor Barry-Allen [@Javilonas]  [Alx31]
+1b41bf6  cpufreq: Add new governor Barry-Allen [@Javilonas]  [Alx31]
+31cb865  defconfigs: regenerate for maple iosched  [Alx31]
+1f70d82  maple-iosched: Fix the -Wdeclaration-after-statement warnings  [Alx31]
+1004a2b  block: maple: Fix inverted logic  [Alx31]
+245c2cfa  block: maple: Make bools constant across functions  [Alx31]
+4e789d7  block: maple: Use native display state instead of PowerSuspend  [Alx31]
+3050312  block: maple: Serve asynchronous requests before synchronous ones  [Alx31]
+64c355b  block: maple: Fix some logic, import former/latter request logic from SIO, and use some improved bits of SIO  [Alx31]
+ca68664  block: maple: Catch writes_starved sooner, increase limit.  [Alx31]
+3a80134  block: maple: Clean up and add patchlevel macro to keep track of commits  [Alx31]
+faeb3ad  block: maple: Remove CONFIG_HZ dependency, assume 300 for interrupt frequency  [Alx31]
+5a8e402  block: Add Maple I/O Scheduler  [Alx31]
+112d7af  Kill 35MHz tends to cause SOD's  [Alx31]
+9dfe152  dts: Add some lower frequencies down to 35mhz  [Alx31]
+4feeb0a  defconfigs: regenerate/enable msm.sleeper  [Alx31]
+8e39bf7  cpufreq: qcom-cpufreq: Check return of cpufreq_frequency_get_table  [Alx31]
+dbc9cf8  qcom-cpufreq: limit min and max cpu frequencies  [Alx31]
+0d95948  msm-sleeper: limit max freq when screen is off  [Alx31]
+6374d95  qcom-cpufreq: ignore rounded calculation for underclock min frequency  [Alx31]
+1e64ae1  defconfigs: regenerate  [Alx31]
+cf678e6  tick: Don't clear idle and iowait sums on CPU down  [Alx31]
+429f373  Revert "tick: don't update idle time if cpu offline"  [Alx31]
+08b4fdc  Revert "proc: stat: fix idle time jump"  [Alx31]
+dc834b2  time: Remove CONFIG_TIMER_STATS  [Alx31]
+6385ff4  tick/broadcast: Prevent NULL pointer dereference  [Alx31]
+16767f6  crypto: msm: Add multi-core crypto support  [Alx31]
+   * packages/apps/OmniSwitch/
+66324a6  Automatic translation import  [maxwen]
+
+====================
+     04-02-2017
+====================
+   * OTA_config/
+0289528  op3: v5.2  [Martinusbe]
+   * device/motorola/addison/
+36136ce  camera: Disable longshot  [Alberto97]
+a2cd58d  Enable Snap camera again  [Alberto97]
+dd6a6ca  camera: Disable video stabilization  [Alberto97]
+9d01733  camera: Increase camera open retries  [Alberto97]
+3519fa9  Import and build empty QCamera2 wrapper  [Alberto97]
+   * frameworks/av/
+64aadc1  Fix Miracast(wifi display)  [Martinusbe]
+   * frameworks/base/
+4cb7c10  Themes: Expose Keyboard Shortcuts Dialog  [Alx31]
+0ff3cf3  Hold "volume up" during boot to disable all overlays  [Alx31]
+f0ef013  Add tile information to ACTION_QS_TILE_PREFERENCES intent  [Alx31]
+5810f49  SystemUI: Dismiss keyguard on boot if disabled by current profile  [Alx31]
+415b3ed  Fix intermittent slowness in resolver activity towards end of day.  [Alx31]
+75117b1  Revert "Wifi: Introduce a config parameter for IpReachabilityMonitor"  [Alx31]
+   * packages/apps/masquerade/
+fe58057  Fix failed authorization toast on restartService  [Martinusbe]
+   * packages/services/OmniJaws/
+c2b8726  OmniJaws: use vector logo  [Alx31]
+4c679ba  Automatic translation import  [Alx31]
+   * vendor/tipsy/
+26016c5  v5.2 Ichtegems week  [Alx31]
+e032d3d  Update Nova 5.1-beta3  [Alx31]
+b0bf313  Update Nova 5.1-beta2  [Alx31]
+797992a  Magisk: update Manager apk to v4.3.1  [Alx31]
+acf7c50  Magisk: update zip to v12.0  [Alx31]
+dc109f5  APN: Fix TalkTalk  [Alx31]
+441f416  apns: Update Swiss APNs  [Alx31]

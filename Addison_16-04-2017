@@ -1,0 +1,121 @@
+====================
+     04-15-2017
+====================
+
+
+====================
+     04-14-2017
+====================
+
+
+====================
+     04-13-2017
+====================
+
+
+====================
+     04-12-2017
+====================
+
+
+====================
+     04-11-2017
+====================
+
+
+====================
+     04-10-2017
+====================
+
+
+====================
+     04-09-2017
+====================
+   * OTA_config/
+99901ef  op3: update xda link  [Martinusbe]
+ec84e0e  fix xml in onyx ota  [Martinusbe]
+3573c0c  op3 v5.3 Jupiler  [Martinusbe]
+   * build/
+26e9c2c  NOF27D  [Martinusbe]
+7bfdbb2  Update Security String to 2017-04-01 on nyc-dev  [Martinusbe]
+   * device/moto/shamu/
+dd06939  shamu: Add notification blink support to liblights  [Alx31]
+787917f  power: Update for PerformanceManager changes  [Alx31]
+d3c2f7a  shamu: update build fingerprint & description to N6F26Y  [Alx31]
+4cde815  shamu: sepolicy: Remove usage of deprecated unix_socket_connect for properties  [Alx31]
+80b6f09  overlay: Enable the Pinner Service for pinning files into memory  [Alx31]
+b68dc0e  shamu: Allow system_server to search persist_file  [Alx31]
+17b4e0c  shamu: Remove deprecated storage_list.xml  [Alx31]
+eaa470e  shamu: power: dereference data pointer  [Alx31]
+   * device/motorola/addison/
+7a43858  disable hardwarekeys and wakekeys overlays  [Alx31]
+69fc7d3  update deps again  [Alx31]
+8bea285  update deps  [Alx31]
+23e8fd3  Tipsy plz.  [Alx31]
+   * frameworks/base/
+09ea7bc  Revert "Emergency call button on Swipe lock Screen."  [Martinusbe]
+124454d  base: add TYPE_PHONE to excludeWindowTypeFromTapOutTask  [Martinusbe]
+523c220  base: OmniSwitch: add hook to handle multi window dock events better  [Martinusbe]
+e4753ae  Fix OmniSwitch non-protected broadcast logspam  [Martinusbe]
+0392086  Add OmniSwitch toggle to protected broadcasts  [Martinusbe]
+9864ee5  Add OmniSwitch as option for default recents [1/2]  [Martinusbe]
+7696776  KeyguardSimPinView: don't send dummy request to get remaining pin  [Martinusbe]
+8c45cbf  keyguard: Allow disabling fingerprint wake-and-unlock  [Martinusbe]
+fdfcd49  PowerProfile: allow overriding battery capacity defined in power profile using a property  [Martinusbe]
+   * kernel/moto/shamu/
+fe18b5f  Add blink support to kernel.  [Alx31]
+   * manifest/
+5a0a9bf  7.1.1_r38  [Martinusbe]
+4705fe9  track our ExactCalculator  [Martinusbe]
+00c46db  track omniswitch  [Martinusbe]
+c91208e  Track SnapdragonGallery from slim  [Martinusbe]
+99a6c91  add slim's external_bson  [GitHub]
+   * packages/apps/Settings/
+caab34c  Expose dashboard category padding bottom  [Martinusbe]
+f4052bd  Settings: Guard against themes without colorAccent defined  [Martinusbe]
+571b6c7  Settings: Expose "ALL" hardcoded and @android colors  [Martinusbe]
+25027fa  Settings: Expose and add tint mode to custom icons  [Martinusbe]
+7ecc2e5  Settings: Expose styles in the manifest for themes  [Martinusbe]
+   * packages/apps/Tavern/
+61eab04  Add OmniSwitch as option for default recents [2/2] *DU Edits*  [Martinusbe]
+   * vendor/motorola/
+0896653  shamu: proprietary blobs for 7.1.1 (N6F26Y)  [Alx31]
+d8ef43c  addison: Rename HAL for camera wrapper  [Alx31]
+93bdee2  addison: Additional RIL blobs  [Alx31]
+3bac386  addison: Regenerate makefile  [Alx31]
+28113e9  addison: Move qdcm configuration to device tree  [Alx31]
+5a88bcc  addison: Drop qcom audio effects libs  [Alx31]
+b409660  addison: Drop hardware revisions  [Alx31]
+9edcbd0  addison: Update for NPN25.137-24-1  [Alx31]
+6e59903  addison: Update Adreno blobs  [Alx31]
+0ff8abf  addison: Add IMS and aptX blobs  [Alx31]
+b6c3410  addison: Add back soundfx libs  [Alx31]
+eb15939  addison: Update proprietary blobs (NPN25.137-15-2)  [Alx31]
+bc8ed12  addison: Update GPS blobs  [Alx31]
+ea1ec5d  addison: Update Camera blobs  [Alx31]
+572b471  Add Qcom Display Color Modes support  [Alx31]
+e70300b  addison: Update from Potter (NPN25.115)  [Alx31]
+07a95bf  Drop irqbalance  [Alx31]
+2de7f52  addison: Update to MPNS24.104-44-7  [Alx31]
+a839942  addison: Get rid of Potter libs  [Alx31]
+23c06d2  addison: Fix fingerprint  [Alx31]
+357e7dc  addison: ims biatch!  [Alx31]
+9328fd5  addison: Import athene libjustshoot  [Alx31]
+341e329  addison: Add IPA support  [Alx31]
+f0d1662  addison: Remove perfd for now  [Alx31]
+d7f13f7  addison: Switch to athene DRM blobs  [Alx31]
+cc7cd49  Add Moto Z Play (addison)  [Alx31]
+   * vendor/tipsy/
+c47f2b6  v5.3 Jupiler  [Martinusbe]
+e4ce986  Build OmniSwitch  [Martinusbe]
+a684af1  addison comes in  [GitHub]
+
+====================
+     04-08-2017
+====================
+
+   * packages/apps/ExactCalculator/
+2bd6ec1  Themes: Expose all elevations  [Martinusbe]
+d1d6e41  Themes: Expose hard coded background in java  [Martinusbe]
+   * vendor/tipsy/
+af3bb7a  add back mako for Dani  [GitHub]

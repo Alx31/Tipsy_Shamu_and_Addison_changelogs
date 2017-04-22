@@ -1,0 +1,197 @@
+====================
+     04-23-2017
+====================
+   * OTA_config/
+107307d  op3 Kasteelbier  [Martinusbe]
+   * build/
+6837756  build_image.py: Update commands based on our python3 update  [Prema Chand Alugu]
+b561225  build: allow to disable recovery-two-step.img generation  [Prema Chand Alugu]
+45c0d3d  Merge android-7.1.2_r2  [Prema Chand Alugu]
+15a8ea2  core: Makefile: Correct package signature disable  [Prema Chand Alugu]
+76f862e  core: assume non-release recoveries to skip signature check  [Prema Chand Alugu]
+62aa46a  core: use 0 compression when creating the target_files package  [Prema Chand Alugu]
+   * device/motorola/addison/
+6a4645b  update deps  [Alx31]
+e8b4d84  build kernel with uber 5.x tc  [Alx31]
+ea257f1  remove DT-LZ4 :( it causes a lot of issues with magisk 1.- Device won't boot and some links was broken 2.- To fix this issue you need to flash Marshmallow Stock kernel then reinstall our rom 3.- To dismiss this I removed this DT-LZ4 :c  [Alx31]
+   * frameworks/base/
+ef041c9  Add protected broadcast for app crash broadcast  [Prema Chand Alugu]
+d5216ca  Fix Aosp bug on custom apps tiles: color not changing on tile state change  [Prema Chand Alugu]
+0b05268  KILL FULLSCREEN KEYBOARD WITH FIRE  [Prema Chand Alugu]
+df1e7c5  Zygote: Fix GL preload property evaluation  [Prema Chand Alugu]
+83c64a8  7.1.2 fixes  [Prema Chand Alugu]
+634d8e0  Merge android-7.1.2_r2  [Prema Chand Alugu]
+ea5ef8d  Intercept Home button press to wake device  [Prema Chand Alugu]
+2b2fd81  Fix NullPointerException in MediaPlayer  [Prema Chand Alugu]
+6db4d9d  Frameworks/base: Fix old code in MediaPlayer  [Prema Chand Alugu]
+1aaf08d  FATAL EXCEPTION IN SYSTEM PROCESS: android.ui  [Prema Chand Alugu]
+facd02d  Themes: Allow volume slider and thumb to work with custom images.  [Prema Chand Alugu]
+407cba7  Separate tile label color from icon drawable color  [Prema Chand Alugu]
+b3c346f  fingerprint: notify client when cancelling succeeded  [Prema Chand Alugu]
+b052ab7  add config_fingerprintRemoveClientOnCancel  [Prema Chand Alugu]
+   * frameworks/opt/slim/
+8657b05  Update for new color picker  [Prema Chand Alugu]
+b47c958  Fix battery alignment  [Prema Chand Alugu]
+7831195  Cleanup SlimSettings layouts on tablets  [Prema Chand Alugu]
+   * frameworks/opt/telephony/
+2902e4b  Merge tag 'android-7.1.2_r2' into cm-14.1  [Prema Chand Alugu]
+   * kernel/motorola/msm8953/
+ab167dd  Merge remote-tracking branch 'los/cm-14.1' into test  [Alx31]
+   * manifest/
+7631f7f  track slim colorpicker  [Prema Chand Alugu]
+01574e5  7.1.2_r2  [Prema Chand Alugu]
+5fab27c  track our ahbottomnavigation  [Prema Chand Alugu]
+7847f50  Revert "Track SnapdragonGallery from slim"  [Prema Chand Alugu]
+88badad  track our gallery2  [Prema Chand Alugu]
+   * packages/apps/Settings/
+7afc8d8  Merge android-7.1.2_r2  [Prema Chand Alugu]
+   * packages/services/Telecomm/
+4cefe59  Merge android-7.1.2_r2  [Prema Chand Alugu]
+   * packages/services/Telephony/
+fc07e7d  Merge remote-tracking branch 'slim/ng7.1' into n7.1  [Prema Chand Alugu]
+2731fc2  Merge android-7.1.2_r2  [Prema Chand Alugu]
+dc0383e  Automatic translation import  [Prema Chand Alugu]
+5121c0d  Automatic translation import  [Prema Chand Alugu]
+   * prebuilts/gcc/linux-x86/arm/arm-eabi-5.x/
+2fcc807  Initial commit  [DespairFactor]
+   * vendor/tipsy/
+6fbe057  v5.4 Kasteelbier  [Prema Chand Alugu]
+088ae54  kernel: Fix broken C_INCLUDE_PATH for Darwin  [Prema Chand Alugu]
+41ba796  kernel: Include openssl headers and dylibs on darwin  [Prema Chand Alugu]
+b5ca987  charger: updates for 7.1.2 minui  [Prema Chand Alugu]
+c2afbe7  cm: charger: Correct res_create_multi_display_surface() usage  [Prema Chand Alugu]
+7539ab2  cm: charger: Center capacity and vertical offset  [Prema Chand Alugu]
+69a2e39  cm: charger: Fix cm healthd  [Prema Chand Alugu]
+406aebc  cm: charger: Export the RTC Clock and Alarm timestamps  [Prema Chand Alugu]
+2be0f3a  cm: charger: Add support for double backlight displays  [Prema Chand Alugu]
+87fcac0  cm: Add custom off-mode charging screen  [Prema Chand Alugu]
+15d8c42  Use PLATFORM_VERSION for PRODUCT_VERSION_MAJOR  [Prema Chand Alugu]
+
+====================
+     04-22-2017
+====================
+
+   * frameworks/av/
+0876f7e  stagefright: Fix SurfaceMediaSource buffer search condition when buffer return  [Martinusbe]
+d6fb19a  Revert "Fix Miracast(wifi display)"  [Martinusbe]
+356834b  stagefright: Remove the HAL3 limitation from the video reference clock selection  [Martinusbe]
+   * frameworks/native/
+0c9f6af  sensorservice: Register orientation sensor if HAL doesn't provide it  [Martinusbe]
+   * packages/apps/Nfc/
+0d15c7a  Nfc: Add android-support-v4 to static libs  [Josue Rivera]
+
+====================
+     04-21-2017
+====================
+
+   * packages/resources/devicesettings/
+dccf644  Automatic translation import  [Abhisek Devkota]
+   * system/core/
+485f907  Merge tag 'android-7.1.2_r2' into n7.1  [Martinusbe]
+
+====================
+     04-20-2017
+====================
+
+   * bionic/
+18207f8  Merge android-7.1.2_r2  [Martinusbe]
+   * frameworks/av/
+976f805  Merge tag 'android-7.1.2_r2' into n7.1  [Martinusbe]
+   * frameworks/native/
+52cc38e  Merge tag 'android-7.1.2_r2' into n7.1  [Martinusbe]
+   * frameworks/opt/color-picker/
+fd2ac56  color-picker: Add a credits file  [Griffin Millender]
+c14977e  Fixes  [Griffin Millender]
+5b5f388  Remove setAlphaEnabled temporarily  [Griffin Millender]
+6a7a50a  color-picker:  Add ability to set initial color from the fragment  [Griffin Millender]
+003d754  Cleanup the dialog when used in settings  [Griffin Millender]
+ba2eaa0  color-picker: Prepare to build inline with rom  [Griffin Millender]
+17c2dec  Cleanup leftover code from rewrite  [Griffin Millender]
+2556f50  Rewrite  [Griffin Millender]
+   * hardware/libhardware/
+e4775fe  hw_auth_token: use macro for HW_AUTH_TOKEN_VERSION  [Martinusbe]
+83fb089  BLE OOB Pairing - parse address type (2/5)  [Martinusbe]
+7a8f0bd  Sensors: MultiHal: support sensor API version 1.4  [Martinusbe]
+9e91ea4  Treat all tags as unsigned when comparing them  [Martinusbe]
+ba38a1c  Sensors: MultiHal: ignore errors from poll calls  [Martinusbe]
+   * system/extras/
+4c29ba0  Update verity_verifier from master branch  [Josue Rivera]
+8d3f159  verity: Include libcrypto_utils_static  [Josue Rivera]
+   * system/sepolicy/
+ab8bdcc  Merge android-7.1.2_r2  [Martinusbe]
+   * system/vold/
+fd4d286  Merge android-7.1.2_r2  [Martinusbe]
+
+====================
+     04-19-2017
+====================
+
+   * art/
+94883f0  Revert "Revert "ART: Give JIT thread pool workers a peer""  [Josue Rivera]
+5f54193  ART: Add ThreadPool mode that creates peers  [Josue Rivera]
+74875fe  Add Thread entry to signal if the thread can call into java  [Josue Rivera]
+d13785f  Cache flush/invalidate needs RWX permission  [Josue Rivera]
+0e8c0ba  Delete extra arm64/mips64 MterpReturn suspend check  [Josue Rivera]
+e0968c9  Add visiting for class loaders in StickyMarkSweep  [Josue Rivera]
+09e0452  Revert "Revert "Prune uses library classes even without profile DO NOT MERGE""  [Josue Rivera]
+ccc75b1  Revert "Prune uses library classes even without profile DO NOT MERGE"  [Josue Rivera]
+11caaeb  Prune uses library classes even without profile DO NOT MERGE  [Josue Rivera]
+412117f  Fix event reporting from the debugger thread  [Josue Rivera]
+f236cef  ART: Prioritize reference table dump  [Josue Rivera]
+   * packages/apps/Bluetooth/
+bffbf5c  Automatic translation import  [Josue Rivera]
+1d92f96  Automatic translation import  [Josue Rivera]
+77ff627  Revert "Introduced Active device for volume updates and volume update in pause state"  [Josue Rivera]
+c612300  Bluetooth: AIRPLANE_MODE_ON has moved  [Josue Rivera]
+65092c4  Automatic translation import  [Josue Rivera]
+45ac8e0  Automatic translation import  [Josue Rivera]
+   * packages/apps/Camera2/
+2b2d5dd  Merge "Automatic translation import" into ng7.1  [Gerrit Code Review]
+   * system/netd/
+5132e6f  DO NOT MERGE Add success/errno to connect() event reporting  [Josue Rivera]
+480f0d1  DO NOT MERGE onConnectEvent does not report udp connects  [Josue Rivera]
+c2891cf  DO NOT MERGE Comment out tests/benchmarks/Android.mk on nyc-mr2-dev  [Josue Rivera]
+baf5f04  DO NOT MERGE Fix use-after-free of mClient member DnsProxyListener::GetHostByNameHandler::run().  [Josue Rivera]
+cf52440  DO NOT MERGE Add null check for hp in DnsProxyListener::GetHostByNameHandler  [Josue Rivera]
+ab4bd29  DO NOT MERGE Add connect event reporting  [Josue Rivera]
+9b4b135  DO NOT MERGE Fixing the netd benchmark  [Josue Rivera]
+7920eb0  DO NOT MERGE Extending DNS event reporting  [Josue Rivera]
+8041075  DO NOT MERGE Remove "if (auto ret = " treated as unused by some compilers  [Josue Rivera]
+c90a962  DO NOT MERGE Adding EventReporter class  [Josue Rivera]
+860a6a6  DO NOT MERGE [benchmark] remove unnecessary shared libs, fix apct  [Josue Rivera]
+6a29d43  DO NOT MERGE Benchmarks for network metrics reporting  [Josue Rivera]
+95cb551  DO NOT MERGE Move Stopwatch into its own header  [Josue Rivera]
+a76621a  DO NOT MERGE Fix getaddrinfo test to use random mapping ids  [Josue Rivera]
+1ebd668  DO NOT MERGE UidRange bounds-checking typo  [Josue Rivera]
+94529f8  DO NOT MERGE Rename the DnsEventListenerService to NetdEventListenerService  [Josue Rivera]
+
+====================
+     04-18-2017
+====================
+   * OTA_config/
+11926cd  Flo 04/17 fixed build  [GitHub]
+5eb57d9  Flo 04/17  [GitHub]
+6180a94  Clark 04/17  [GitHub]
+   * device/motorola/addison/
+58a03b3  Select wlan regulatory file according to the carrier  [Alx31]
+a87c175  addison: Use sensor multi hal  [Alx31]
+e465df9  Disable CMActions  [Alx31]
+e7c11fd  Tipsy.  [Alx31]
+   * system/sepolicy/
+7e4524f  sepolicy: add file and domain trans to interfacer  [Martinusbe]
+
+====================
+     04-17-2017
+====================
+
+   * kernel/motorola/msm8953/
+4794970  Select wlan regulatory file according to the carrier  [Alberto97]
+e62fd81  addison: Use sensor multi hal  [Alberto97]
+
+====================
+     04-16-2017
+====================
+
+   * packages/apps/masquerade/
+cd66c01  restartService --> forceStopService  [Martinusbe]
+544fd21  Polish copyright  [Martinusbe]

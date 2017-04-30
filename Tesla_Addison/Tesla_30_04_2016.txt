@@ -1,0 +1,204 @@
+====================
+     04-30-2017
+====================
+
+   * OTA_config/
+a780e22 Clark 04/30
+
+   * kernel/motorola/msm8953/
+996c53c wlan: Fix SAP SSR reinit for uninitialized config
+cb3deed wlan: Indicate disconnect to SME to abort pre-auth
+aeed58a wlan: Changes to force roam in low RSSI scenarios
+7bfed1c BACKPORT: [UPSTREAM] ext2: convert to mbcache2
+17a7a65 BACKPORT: [UPSTREAM] ext4: convert to mbcache2
+d76ccf1 BACKPORT: [UPSTREAM] mbcache2: reimplement mbcache
+f9b829e ASoC: msm: qdsp6v2: DAP: Add check to validate param length
+8da9d91 ASOC: msm: Restrict loop index to avoid buffer overread
+6d2dbb3 ASoC: soc: msm: initialize buffer to prevent kernel data leakage
+00b9121 drivers: soc: qcom: Add overflow check for sound model size
+2ed889c ASoC: msm-cpe-lsm: cleanup ioctl functions
+4d595ab ASoC: msm: qdsp6v2: DAP: Add check to validate param length
+a8050e4 Asoc: msm: qdsp6v2: Fix Out-of-bounds memory access in adm_get_params_v2
+dacf971 msm: rndis_ipa: Remove rndis_ipa loopback functionality
+503f153 msm: rndis_ipa: fix to debug file system init failure
+93f0cb5 wcnss: Expose wcnss_nv_name
+fd54be1 BACKPORT: UPSTREAM: selinux: fix off-by-one in setprocattr
+302716f UPSTREAM: init: export name_to_dev_t and mark name argument as const
+e3d2b2b BACKPORT: UPSTREAM: sysctl: Drop reference added by grab_header in proc_sys_readdir
+f484839 UPSTREAM: ipv4: keep skb->dst around in presence of IP options
+14d3e81 Bump Motorola Kernel Version
+01c3de8 arm/dt: Add channel ID for Altice Portugal
+265b258 mbhc: check validation before call micb callback
+274e72e input: synaptics_dsx: protect tmpbuf allocation.
+85f0883 tty: n_hdlc: get rid of racy n_hdlc.tbuf
+d9639b2 TTY: n_hdlc, fix lockdep false positive
+1086c46 ip6_gre: fix ip6gre_err() invalid reads
+8af954b soc: qcom: make debugfs support configurable for kryo l2 accessors driver
+0b6a6df sctp: deny peeloff operation on asocs with threads sleeping on it
+7352e2e irda: Fix lockdep annotations in hashbin_delete().
+b9a4768 net/llc: avoid BUG_ON() in skb_orphan()
+e0d651f dccp: fix freeing skb too early for IPV6_RECVPKTINFO
+6255b1e perf/core: Fix concurrent sys_perf_event_open() vs. 'move_group' race
+3047ae4 sctp: avoid BUG_ON on sctp_wait_for_sndbuf
+0a26af3 drivers: video: Add bounds checking in fb_cmap_to_user
+7525d2f spcom: check user space command size
+fbdb54b spcom: check buf size for send modified command
+b081cc8 spcom: check size before calling copy_to_user()
+51fab65 spcom: check buf_size validity for user send command
+3d07f12 ALSA: hrtimer: Fix stall by hrtimer_cancel()
+fd116fd Input: aiptek - fix crash on detecting device without endpoints
+a720b63 scsi: sg: check length passed to SG_NEXT_CMD_LEN
+15b935c FROMLIST: CHROMIUM: usb: gadget: configfs: Fix KASAN use-after-free
+4c02138 ANDROID: ion: Protect kref from userspace manipulation
+caa3019 usb: gadget: f_mbim: Release lock in mbim_ioctl upon disconnect
+33b1563 ASoC: msm: qdsp6v2: Fix out-of-bounds access in put functions
+85186ce mdss: Validate cursor image size
+bdae5a0 soc: qcom: rpm: Change driver memory allocation to use GFP_NOIO
+f9d6cfe power: qpnp-fg: Return error properly when IMA read/write fails
+511773d platform: msm: spmi: Fix possible race condition in debugfs
+bf0dfb5 platform: msm: spmi: Add flag to make SPMI debugfs write optional
+c50ee26 USB: gadget: mbim: Avoid copying uninitialized data to userspace
+066260d drivers: soc: qcom: Add error handling in function avtimer_ioctl
+22dda35 qseecom: whitelist support for kernel client and listener
+50f7764 qseecom: fix incomplete error handling for several functions
+aba3e61 msm-3.18: drivers : added validation of input/output buffer sizes
+5e1431f qseecom: check buffer size when loading firmware images
+f008ed8 qseecom: improve error checks in qseecom_probe()
+297ddaf qseecom: check error return value of ion_map_kernel
+d86f88f qseecom: configurable encryption key size
+0bfde3a seemp: use local stack mem when encoding params
+8c3aed7 ASoC: wcd9335: Fix out of bounds for mad input value
+63b70eb crypto: msm: check integer overflow on total data len in qcedev.c
+1a3b1b2 ASoC: msm: qdspv2: add mutex lock when access output buffer length
+20f2677 qcrypto: protect potential integer overflow.
+
+   * vendor/tesla/
+a6f6580 addison plz
+
+====================
+     04-29-2017
+====================
+
+
+   * build/
+600e5be releasetools:tesla
+
+   * vendor/codeaurora/telephony/
+a57c572 IMS-VT: Send static image in a Video Call
+0e94dd0 Merge remote-tracking branch 'los/cm-14.1' into HEAD
+
+   * vendor/qcom/opensource/dataservices/
+d736d3a dataservices: Don't pollute the tree
+
+====================
+     04-28-2017
+====================
+
+
+   * frameworks/av/
+b3ca9d6 Conditionally revert "CameraService: Allow HAL to handle video buffer duped FD's."
+
+   * packages/apps/ThemeInterfacer/
+40e3809 JobService: Expose configuration shim refresh delay
+
+   * vendor/tesla/
+ed46b53 Update Magisk Manager 4.3.3
+
+====================
+     04-27-2017
+====================
+
+
+   * external/boringssl/
+ea824e0 Make CRYPTO_is_NEON_capable aware of the buggy CPU.
+af38d7b Don't set a default armcap state in dynamic armcap modes.
+e850fcd Rewrite ARM feature detection.
+ae4c80f Remove CRYPTO_set_NEON_functional.
+
+   * frameworks/base/
+3c413ae Solid battery: Bring back pulsing animation
+f415773 PA solid circle battery style [1/2]
+1ae71dc Fix DUI slippery flag logic and IllegalArgumentException [2/2]
+
+   * packages/apps/DUI/
+a7b53c9 Fix DUI slippery flag logic and IllegalArgumentException [1/2]
+aeef534 DUI mediamonitor: exclude Chrome from isPlaying check
+f8104e7 DUI mediamonitor: exclude youtube from isPlaying check
+7bddc73 Improve Pulse and MediaMonitor reliability
+
+   * packages/apps/MusicFX/
+5a51817 Make MusicFX fully themeable
+6307dc9 Build as PRIVILEGED
+66bea5e Fix UI behavior for virtualizer effect
+4fa092e MusicFX: Expose icon color
+1eecbdb MusicFX: Adjust colors
+b171e51 Moar stock colors
+970b9ed Modify Hungarian translation
+e3d942b Remove extra quotation mark
+a5c581f Toast string change
+96ac148 Update theme / targetSdkVersion
+fab7848 Materialized icon for MusicFX
+51aa246 MusicFX: be nice to themers
+d20d0b5 MusicFX: cleanup unneeded
+0262774 MusicFX: add disable system property
+dd74c96 MusicFX: output type specific settings
+d785b64 MusicFX: use correct preset for equalizer
+f0051b8 MusicFX: set proper SDK version
+59cfcdd MusicFX: fix enablement of virtualizer knob
+85a4791 MusicFX: apply effects only if needed
+53f31d9 MusicFX: cleanup and bugfixes
+97e2389 MusicFX: omnification
+1e856af MusicFX: use fallback for calling package
+
+   * packages/apps/TeslaCoil/
+9fe1fc1 PA solid circle battery style [2/2]
+
+   * packages/apps/ThemeInterfacer/
+3f3c33b Add a looper to the locale change handler
+
+====================
+     04-26-2017
+====================
+
+
+   * frameworks/opt/telephony/
+fd17353 telephony: Fix rebase mismerge breaking SIM detection when encrypted
+
+   * hardware/ril-caf/
+c4dec07 ril-caf: Fix crash when enabling RILC_LOG
+93e1466 ril: Setting ril to v10 or v11 serves no purpose
+87b4213 ril-caf: Only allow GET_CARRIER_RESTRICTIONS for ril versions >= 14
+f2ab8d7 Properly parcel v6 RIL_CellInfo GSM cell response.
+fd76b61 Fix RIL_CardStatus_v5 Parceling.
+4ccec83 ril-caf: Allow using RIL version 10
+0a62b51 RIL: Fix CellInfo for RIL version < 12
+affba17 ril: Add support for selecting RIL version 11
+17e3a45 librilutils: Relocate pb-generated objects to their expected path
+89c35f4 rild: Don't use the clientId argument with non-qcom hardware
+a4cc691 ril-caf: Add guard makefile
+7f336e9 libril: allow board to provide libril
+
+   * manifest/
+5c32fc0 ril-caf: 7.1.2-caf branch
+
+   * packages/apps/OmniSwitch/
+4e8ef3e OmniSwitch: shadow wars
+7b05591 OmniSwitch: Launcher: refine assist activity check
+f97992e OmnSwitch: enable update thumbs during swipe
+e4e9ec1 OmniSwitch: Launcher: check for existing assist activities
+1f8ef8f OmniSwitch: reduce vertical padding on app icons
+
+   * packages/apps/Stk/
+6998ac7 Merge tag 'android-7.1.2_r2' into n7.1.2
+
+   * packages/apps/ThemeInterfacer/
+9936dc3 README: Recommend Interfacer be put in the services folder
+
+   * system/core/
+315fe7a init.rc: set initial cpuset to all cores
+
+   * vendor/tesla/
+09291e2 backuptool: Preserve the SELinux context of the files
+51b39a7 backuptool: Don't rely on the order of the elements in the list
+b05ce49 gzr: Fix Trusted Face
+

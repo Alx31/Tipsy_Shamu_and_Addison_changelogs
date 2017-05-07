@@ -1,0 +1,114 @@
+====================
+     05-07-2017
+====================
+
+
+   * device/motorola/addison/
+d4708d8 Revert "remove DT-LZ4 :( it causes a lot of issues with magisk"
+
+====================
+     05-06-2017
+====================
+
+
+   * device/motorola/addison/
+ee710ee Fix CMActions
+
+   * packages/apps/Settings/
+102e20b Move LED Settings to the Den [1/2]
+
+   * packages/apps/WolvesDen/
+9962388 Move LED Settings to the Den [2/2]
+
+====================
+     05-05-2017
+====================
+
+   * OTA_config/
+866883a Flounder 05/04
+
+====================
+     05-04-2017
+====================
+
+   * OTA_config/
+0ca0c69 Add onyx (05/03)
+ab0de28 ota: Redmi2 0503
+5d336fe ota: Bacon 0503
+
+   * frameworks/av/
+3eef3e0 seccomp: Fix policy for ffmpeg
+
+   * system/core/
+c28c1d9 Lockscreen charging info: real time values [2/4]
+6e71cd2 healthd: dock battery
+498fbac healthd: Detect power supply type for all charger devices
+90d9125 Revert "healthd: dock battery"
+80eb245 Revert "Lockscreen charging info: real time values [2/4]"
+
+   * system/sepolicy/
+4ecde37 sepolicy: Add cap_sys_nice to surfaceflinger
+
+   * vendor/motorola/
+9d8f639 shamu: proprietary blobs for 7.1.1 (N6F27C)
+33f9eca Revert "shamu: add faceunlock proprietary file libfrsdk.so"
+
+   * vendor/validus/
+fae3d61 Rename BoardConfigCM.mk to BoardConfigVALIDUS.mk
+59d1967 RC v14.1
+
+====================
+     05-03-2017
+====================
+
+
+   * device/motorola/addison/
+0ebdc53 track gzr kernel
+
+   * kernel/motorola/msm8953/
+32556d0 mm: Tighten x86 /dev/mem with zeroing reads
+c14ebea crypto: ahash - Fix EINPROGRESS notification callback
+f582333 mm/mempolicy.c: fix error handling in set_mempolicy and mbind.
+aae42ef5 KEYS: fix keyctl_set_reqkey_keyring() to not leak thread keyrings
+f814a06 KEYS: Change the name of the dead type to ".dead" to prevent user access
+889f432 KEYS: Disallow keyrings beginning with '.' to be joined as session keyrings
+931d89d xfrm_user: validate XFRM_MSG_NEWAE incoming ESN size harder
+d4c7408 xfrm_user: validate XFRM_MSG_NEWAE XFRMA_REPLAY_ESN_VAL replay_window
+502f2fc net: rmnet_data: Fix incorrect netlink handling
+aca0c97e msm: vidc: Protect debug_buffer access in core_info_read with lock.
+39f0adf ASoC: msm: qdsp6v2: set pointer to NULL after free
+b3a119f drivers: soc: add size check
+7df81bb msm: mdss: install the rel_fence even if retire_fence is skipped
+556e429 tracing: do not leak kernel addresses
+7fddc4c msm: mdss: Install sync fences after user copy
+864f168 msm: mdss: avoid removing wrong multirect on validate failures
+dfbf151 BACKPORT: trace: resolve stack corruption due to string copy
+20a0ae0 msm: camera: flash: Validate the power setting size
+cb48133 ASoC: wcd9330: Fix out of bounds for mad input value
+47ee59f msm: camera: sensor: Validate i2c_frq_mode in msm_cci_get_clk_rates
+8481595 power: qpnp-fg: Fix possible race condition in FG debugfs
+3e20c46 msm: crypto: set CLR_CNTXT bit for crypto operations
+dab3794 soc: qcom: scm: add check to avoid buffer overflow
+d157f0a qseecom: improve input validatation for qseecom_send_service_cmd
+3e7e87d msm: ADSPRPC: Check for buffer overflow condition
+1116753 uio: fix potential use after free issue when accessing debug_buffer
+14fffe5 crypto: msm: check length before copying to buf in _debug_stats_read
+84fed06 leds: qpnp-flash: Fix Use-after-free(UAF) for debugfs
+8d00fdd leds: qpnp-flash: Fix possible race condition in debugfs
+33e6c8c ASoC: msm: qdsp6v2: return error when copy from userspace fails
+8fee862 ASoC: msm: qdsp6v2: DAP: Add check to validate param length
+37dca6e ASoC: msm: qdsp6v2: Add range checking in msm_dai_q6_set_channel_map
+9f9c194 ASoC: msm: q6dspv2: use correct variable type to store ION buff size
+eac8367 drivers: soc: add mutex to prevent response being processed twice
+991a117 ASoC: msm: qdsp6v2: completely deallocate on cal block creation failure
+9cc9a04 msm: mdss: handle synchronization issues during DSI debugfs read/write
+
+   * manifest/
+8135e7c bring back 5.x tc for addison kernel
+
+   * vendor/motorola/
+6c89429 Clark: update WV from bullhead (NMF26F)
+c25b1b3 Clark: ims update from bullhead (NMF26F)
+c4c648e Add libfrsdk per Beans Gapps
+db380aa clark: kang drm from bullhead
+4e248ca clark: pull in adreno libs and regen makefiles

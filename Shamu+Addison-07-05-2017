@@ -1,0 +1,320 @@
+====================
+     05-06-2017
+====================
+
+   * device/motorola/addison/
+e130d68  Revert "remove DT-LZ4 :( it causes a lot of issues with magisk"  [Alx31]
+   * frameworks/base/
+e87d3c3  Frameworks: Re-adapt toast window animations for 7.1.1 - Since google updated toast popup notifications on 7.1.1 release. toast window animations stop working .So now this is make it work again  [Prema Chand Alugu]
+2003a49  SystemUI:Bluetooth can't be turn off  [Prema Chand Alugu]
+d2bb0f7  BT: Update wait function in ManagerService to handle  BLE states  [Prema Chand Alugu]
+49edbfd  Bluetooth: Handle user switch with new states  [Prema Chand Alugu]
+af22b80  StatusBar: Catch OOM caused by third-party icons  [Prema Chand Alugu]
+   * manifest/
+f7b5a98  track 8937 from Tesla for Alex  [Prema Chand Alugu]
+   * packages/apps/Settings/
+4e44f4d  Settings[Wifi]: fix the input invalid length for WEP encryption.  [Prema Chand Alugu]
+4f957d2  Settings: Fix internal storage summary for non-emulated storage  [Prema Chand Alugu]
+   * packages/apps/Tavern/
+357ddbc  nuke wifi easy toggle since we have this b8dce5c  [Prema Chand Alugu]
+   * vendor/tipsy/
+b71ef95  v5.6 Mystic  [Prema Chand Alugu]
+1bcc130  Update Amaze to RC3  [Prema Chand Alugu]
+e404771  Add AmazeFileManager apk v3.1.2-RC2  [Prema Chand Alugu]
+
+====================
+     05-05-2017
+====================
+
+
+====================
+     05-04-2017
+====================
+   * OTA_config/
+0ce1acd  Flounder 05/04  [GitHub]
+   * build/
+5b40e13  pull BoardConfigTIPSY.mk from vendor  [GitHub]
+   * frameworks/av/
+844da4c  seccomp: Fix policy for ffmpeg  [Martinusbe]
+   * vendor/tipsy/
+266a5a3  Rename BoardConfigCM.mk to BoardConfigTIPSY.mk  [GitHub]
+
+====================
+     05-03-2017
+====================
+   * OTA_config/
+74a8dcf  onyx (05/03)  [GitHub]
+   * vendor/motorola/
+9d8f639  shamu: proprietary blobs for 7.1.1 (N6F27C)  [Mirko]
+33f9eca  Revert "shamu: add faceunlock proprietary file libfrsdk.so"  [Mirko]
+
+====================
+     05-02-2017
+====================
+
+   * build/
+1cceefe  N2G47O  [Martinusbe]
+62e9d73  N2G47N  [Martinusbe]
+eec4276  N2G47M  [Martinusbe]
+9f54eff  N2G47L  [Martinusbe]
+0186621  N2G47K  [Martinusbe]
+6aed3a7  Update Security String to 2017-05-05 on nyc-dev  [Martinusbe]
+94f8b0c  Update Security String to 2017-05-01 on nyc-dev  [Martinusbe]
+2ef3365  N2G47I  [Martinusbe]
+49782e9  N2G47H  [Martinusbe]
+acf9399  N2G47G  [Martinusbe]
+d9e5559  N2G47F  [Martinusbe]
+   * device/qcom/common/
+6f3603c  add support of mpctlv3 on msm8953  [Alx31]
+1af178b  add power-8953  [Alx31]
+   * frameworks/av/
+649801f  Add bounds check in SoftAACEncoder2::onQueueFilled()  [Martinusbe]
+253956a  Fix NPDs in h263 decoder  [Martinusbe]
+a6263fc  Fix out of bounds access  [Martinusbe]
+01b856a  Fix integer overflow and divide-by-zero  [Martinusbe]
+e53dd22  Validate lengths in HEVC metadata parsing  [Martinusbe]
+58967f1  AudioFlinger: Check framecount overflow when creating track  [Martinusbe]
+   * frameworks/base/
+5affdc0  Remove bg_non_interactive cgroup [ DO NOT MERGE ]  [Martinusbe]
+e169fd6  [DO NOT MERGE] Don't allow permission change to runtime  [Martinusbe]
+1e26fbe  [DO NOT MERGE] Throw exception if slot has invalid offset  [Martinusbe]
+65ca0fa  [DO NOT MERGE] Check bounds in offsetToPtr  [Martinusbe]
+949995d  Fix issue with saving admins before finishing loading.  [Martinusbe]
+79130c8  resolve merge conflicts of ad4aa1ce7d3d to nyc-mr1-dev fix conflict in nyc-mr2-release  [Martinusbe]
+2f8ac0c  Protect Bluetooth OPP ACCEPT and DECLINE broadcast  [Martinusbe]
+4bbd37e  fix anr when concurrent request provider  [Martinusbe]
+edc660f  Ensure that the decor view is attached to window.  [Martinusbe]
+983b699  Bad token of activity when do the launch work at the app process side.  [Martinusbe]
+97ec414  Query geo description in worker thread to prevent ANR  [Martinusbe]
+225ca85  remove duplicated incorrectly code in ProcessRecord  [Martinusbe]
+3592883  fix foreground process will be mistakenly killed when it uses content provider.  [Martinusbe]
+bca4541  Fix PacketKeepalive.stop() crash  [Martinusbe]
+b600df4  Restart persistent process if start timeout.  [Martinusbe]
+c3814be  fix system_server crash issue caused by fd leak.  [Martinusbe]
+6cd6431  framework: fix screenshot and rotation animation for devices with abnormal hw rotation  [Martinusbe]
+   * frameworks/native/
+199664b  Merge pull request #11 from TipsyOs/testing  [GitHub]
+9a52e54  binder: remove cgroup interactions [ DO NOT MERGE ]  [Martinusbe]
+   * kernel/motorola/msm8953/
+32556d0  mm: Tighten x86 /dev/mem with zeroing reads  [Alx31]
+c14ebea  crypto: ahash - Fix EINPROGRESS notification callback  [Alx31]
+f582333  mm/mempolicy.c: fix error handling in set_mempolicy and mbind.  [Alx31]
+aae42ef5  KEYS: fix keyctl_set_reqkey_keyring() to not leak thread keyrings  [Alx31]
+f814a06  KEYS: Change the name of the dead type to ".dead" to prevent user access  [Alx31]
+889f432  KEYS: Disallow keyrings beginning with '.' to be joined as session keyrings  [Alx31]
+931d89d  xfrm_user: validate XFRM_MSG_NEWAE incoming ESN size harder  [Alx31]
+d4c7408  xfrm_user: validate XFRM_MSG_NEWAE XFRMA_REPLAY_ESN_VAL replay_window  [Alx31]
+502f2fc  net: rmnet_data: Fix incorrect netlink handling  [Alx31]
+aca0c97e  msm: vidc: Protect debug_buffer access in core_info_read with lock.  [Alx31]
+39f0adf  ASoC: msm: qdsp6v2: set pointer to NULL after free  [Alx31]
+b3a119f  drivers: soc: add size check  [Alx31]
+7df81bb  msm: mdss: install the rel_fence even if retire_fence is skipped  [Alx31]
+556e429  tracing: do not leak kernel addresses  [Alx31]
+7fddc4c  msm: mdss: Install sync fences after user copy  [Alx31]
+864f168  msm: mdss: avoid removing wrong multirect on validate failures  [Alx31]
+dfbf151  BACKPORT: trace: resolve stack corruption due to string copy  [Alx31]
+20a0ae0  msm: camera: flash: Validate the power setting size  [Alx31]
+cb48133  ASoC: wcd9330: Fix out of bounds for mad input value  [Alx31]
+47ee59f  msm: camera: sensor: Validate i2c_frq_mode in msm_cci_get_clk_rates  [Alx31]
+8481595  power: qpnp-fg: Fix possible race condition in FG debugfs  [Alx31]
+3e20c46  msm: crypto: set CLR_CNTXT bit for crypto operations  [Alx31]
+dab3794  soc: qcom: scm: add check to avoid buffer overflow  [Alx31]
+d157f0a  qseecom: improve input validatation for qseecom_send_service_cmd  [Alx31]
+3e7e87d  msm: ADSPRPC: Check for buffer overflow condition  [Alx31]
+1116753  uio: fix potential use after free issue when accessing debug_buffer  [Alx31]
+14fffe5  crypto: msm: check length before copying to buf in _debug_stats_read  [Alx31]
+84fed06  leds: qpnp-flash: Fix Use-after-free(UAF) for debugfs  [Alx31]
+8d00fdd  leds: qpnp-flash: Fix possible race condition in debugfs  [Alx31]
+33e6c8c  ASoC: msm: qdsp6v2: return error when copy from userspace fails  [Alx31]
+8fee862  ASoC: msm: qdsp6v2: DAP: Add check to validate param length  [Alx31]
+37dca6e  ASoC: msm: qdsp6v2: Add range checking in msm_dai_q6_set_channel_map  [Alx31]
+9f9c194  ASoC: msm: q6dspv2: use correct variable type to store ION buff size  [Alx31]
+eac8367  drivers: soc: add mutex to prevent response being processed twice  [Alx31]
+991a117  ASoC: msm: qdsp6v2: completely deallocate on cal block creation failure  [Alx31]
+9cc9a04  msm: mdss: handle synchronization issues during DSI debugfs read/write  [Alx31]
+   * manifest/
+69489e3  7.1.2_r8  [Martinusbe]
+c64f144  tc cleanup and bring back 5.x for mzp kernel  [Martinusbe]
+d550923  update readme just because  [GitHub]
+   * packages/apps/masquerade/
+00415e7  JobService: Expose configuration shim refresh delay  [Martinusbe]
+8208ce8  Add a looper to the locale change handler  [Martinusbe]
+ebb9a01  README: Recommend Interfacer be put in the services folder  [Martinusbe]
+67f9a0c  JobService: Transition to the Binder Interprocess Communication System  [Martinusbe]
+963118d  restartService --> forceStopService  [Martinusbe]
+8d305f3  Polish copyright  [Martinusbe]
+a97402d  Fix failed authorization toast on restartService  [Martinusbe]
+509ae52  JobService: Fix inital font application  [Martinusbe]
+5f24233  JobService: fix initial theme dir creation  [Martinusbe]
+e0d329d  Run RestartService immediately if called  [Martinusbe]
+eb7d9ad  Welcome to Theme Interfacer! [1/2]  [Martinusbe]
+38a4d87  AndroidManifest: Add protected broadcasts  [Martinusbe]
+df989e9  JobService: new RestartService job  [Martinusbe]
+d1529cb  Broadcast authorization result  [Martinusbe]
+5677261  Introducing Signature check in Masquerade (1/3)  [Martinusbe]
+d2678da  Add missing exception handling in setDefaultAudible  [Martinusbe]
+52816c6  Rewrite the way we handle sound overlays  [Martinusbe]
+81fa0c9  This is not how you convert long to String ;_;  [Martinusbe]
+503d252  Improve code style  [Martinusbe]
+877bd69  Unify logging  [Martinusbe]
+cff4d74  Use Log.e() instead of printStackTrace();  [Martinusbe]
+   * system/bt/
+f8eceb6  resolve merge conflicts of a3ee2e35 to nyc-dev  [Josue Rivera]
+   * system/core/
+400c7fc  libcutils: only change cgroup when fd is initialized [ DO NOT MERGE ]  [Martinusbe]
+3393bef  init.rc: remove bg_non_interactive cgroup [ DO NOT MERGE ]  [Martinusbe]
+   * vendor/motorola/
+6c89429  Clark: update WV from bullhead (NMF26F)  [slebit]
+c25b1b3  Clark: ims update from bullhead (NMF26F)  [slebit]
+c4c648e  Add libfrsdk per Beans Gapps  [slebit]
+db380aa  clark: kang drm from bullhead  [slebit]
+4e248ca  clark: pull in adreno libs and regen makefiles  [slebit]
+   * vendor/tipsy/
+6be4419  Update Magisk Manager 4.3.3  [Martinusbe]
+
+====================
+     05-01-2017
+====================
+   * OTA_config/
+3963e16  Flo 05/01  [GitHub]
+   * hardware/qcom/fm/
+7297363  Automatic translation import  [Josue Rivera]
+   * packages/apps/Snap/
+af5839c  Automatic translation import  [Josue Rivera]
+
+====================
+     04-30-2017
+====================
+   * OTA_config/
+c1dabfa  Redmi2 04/30 Lucifer  [Prema Chand Alugu]
+b1764aa  Clark 04/30  [GitHub]
+885c217  ota: bacon 04/30 Lucifer  [Prema Chand Alugu]
+ec695ab  op3 Lucifer  [Martinusbe]
+   * build/
+8e0b0cb  Use 'release-keys' for build tag  [Alx31]
+   * frameworks/base/
+816d18a  fix pastie derp  [Alx31]
+25334e7  QS WiFi easy toggle: if enabled, long press for detail view no.2  [Alx31]
+aabb00a  QS BT easy toggle: if enabled, long press for detail view  [Alx31]
+cb23f84  QS: BT easy toggle [1/2]  [Alx31]
+1ad3d00  Data tile quick toggle: apply the custom behavior also to mini tiles bar  [Alx31]
+66f06ff  Add VOLTE icon from caf  [Alx31]
+95bcfc6  IMS: Add API to get IMS Registration Status based on subId  [Alx31]
+43796c4  SystemUI:Notification bar custom notification display problems  [Alx31]
+ff41679  SystemUI: Fix SystemUI ANR  [Alx31]
+7988612  Retro Theme [2/7]  [Alx31]
+   * frameworks/native/
+b80cbb6  Retro Theme [3/7]  [Alx31]
+   * kernel/motorola/msm8953/
+996c53c  wlan: Fix SAP SSR reinit for uninitialized config  [Alx31]
+cb3deed  wlan: Indicate disconnect to SME to abort pre-auth  [Alx31]
+aeed58a  wlan: Changes to force roam in low RSSI scenarios  [Alx31]
+7bfed1c  BACKPORT: [UPSTREAM] ext2: convert to mbcache2  [Alx31]
+17a7a65  BACKPORT: [UPSTREAM] ext4: convert to mbcache2  [Alx31]
+d76ccf1  BACKPORT: [UPSTREAM] mbcache2: reimplement mbcache  [Alx31]
+f9b829e  ASoC: msm: qdsp6v2: DAP: Add check to validate param length  [Alx31]
+8da9d91  ASOC: msm: Restrict loop index to avoid buffer overread  [Alx31]
+6d2dbb3  ASoC: soc: msm: initialize buffer to prevent kernel data leakage  [Alx31]
+00b9121  drivers: soc: qcom: Add overflow check for sound model size  [Alx31]
+2ed889c  ASoC: msm-cpe-lsm: cleanup ioctl functions  [Alx31]
+4d595ab  ASoC: msm: qdsp6v2: DAP: Add check to validate param length  [Alx31]
+a8050e4  Asoc: msm: qdsp6v2: Fix Out-of-bounds memory access in adm_get_params_v2  [Alx31]
+dacf971  msm: rndis_ipa: Remove rndis_ipa loopback functionality  [Alx31]
+503f153  msm: rndis_ipa: fix to debug file system init failure  [Alx31]
+93f0cb5  wcnss: Expose wcnss_nv_name  [Alx31]
+fd54be1  BACKPORT: UPSTREAM: selinux: fix off-by-one in setprocattr  [Alx31]
+302716f  UPSTREAM: init: export name_to_dev_t and mark name argument as const  [Alx31]
+e3d2b2b  BACKPORT: UPSTREAM: sysctl: Drop reference added by grab_header in proc_sys_readdir  [Alx31]
+f484839  UPSTREAM: ipv4: keep skb->dst around in presence of IP options  [Alx31]
+14d3e81  Bump Motorola Kernel Version  [Alx31]
+01c3de8  arm/dt: Add channel ID for Altice Portugal  [Alx31]
+265b258  mbhc: check validation before call micb callback  [Alx31]
+274e72e  input: synaptics_dsx: protect tmpbuf allocation.  [Alx31]
+85f0883  tty: n_hdlc: get rid of racy n_hdlc.tbuf  [Alx31]
+d9639b2  TTY: n_hdlc, fix lockdep false positive  [Alx31]
+1086c46  ip6_gre: fix ip6gre_err() invalid reads  [Alx31]
+8af954b  soc: qcom: make debugfs support configurable for kryo l2 accessors driver  [Alx31]
+0b6a6df  sctp: deny peeloff operation on asocs with threads sleeping on it  [Alx31]
+7352e2e  irda: Fix lockdep annotations in hashbin_delete().  [Alx31]
+b9a4768  net/llc: avoid BUG_ON() in skb_orphan()  [Alx31]
+e0d651f  dccp: fix freeing skb too early for IPV6_RECVPKTINFO  [Alx31]
+6255b1e  perf/core: Fix concurrent sys_perf_event_open() vs. 'move_group' race  [Alx31]
+3047ae4  sctp: avoid BUG_ON on sctp_wait_for_sndbuf  [Alx31]
+0a26af3  drivers: video: Add bounds checking in fb_cmap_to_user  [Alx31]
+7525d2f  spcom: check user space command size  [Alx31]
+fbdb54b  spcom: check buf size for send modified command  [Alx31]
+b081cc8  spcom: check size before calling copy_to_user()  [Alx31]
+51fab65  spcom: check buf_size validity for user send command  [Alx31]
+3d07f12  ALSA: hrtimer: Fix stall by hrtimer_cancel()  [Alx31]
+fd116fd  Input: aiptek - fix crash on detecting device without endpoints  [Alx31]
+a720b63  scsi: sg: check length passed to SG_NEXT_CMD_LEN  [Alx31]
+15b935c  FROMLIST: CHROMIUM: usb: gadget: configfs: Fix KASAN use-after-free  [Alx31]
+4c02138  ANDROID: ion: Protect kref from userspace manipulation  [Alx31]
+caa3019  usb: gadget: f_mbim: Release lock in mbim_ioctl upon disconnect  [Alx31]
+33b1563  ASoC: msm: qdsp6v2: Fix out-of-bounds access in put functions  [Alx31]
+85186ce  mdss: Validate cursor image size  [Alx31]
+bdae5a0  soc: qcom: rpm: Change driver memory allocation to use GFP_NOIO  [Alx31]
+f9d6cfe  power: qpnp-fg: Return error properly when IMA read/write fails  [Alx31]
+511773d  platform: msm: spmi: Fix possible race condition in debugfs  [Alx31]
+bf0dfb5  platform: msm: spmi: Add flag to make SPMI debugfs write optional  [Alx31]
+c50ee26  USB: gadget: mbim: Avoid copying uninitialized data to userspace  [Alx31]
+066260d  drivers: soc: qcom: Add error handling in function avtimer_ioctl  [Alx31]
+22dda35  qseecom: whitelist support for kernel client and listener  [Alx31]
+50f7764  qseecom: fix incomplete error handling for several functions  [Alx31]
+aba3e61  msm-3.18: drivers : added validation of input/output buffer sizes  [Alx31]
+5e1431f  qseecom: check buffer size when loading firmware images  [Alx31]
+f008ed8  qseecom: improve error checks in qseecom_probe()  [Alx31]
+297ddaf  qseecom: check error return value of ion_map_kernel  [Alx31]
+d86f88f  qseecom: configurable encryption key size  [Alx31]
+0bfde3a  seemp: use local stack mem when encoding params  [Alx31]
+8c3aed7  ASoC: wcd9335: Fix out of bounds for mad input value  [Alx31]
+63b70eb  crypto: msm: check integer overflow on total data len in qcedev.c  [Alx31]
+1a3b1b2  ASoC: msm: qdspv2: add mutex lock when access output buffer length  [Alx31]
+20f2677  qcrypto: protect potential integer overflow.  [Alx31]
+   * manifest/
+59c7629  track our caf telephony  [Alx31]
+1dc85e3  track MusicFX  [Alx31]
+7c25100  track our development and fw_support  [Alx31]
+   * packages/apps/Dialer/
+89a3a77  IMS-VT: Send static image in a Video Call  [Martinusbe]
+   * packages/apps/Settings/
+98aa5d4  add new Tipsy banner for red theme  [Alx31]
+56ee678  Settings: Phone process crash in SIM Status.  [Alx31]
+6f5d274  IMS: Cellular network type is not showing VoLTE enabled  [Alx31]
+6c4f1fd  Add package overlay support for carrier  [Alx31]
+3cc6d93  Add new network types in settings app.  [Alx31]
+4299439  Port "Battery Usage Alerts" feature from factory images to aosp  [Alx31]
+5462fb0  cosmetics.  [Alx31]
+10d6b47  move wolvesden retro theme commit to tipsy settings  [Alx31]
+6499987  Retro Theme [5/7]  [Alx31]
+   * packages/apps/Tavern/
+4124874  add missing import from b8dce5c  [Alx31]
+e261ac2  Unify all "advanced" tiles into one easy toggle tile  [Alx31]
+3abd317  QS: WiFi easy toggle [2/2]  [Alx31]
+c425a74  QS: Bluetooth easy toggle [2/2]  [Alx31]
+   * packages/services/OmniJaws/
+7ebbbc4  Automatic translation import  [Alx31]
+75a2504  OmniJaws: come here all you hidden bugs into the bright light  [Alx31]
+   * packages/services/Telephony/
+f713b23  Revert "Add support to launch call barring"  [Martinusbe]
+d363525  Revert "CallFeaturesSettings: Only show Call Barring if QTI package is installed"  [Martinusbe]
+   * vendor/codeaurora/telephony/
+8de9275  IMS-VT: Send static image in a Video Call  [Martinusbe]
+   * vendor/tipsy/
+967a342  v5.5 Lucifer week it is.  [Alx31]
+ffed833  Introduce the 'Turbo' apk  [Alx31]
+c9d367d  Retro Theme [7/7]  [Alx31]
+
+====================
+     04-29-2017
+====================
+
+   * hardware/libhardware_legacy/
+6559ee3  wifi: add firmware loader support for the non-LKM case  [Josue Rivera]
+   * hardware/qcom/fm/
+ba45ce9  libfm_jni: Fix strchr implicit char* typecast in ConfFileParser  [Josue Rivera]
+c810bd1  libjm_jni: Missing liblog dependency and jni core headers  [Josue Rivera]
+c59116f  Automatic translation import  [Josue Rivera]
+   * packages/apps/Bluetooth/
+1706726  Automatic translation import  [Josue Rivera]
+7a4942b  Revert "Bluetooth: handle opening incoming APK files"  [Josue Rivera]

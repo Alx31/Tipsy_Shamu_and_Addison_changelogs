@@ -2,16 +2,15 @@
      05-07-2017
 ====================
 
-   * OTA_config/
-98fcc36 ota: Redmi2 05/06
-b6ab0f8 ota: bacon 05/06
 
    * device/motorola/addison/
+414d769 Addison: Build with SDCLANG
 2cbeb80 Fix CMActions
 2713c87 Revert "remove DT-LZ4 :( it causes a lot of issues with magisk"
 
-   * external/DUtils/
-febfd7f Killapp action: restore home screen before killing the app
+   * frameworks/base/
+686593d tethering
+cb9a9af Fix java crash under DhcpClient.java
 
    * packages/apps/OmniStyle/
 4af7696 add new colors
@@ -19,17 +18,31 @@ febfd7f Killapp action: restore home screen before killing the app
    * packages/apps/Settings/
 20ee1f0 night folder for custom icons in settings.. ..thx @TheRingMaster
 
-   * vendor/tesla/
-76d450c reboot menu dark mode: make tap with tesla color... ...thx @TheRingMaster
+====================
+     05-07-2017
+====================
+
+   * OTA_config/
+98fcc36 ota: Redmi2 05/06
+b6ab0f8 ota: bacon 05/06
+
+   * external/DUtils/
+febfd7f Killapp action: restore home screen before killing the app
+
+   * frameworks/base/
+686593d tethering
+cb9a9af Fix java crash under DhcpClient.java
+
+   * packages/apps/OmniStyle/
+4af7696 add new colors
+
+   * packages/apps/Settings/
+20ee1f0 night folder for custom icons in settings.. ..thx @TheRingMaster
 
 ====================
      05-06-2017
 ====================
 
-
-   * frameworks/base/
-686593d tethering
-cb9a9af Fix java crash under DhcpClient.java
 
    * packages/apps/DUI/
 ee6c9cb Fix Fling swipe up gesture being hard to trigger
@@ -59,6 +72,8 @@ bdbfe5c PowerUsageFeatureProviderImpl: little cleanup
 
    * OTA_config/
 0aa88c5 onyx (05/03)
+c1f42f3 ota: Redmi2 0503
+184561e ota: bacon 0503
 
    * system/core/
 0f3c9cb Lockscreen charging info: real time values [2/4]
@@ -74,63 +89,3 @@ c0f0d9b healthd: dock battery
    * vendor/tesla/
 479c62e Rename BoardConfigCM.mk to BoardConfigTESLA.mk
 842a892 4.1 no alpha
-
-====================
-     05-03-2017
-====================
-
-   * OTA_config/
-c1f42f3 ota: Redmi2 0503
-184561e ota: bacon 0503
-007f53d Update lux, shieldtablet & hammerhead 02/05
-
-   * kernel/motorola/msm8953/
-32556d0 mm: Tighten x86 /dev/mem with zeroing reads
-c14ebea crypto: ahash - Fix EINPROGRESS notification callback
-f582333 mm/mempolicy.c: fix error handling in set_mempolicy and mbind.
-aae42ef5 KEYS: fix keyctl_set_reqkey_keyring() to not leak thread keyrings
-f814a06 KEYS: Change the name of the dead type to ".dead" to prevent user access
-889f432 KEYS: Disallow keyrings beginning with '.' to be joined as session keyrings
-931d89d xfrm_user: validate XFRM_MSG_NEWAE incoming ESN size harder
-d4c7408 xfrm_user: validate XFRM_MSG_NEWAE XFRMA_REPLAY_ESN_VAL replay_window
-502f2fc net: rmnet_data: Fix incorrect netlink handling
-aca0c97e msm: vidc: Protect debug_buffer access in core_info_read with lock.
-39f0adf ASoC: msm: qdsp6v2: set pointer to NULL after free
-b3a119f drivers: soc: add size check
-7df81bb msm: mdss: install the rel_fence even if retire_fence is skipped
-556e429 tracing: do not leak kernel addresses
-7fddc4c msm: mdss: Install sync fences after user copy
-864f168 msm: mdss: avoid removing wrong multirect on validate failures
-dfbf151 BACKPORT: trace: resolve stack corruption due to string copy
-20a0ae0 msm: camera: flash: Validate the power setting size
-cb48133 ASoC: wcd9330: Fix out of bounds for mad input value
-47ee59f msm: camera: sensor: Validate i2c_frq_mode in msm_cci_get_clk_rates
-8481595 power: qpnp-fg: Fix possible race condition in FG debugfs
-3e20c46 msm: crypto: set CLR_CNTXT bit for crypto operations
-dab3794 soc: qcom: scm: add check to avoid buffer overflow
-d157f0a qseecom: improve input validatation for qseecom_send_service_cmd
-3e7e87d msm: ADSPRPC: Check for buffer overflow condition
-1116753 uio: fix potential use after free issue when accessing debug_buffer
-14fffe5 crypto: msm: check length before copying to buf in _debug_stats_read
-84fed06 leds: qpnp-flash: Fix Use-after-free(UAF) for debugfs
-8d00fdd leds: qpnp-flash: Fix possible race condition in debugfs
-33e6c8c ASoC: msm: qdsp6v2: return error when copy from userspace fails
-8fee862 ASoC: msm: qdsp6v2: DAP: Add check to validate param length
-37dca6e ASoC: msm: qdsp6v2: Add range checking in msm_dai_q6_set_channel_map
-9f9c194 ASoC: msm: q6dspv2: use correct variable type to store ION buff size
-eac8367 drivers: soc: add mutex to prevent response being processed twice
-991a117 ASoC: msm: qdsp6v2: completely deallocate on cal block creation failure
-9cc9a04 msm: mdss: handle synchronization issues during DSI debugfs read/write
-
-   * packages/apps/Settings/
-892211b Port "Battery Usage Alerts" feature from factory images to aosp
-
-   * vendor/motorola/
-6c89429 Clark: update WV from bullhead (NMF26F)
-c25b1b3 Clark: ims update from bullhead (NMF26F)
-c4c648e Add libfrsdk per Beans Gapps
-db380aa clark: kang drm from bullhead
-4e248ca clark: pull in adreno libs and regen makefiles
-
-   * vendor/tesla/
-16405c4 Introduce the 'Turbo' apk

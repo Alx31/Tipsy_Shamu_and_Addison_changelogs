@@ -1,0 +1,113 @@
+====================
+     05-14-2017
+====================
+   * OTA_config/
+5b7b82d  ota: Redmi2, Oneplus One 05/14  [Prema Chand Alugu]
+   * bionic/
+b57bd20  libc: memcpy_base: Disable opt for certain targets  [Alx31]
+   * frameworks/base/
+2253290  base: SystemUI: add dedicated TextView for OmniJaws error marker  [Alx31]
+2f5f735  base: SystemUI: dont show OmniJaws error that prominent  [Alx31]
+658bfd2  base: remove duplicates sounds  [Alx31]
+e21c6c3  base: SystemUI: thread protect keyguard callbacks  [Alx31]
+2ec2924  base: SystemUI: dont hide weather forcast data on errors  [Alx31]
+9c9dbbc  base: SystemUI: use new OmniJaws error broadcasts  [Alx31]
+028841f  base: SystemUI: remove force weather update bits  [Alx31]
+1289df1  audiofx: added missing @hide to BassBoost enhancements  [Alx31]
+23fafef  base: audiofx: harden against offload effects  [Alx31]
+5307e00  [3/3] AudioFX: Add center frequency param to bassboost  [Alx31]
+7c02ed6  [3/3] AudioEffect: Add a stereo widener effect  [Alx31]
+   * manifest/
+d91072d  track our system_media and DSPlibs  [Alx31]
+   * packages/services/OmniJaws/
+13135d5  OmniJaws: fix OWM metric wind speed units  [Alx31]
+ae3cf40  OmniJaws: widget layout madness  [Alx31]
+418449b  OmniJaws: dont show OmniJaws error that prominent  [Alx31]
+   * vendor/tipsy/
+c093434  v5.7 NakedLadies week it is.  [Alx31]
+3448e5d  Add dsplibs to build as well as add a way to disable per device  [Alx31]
+
+====================
+     05-13-2017
+====================
+   * OTA_config/
+57e2414  Flo 05/12  [GitHub]
+
+====================
+     05-12-2017
+====================
+   * OTA_config/
+8d779bb  Bullhead 05/11  [GitHub]
+
+====================
+     05-11-2017
+====================
+
+   * manifest/
+04756ad  track our recovery  [GitHub]
+   * packages/apps/MusicFX/
+fc5b47b  Tipsy accents  [Martinusbe]
+3fd7aba  Bring in Validus theming  [Martinusbe]
+   * system/sepolicy/
+45c5197  sepolicy: Allow system_server to set theme_prop  [Martinusbe]
+
+====================
+     05-10-2017
+====================
+   * OTA_config/
+cb61cc7  Clark 05/09  [GitHub]
+   * system/media/
+91ecdde  [1/3] AudioEffects: Add center frequency param to bassboost  [Martinusbe]
+
+====================
+     05-09-2017
+====================
+
+   * packages/apps/MusicFX/
+5997166  Better layout for the Reverb spinner  [Martinusbe]
+8a9c6ec  Theming: Center Visualizer view  [Martinusbe]
+b648ce2  Theming: add missing reverb effects list background color  [Martinusbe]
+   * system/core/
+64c9dc0  Revert "init.rc: set initial cpuset to all cores"  [Martinusbe]
+0fe1e20  Revert "rootdir: init.rc: Fix for "add_tid_to_cgroup failed to write" warnings"  [Martinusbe]
+   * system/extras/
+add1bd8  Use    * pathmap for recovery  [Josue Rivera]
+   * system/media/
+3f717e8  [2/3] audio_effects: Add a stereo widening effect  [Martinusbe]
+
+====================
+     05-08-2017
+====================
+   * OTA_config/
+b96c317  ota: Redmi2 05/07  [Prema Chand Alugu]
+530a1cf  ota: bacon 05/07  [Prema Chand Alugu]
+2e463cf  op2: Lucifer  [Martinusbe]
+39ca9cc  op3 Mystic  [Martinusbe]
+   * device/motorola/addison/
+24d149f  Fix CMActions  [Alx31]
+   * kernel/motorola/msm8953/
+0af0b36  proc: Remove verifiedbootstate flag from /proc/cmdline  [Alx31]
+
+====================
+     05-07-2017
+====================
+
+   * device/motorola/addison/
+e130d68  Revert "remove DT-LZ4 :( it causes a lot of issues with magisk"  [Alx31]
+   * frameworks/base/
+e87d3c3  Frameworks: Re-adapt toast window animations for 7.1.1 - Since google updated toast popup notifications on 7.1.1 release. toast window animations stop working .So now this is make it work again  [Prema Chand Alugu]
+2003a49  SystemUI:Bluetooth can't be turn off  [Prema Chand Alugu]
+d2bb0f7  BT: Update wait function in ManagerService to handle  BLE states  [Prema Chand Alugu]
+49edbfd  Bluetooth: Handle user switch with new states  [Prema Chand Alugu]
+af22b80  StatusBar: Catch OOM caused by third-party icons  [Prema Chand Alugu]
+   * manifest/
+f7b5a98  track 8937 from Tesla for Alex  [Prema Chand Alugu]
+   * packages/apps/Settings/
+4e44f4d  Settings[Wifi]: fix the input invalid length for WEP encryption.  [Prema Chand Alugu]
+4f957d2  Settings: Fix internal storage summary for non-emulated storage  [Prema Chand Alugu]
+   * packages/apps/Tavern/
+357ddbc  nuke wifi easy toggle since we have this b8dce5c  [Prema Chand Alugu]
+   * vendor/tipsy/
+b71ef95  v5.6 Mystic  [Prema Chand Alugu]
+1bcc130  Update Amaze to RC3  [Prema Chand Alugu]
+e404771  Add AmazeFileManager apk v3.1.2-RC2  [Prema Chand Alugu]

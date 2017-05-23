@@ -1,0 +1,296 @@
+====================
+     05-22-2017
+====================
+
+   * OTA_config/
+9514a62 ota: Clark 05/22
+126729d ota: Redmi2, Oneplus One 05/22
+
+   * device/motorola/addison/
+9da7822 addison: Kill Gello
+3342efc addison: Pin SDM blobs and throw deprecated
+10e3b23 addison: Drop not needed blobs
+59c0edb Switch to OSS GPS
+ee55e24 gps: Fix OSS build
+d789827 gps: Import from LA.UM.5.6.r1-01900-89xx.0 release
+
+   * vendor/motorola/
+71af26b addison: Display blobs update
+
+====================
+     05-21-2017
+====================
+
+
+   * kernel/motorola/msm8953/
+0d0cd01 Revert "mmc: move to a SCHED_FIFO thread"
+0970fbb defconfigs: regenerate for ioscheds
+f01f36f PM / devfreq: Restart previous governor if new governor fails to start
+ed03203 PM / devfreq: Skip status update on uninitialized previous_freq
+5603cd3 PM / devfreq: Add proper locking around list_del()
+6186efff PM: devfreq: Always reflect a change of polling interval
+4ea7332 cpufreq: interactive: slightly faster sampling during screen off to offset cases like Android Auto and Viper4Android hi-resolution audio decoding where 60ms was a bit too aggressive
+84aa4c2 cpufreq: interactive: remove hispeed_freq init restriction
+460b0cc sched/deadline: Split cpudl_set() into cpudl_set() and cpudl_clear()
+7f43959 sched/deadline: Make CPU heap faster avoiding real swaps on heapify
+f3e0935 sched/deadline: Refactor CPU heap code
+7ec23a8 sched/deadline: Fix wrap-around in DL heap
+0a606d7 sched/deadline: Unify dl_time_before() usage
+b6f04b6 sched/deadline: Remove cpu_active_mask from cpudl_find()
+d526600 sched/deadline: Modify cpudl::free_cpus to reflect rd->online
+9cb853b sched: Fix integer overflow in sched_update_nr_prod()
+68c2fa8 cpufreq: interactive: reduce timer with screen off
+c948a13 display: add a simple api to query the display state (on/off) at any point in time
+baea9b7 fs/sync.c: make sync_file_range(2) use WB_SYNC_NONE writeback
+e1ddbeb PM / devfreq: Add a governor white list
+18be320 UPSTREAM: sched/fair: Avoid pulling all tasks in idle balancing
+89a3ef1 UPSTREAM: sched: Improve load balancing in the presence of idle CPUs
+64bd019 perf: disable cross_hotplug for l2 cache pmu.
+472a7f1 workqueue: make sure delayed work run in local cpu
+2730212 vmstat: Reduce time interval to stat update on idle cpu
+7a60466 firmware_class: Fix firmware_loading_timeout usage of jiffies
+3736a4b writeback: fix writeback cache thrashing
+e7fc9cf sched/deadline: Avoid pointless __setscheduler()
+f6edcc3 sched/wait: Fix a kthread race with wait_woken()
+0419300 msm: kgsl: Report correct GPU frequency in sysfs
+28a6b5b kgsl: convert some workqueues to use kthreads
+4b1eb5b mdss: move to a kthread for vsync_retire_work_handler
+a1eea38 Revert "asm-generic: atomic.h: relaxed atomic_read"
+8d1bda1 sched/loadavg: Fix loadavg artifacts on fully idle and on fully loaded systems
+7eaedbf asm-generic: atomic.h: relaxed atomic_read
+5bd4371 msm: mpm: disable debugging
+451d53c Remove '+' symbol from kernel version string
+35cf2df qcom: msm-core: uninterruptible wait - you can kiss my arse goodbye
+2bf2f27 msm: Use interruptible wait to not affect load average
+7586633 qcom: mpm: use interruptible wait to reduce load avg
+24cdd24 sched/core: Fix a race between try_to_wake_up() and a woken up task
+09a2c5d Makefile: remove wrapper
+3b5e221 drivers: wakeup: allow to request and count wakelocks with screen on.
+e564717 drivers: wakeup: allow 1 wakeup from IPA_WS every now and then
+e30f151 drivers: wakeup: be more thorough with blocking wakelocks
+3a859eb drivers: wakeup: it's pointless to output the active wakeup sources during screen on, no need to go through the rcu locks and list iterations every now and then
+534ec78 drivers: wakeup: there's no much point in running the blockers during screen on
+9ff3fb0 drivers: wakeup: run the wakelock blockers during wakeup_source activation and every resume
+1d063f2 drivers: wakeup: more thoroughly deactivation of wakelocks
+1823f33 drivers: wakeup: add options to disable timerfd, netlink and wlan wakelocks
+f398c03 drivers: wakeup: bypass two WiFi wakelocks
+21a96c5 power: wakeup: prevent IPA_WS wakelock from being acquired by default
+48221b5 block: Make CFQ default to IOPS mode on SSDs
+20202ba cfq-iosched: fix the setting of IOPS mode on SSDs
+8601cde net: sch_generic: Allow devices to opt-out net watchdog
+1ab0ae6 block: Make CFQ default to IOPS mode on SSDs
+a68e25d zen-iosched: change fifo_batch to 16
+c30d34b block: add zen scheduler
+50a09c7 PM: devfreq: Use high priority workqueue
+354705e AIO: Don't plug the I/O queue in do_io_submit()
+c26f6ca SIO: update for linux 3.18
+f61dfc0 FIOPS: update for linux 3.18
+9a3ea83 Add SIO and FIOPS i/o schedulers
+01a9dbe Added fsync on/off support.
+75047a7 mm: slub: Default slub_max_order to 0
+3ea65be fs: Workaround the compiler's bad optimization
+0b33675 mmc: move to a SCHED_FIFO thread
+9a36a72 binfmt_elf.c: use get_random_int() to fix entropy depleting
+45ad540 cpuidle: don't disable cpuidle when entering suspend
+cb2b9c6 mmc: core: disable crc check
+83986a8 arm: import cedric defconfig
+62190ff kernel: Only expose su when daemon is running
+401b314 f2fs: set dentry bits on random location in memory
+4131651 f2fs: fix missing read/write function pointers
+f44dcf8 leds: leds-atc: Add LED blinking support
+04e1f8b Revert "device-mapper: Add debug log for block size check."
+38d3f76 Revert "switch: arizona: enable more logs"
+3487d07 homebutton: handle VOICE_ASSIST and expose haptic
+5a270b2 qpnp-haptic: expose vibration
+c4405e6 xfrm_user: validate XFRM_MSG_NEWAE incoming ESN size harder
+429cd2e xfrm_user: validate XFRM_MSG_NEWAE XFRMA_REPLAY_ESN_VAL replay_window
+2b14dcb msm: mdss: install the rel_fence even if retire_fence is skipped
+136268c msm: mdss: avoid removing wrong multirect on validate failures
+f000770 msm: mdss: Fix integer overflow in cursor validaton
+b57810a Merge "msm: kgsl: Increase memstore size"
+1cac095 tcp: take care of truncations done by sk_filter()
+1855bc7 rose: limit sk_filter trim to payload
+81f704b msm: thermal-dev: Protect IOCTL from race condition
+180f2de soc: qcom: Avoid possible buffer overflow in service-locator
+d1fa9f5 msm: mdss: Fix possible integer overflow
+d2df165 msm: mdss: Install sync fences after user copy
+8d406c9 msm: mdss: Add lock to avoid release of active session in rotator
+74362b7 msm: mdss: fix race condition in mdp debugfs
+9c0c902 msm: mdss: Validate cursor image size
+e58706d android: fiq_debugger: restrict access to critical commands.
+a0547ab input: synaptics: put offset checks under mutex.
+7333ba2 msm: mdss: mask DSI FIFO overflow errors during BTA operation
+c4cb914 msm: mdss: fix check for igc read
+785923f msm: msm_bus: Set current index to default value
+474dac1 msm: mdss: Fix DSPP usage inconsistency issue
+ec18c45 msm: IPA: add the check on intf query
+ab049ff ASoC: Add backend user count checking
+f97b2c6 usb: dwc3: Replace sscanf with kstrtou8_from_user
+882c4ec msm: mdss: Trigger idle fallback when no update due to touch
+bd5b4d6 ASoC: msm: acquire lock in ioctl
+8051791e msm: ipa: Modify IPAERR to IPADBG
+802eb30 bluetooth: Fix free data pointer routine
+c8467fb msm: mdss: ensure proper state transition during ULPS exit
+40970c1 leds: qpnp-flash: Fix Use-after-free(UAF) for debugfs
+10f756f input: touchscreen: remove msg21xx mstar touch driver
+129b5f8 misc: qcom: qdsp6v2: Add range check in function aac_in_ioctl_shared
+edff5ac regulator: msm_gfx_ldo: Fix the CX voting logic
+4361252 ice: fix security issue with validating error in pointer
+65f0f920 input: touchscreen: gt9xx: fix memory corruption in Goodix driver
+3844991 msm: ba: Fix race conditions in debug writes
+e665487b msm: pm: Add mutex lock for shared data
+a6eea11 msm: wlan: update regulatory database
+d6dff47 msm: kgsl: Increase fault detection threshold value
+4fa602a mm: cma: check the max limit for cma allocation
+c44a6a7 msm: mdss: Avoid unnecessary warnings during pipe unstaging
+9701de7 msm: ipa3: Validate IPA and GSI firmwares before loading
+48d29fa input: misc: fix heap overflow issue in hbtp_input.c
+1225965 soc: qcom: fingerprint: keep QSEE handle in kernel space
+8f5074b QBT1000: check for null pointer before copying command
+6330603 QBT1000: copy qseecom handle to user when loading/unloading app
+e1de682 scsi: ufs: check for err state when polling for doorbell
+5196bf0 msm: vidc: Check for sanity of size while mapping buffers
+a8a8652 crypto: ice: Fix NULL pointer exception in ice.
+e4f051c msm: kgsl: refcount irq to avoid racing against idle check
+19c79c7 Merge "rcu: Kick rcuo kthreads after their CPU goes offline"
+3002d20 msm: mdss: fix to handle multi-rect configuration in error cases
+da4548d soc: qcom: pil: Initialize variable to avoid invalid access
+f9661df USB: android: Fix gsmd_setup() error path cleanup on sigkill
+2cda26e leds: qpnp-flash: Fix possible race condition in debugfs
+abbf953 ecm_ipa: remove redundant code
+5516a90 Revert "ASoC: wcd_cpe_core: Perform irq cleanup once the bus is up"
+2df0de1 mfd: wcd9xxx: send down notification to devices before cleaning-up IRQs
+ad257b8 msm: mdss: Fix invalid dma attachment during fb shutdown
+b571de4 msm: mdss: Add sanity check for Gamut LUT size
+b938da7 msm: mdss: Clear compat structures before copying to user
+de96c1b soc: qcom: pil: Fix kernel pointer leak
+fb7cfd9 msm: ipa: Prevent multiple header deletion from user space
+b845656 mfd: wcd9xxx: Add range checking in function wcd9xxx_init_slimslave
+29f83c5 clk: msm: gcc: Add support for 19.2MHz for MCLK clocks
+2a99cd7 msm: vidc: Enable WARN_ON based on debug level
+46fbff9 usb: replace %p with %pK
+dc42b7b security: switched to stackable model for PFT/PFK module
+35bb2f9 drivers: soc: qcom: Add overflow check in ADM driver
+5c7173b ARM: dts: msm: Update frequency to 1804.8MHz for MSM8953
+9cdfe06 msm: qpnp-haptic: Manage the state of PON regulator
+aeab477 msm: vidc: read capability version from efuse register
+7a382c3 ARM: dts: msm: Add VFE efuse support for 8953
+f408aac msm: mdss: avoid removing wrong multirect on validate failures
+4082618 msm: thermal: Update error handling of device offline
+ee2a5a6 defconfig: msm: Use RCU_BOOST option for msm8917/37/53
+7357ed7 soc: qcom: smem: Fix uninitialized usage of a stack variable
+9eb96fc soc: qcom: glink: add NULL check for edge_ctx
+31cdac9 msm: kgsl: Make sure USE_CPU_MAP + MAP_USER_MEM work together
+7d412b4 msm: kgsl: Fix pagetable member of struct kgsl_memdesc
+acafa5c ARM: dts: msm: add efuse register information on msm8953
+cafdaee clk: msm: gcc: Add support for active clients of SNOC/BIMC
+f4a5c2d msm: mdss: Fix potential deferencing of null pointer
+1ed7b08 msm: isp: Fix ping pong recovery
+6e4a7e8 wcnss: Dump WCNSS registers during SSR Timeout
+b472f3c sound: usb: Handle audio control interface descriptor properly
+22906bb sound: usb: auto suspend device only if it supports remote wakeup
+ffc91bd sound: usb: Handle implicit feedback data endpoint properly
+02cfa94 scsi: ufs: Add clock ungating to a separate workqueue
+d87e5fd lpm-levels: Do not consider cluster residency in suspend
+bf40e1a msm: mdss: Add check to fix null pointer dereference
+f01c5cd msm: isp: Prevents interrupt storm on ISPIF overflow.
+6eb549f msm: ion: Modified Secure Display buffer permissions
+a3b084c regulator: msm_gfx_ldo: fix null pointer dereference
+4946c547 soc: qcom: pil/ssr: fix issue with logs
+43e91b1 arm64: avoid segfault on el0 cache maintenance
+3b0f691 ARM: config: Enable DEFERRED RESUME flag
+2142b8d msm: sps: add the checking of userspace input length
+572576c msm: mdss: Fix race condition during secure display transitions
+6a84fdf cpufreq_stats: fix to process policy exit in notifier
+f1167d5 ARM: dts: msm: Add AF support for rear aux camera on msm8953
+660dcf4 sched: Fix deadlock between cpu hotplug and upmigrate change
+b186180 sched: drop related_thread_group_lock before calling call_rcu()
+b2ce536 mdss: remove panic due to excessive interrupt errors
+f49f1bf msm: sensor: Validationg function pointers before using them
+e4e3f68 msm: vidc: Fix kw issues
+d52d8e9 USB: android: Call PM APIs if configured and suspended are true
+6d56dc1 arm: dma-mapping: page align size before flush tlb
+238f41c fbdev: use unsigned integers to prevent overflow
+2abb684 defconfig: Enable config IP_NF_MATCH_RPFILTER
+b6a9afe adreno_tz: Fix divide by zero problem in gpu_load_show()
+95e6956 sound: usb: Add support to handle QMI client disconnect
+08026c0 usb: xhci: Clear event handler busy flag upon event ring cleanup
+57721bb sound: usb: Map audio format received from QMI client
+c2b1c9a sound: usb: Remove IOMMU support from USB Audio QMI Service Driver
+dcd540e sound: usb: Increase maximum transfer buffer limit
+ec95b8f sound: usb: Send explicit device disconnect to clients
+5f399a5 sound: usb: Add NULL check on return value of iommu_domain_alloc()
+d8c95e6 sound: usb: Treat find format failure as error
+a1bc93c sound: usb: Update USB audio QMI data structure
+6d82e63 defconfig: msmcortex: Enable USB audio QMI service driver
+7a44a97 sound: usb: Add support to share iova with remote processor
+ed32194 sound: usb: Add support for usb audio qmi service
+d7baf6d usb: xhci: Add helper APIs to return xhci dma addresses
+b285038 usb: xhci: Add support for secondary interrupters
+b41b36b msm: vidc: Add Colorspace in sequence change event
+f9a4814 sound: usb: Add helper APIs to enable audio stream
+64f55c4 Merge "msm: vidc: Check ion_handle for errors"
+7fd47c3 sctp: deny peeloff operation on asocs with threads sleeping on it
+b05c6ec sctp: avoid BUG_ON on sctp_wait_for_sndbuf
+a290341 msm: sensor: correcting return value for get actuator info
+3afc6d9 kernel: Fix potential refcount leak in su check
+4c839b8 dccp/tcp: do not inherit mc_list from parent
+5db1676 lowmemorykiller: account for unevictable pages
+4b0e8ee wlan: Trim operation classes to max supported in change station
+ffa7658 net/packet: fix overflow in check for tp_reserve
+103dd33 net/packet: fix overflow in check for tp_frame_nr
+cb3c72d net/packet: fix overflow in check for priv area size
+b9dfac6 mm: migrate dirty page without clear_page_dirty_for_io etc
+8d6a558 kernel: Only expose su when daemon is running
+f3063c5 ftrace/recordmcount: Work around for addition of metag magic but not relocations
+565f6c4 scripts: recordmcount: break hardlinks
+5301be2 recordmcount: Fix endianness handling bug for nop_mcount
+19dd415 scripts/recordmcount.pl: support data in text section on powerpc
+6dc99b4 drivers: misc: import Moto DTV drivers
+2db9ef8 input: homebutton: handle egis gestures
+afa5a40 input: egis: add custom key for double tap
+1079eb4 defconfigs: regenerate
+892820e add a defconfig script
+
+   * vendor/motorola/
+1aa6731 addison: Drop unneeded blobs
+8277ffa addison: Switch to OSS GPS
+
+====================
+     05-20-2017
+====================
+
+
+   * packages/apps/Settings/
+d88825d Merge pull request #3 from GtrCraft/n7.1.2
+
+   * packages/apps/ThemeInterfacer/
+5aeba49 Add interface to get API version and app authentication status
+069e629 Fix permissions for CTS [2/2]
+
+====================
+     05-19-2017
+====================
+
+
+   * frameworks/base/
+a5a118b bt manager: add missing mHandler
+
+   * packages/apps/Settings/
+5c15b98 Remove duplicate options in accessibility settings
+ee3f457 DisplaySettings: font size in 5% steps from 80% to 130%
+
+   * packages/resources/devicesettings/
+bd3c549 Automatic translation import
+
+   * vendor/validus/
+097ee44 add potter to devices
+
+====================
+     05-18-2017
+====================
+
+
+   * vendor/validus/
+de06b3b Merge pull request #4 from GtrCraft/patch-1
+ec0b397 Enable Night Display globally

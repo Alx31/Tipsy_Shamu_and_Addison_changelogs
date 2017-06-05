@@ -1,0 +1,79 @@
+====================
+     06-05-2017
+====================
+
+
+   * device/motorola/addison/
+73aa9c1 cosmetics: MZP shows in about phone menu
+5a2b989 tipsy.mk: don't override product_model plz.
+d79db3f addison: enable WiFi Display
+1c2b90c addison: livedisplay: do not set night mode as default
+da7467f Addison: Show VoLTE icon
+4361064 system.prop: adb at boot and google assistant
+9f792f5 CMActions: Switch to fingerprint sleep
+78a58aa Root method: unrooted moved to device.mk
+c4a5c15 BC: Default root method is rootless
+
+   * kernel/motorola/msm8953/
+551d041 Revert "arm/dts: Addison: TF bringup"
+68b19dd bpf: don't let ldimm64 leak map addresses on unprivileged
+2705a8f ext4: fix data exposure after a crash
+72f5f58 drivers: input: fpc1020: Allow enabling KeyEvents dynamically
+c60e2e2 drivers: input: Drop homebutton code
+d78770c Revert "input: homebutton: handle egis gestures"
+284c5d8 Revert "homebutton: handle VOICE_ASSIST and expose haptic"
+
+   * manifest/
+5e8f25f add cm's external_bson
+
+   * vendor/motorola/
+533e102 addison: Display blobs update
+
+   * vendor/validus/
+c921065 add gemini for Robert
+
+====================
+     06-04-2017
+====================
+
+
+   * frameworks/base/
+be88292 Merge pull request #11 from psyafter/n7.1.2
+a8bceff Fix double ")"
+53eb43e Fix "unresolved link in annotation {@link android.provider.Settings.Global#KEY_SMS_BREATH}"
+
+   * vendor/validus/
+fb0b5d4 Merge pull request #5 from psyafter/n7.1.2
+c0bc08b add herolte
+
+====================
+     06-03-2017
+====================
+
+
+====================
+     06-02-2017
+====================
+
+
+   * frameworks/base/
+ce89a84 daynight: try to fix the ugly white in notifications
+
+   * packages/resources/devicesettings/
+fe6b096 Automatic translation import
+
+   * vendor/validus/
+7c3eb30 overlay: Enable Wi-Fi by default on first boot
+dbec0ba Update example backup-transport resource overlay
+
+====================
+     06-01-2017
+====================
+
+
+   * hardware/libhardware/
+6f3b387 hardware: Enable Soter for Android N
+57a220b audio: add parameter for device shutdown notification
+
+   * packages/resources/devicesettings/
+1935d69 Add fingerprint sleep strings

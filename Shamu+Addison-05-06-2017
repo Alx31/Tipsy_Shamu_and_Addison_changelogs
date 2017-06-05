@@ -1,0 +1,171 @@
+====================
+     06-04-2017
+====================
+
+   * build/
+d1756c7  ro.secure=0 on userdebug builds  [Alx31]
+   * device/motorola/addison/
+2b05f87  cosmetics...show Addison in about phone menu  [Alx31]
+da346bc  tipsy.mk: don't override product_model plz.  [Alx31]
+eb0dec7  addison: enable WiFi Display  [Alx31]
+a45665a  addison: livedisplay: do not set night mode as default  [Alx31]
+421ac9a  Addison: Show VoLTE icon  [Alx31]
+38c9201  system.prop: adb at boot and google assistant  [Alx31]
+c76fa06  CMActions: Switch to fingerprint sleep  [Alx31]
+   * frameworks/base/
+47a27f8  base: Set animation scaling to 0.7  [Alx31]
+b2001aa  daynight: try to fix the ugly white in notifications  [Alx31]
+9bb7608  QS tiles string changes The following tiles all had one thing in common, they all failed to follow AOSP behavior. They all had the label show 'off' when the tile was in the off state. Normal AOSP behavior uses the drawable to indicate whether a tile is off or on. For example the flashlight tile which comes loaded on AOSP doesn't show Flashlight off when the tile is off. You can look at the other tiles such as WiFi, Airplane, Cast, Bluetooth and DND.  [Alx31]
+1c9bef5  base: SystemUI: qs: location tile quickbar press is just toggle  [Alx31]
+35b6c2f  Location tile easy toggle single tap: make it cycle modes  [Alx31]
+0618650  Location tile: add high accuracy state icon  [Alx31]
+ab3f917  Location tile: dynamic icon state also when easy toggle enabled  [Alx31]
+79fd4e83  Add location to Easy toggle [1/2]  [Alx31]
+761d154  Revert "Location tile: add high accuracy state icon"  [Alx31]
+d55d042  Location tile: add high accuracy state icon  [Alx31]
+ba25541  Add advanced location tile  [Alx31]
+1d0a6f7  [1/2] SlimDoze: add hand wave & pocket mode gesture  [Alx31]
+61e13d1  [1/2] SlimDoze: add tilt gesture  [Alx31]
+a572b9b  More visible secondary color on black background  [Alx31]
+   * frameworks/opt/slim/
+275769b  [2/2] SlimDoze: add hand wave & pocket mode gesture  [Alx31]
+acd4cf6  [2/2] SlimDoze: add tilt gesture  [Alx31]
+   * kernel/motorola/msm8953/
+551d041  Revert "arm/dts: Addison: TF bringup"  [Alx31]
+68b19dd  bpf: don't let ldimm64 leak map addresses on unprivileged  [Alx31]
+2705a8f  ext4: fix data exposure after a crash  [Alx31]
+72f5f58  drivers: input: fpc1020: Allow enabling KeyEvents dynamically  [Alx31]
+c60e2e2  drivers: input: Drop homebutton code  [Alx31]
+d78770c  Revert "input: homebutton: handle egis gestures"  [Alx31]
+284c5d8  Revert "homebutton: handle VOICE_ASSIST and expose haptic"  [Alx31]
+   * manifest/
+5d7393f  Remove SlimOTA [1/2]  [Alx31]
+   * packages/apps/Bluetooth/
+7b70498  AVRCP: Avoid NullPointerException  [Alx31]
+   * packages/apps/OmniSwitch/
+13cbc65  Automatic translation import  [Alx31]
+4fca051  OmniSwitch: cleanup BitmapUtils  [Alx31]
+   * packages/apps/Settings/
+8eb264e  Settings: Remove Slim OTA  [Alx31]
+c349dad  Remove description for GZRoms App preference  [Alx31]
+a2190e9  Settings: Add GZRoms App to About phone/device  [Alx31]
+161e291  Revert "Settings: Add GZRoms App to dashboard"  [Alx31]
+7daca02  Settings: Add GZRoms App to dashboard  [Alx31]
+75a8158  move Magisk Manager to Tavern category  [Alx31]
+9e00824  Revert "move substratum and supersu to System category"  [Alx31]
+   * packages/apps/Tavern/
+06d5941  Add location to Easy toggle [2/2]  [Alx31]
+13b0930  Fix Max values for CustomSeekBarPreference in some settings  [Alx31]
+   * packages/services/OmniJaws/
+017c3b7  Automatic translation import  [Alx31]
+efe3cb0  OmniJaws: update README.md to include OWM API key usage info  [Alx31]
+   * vendor/motorola/
+533e102  addison: Display blobs update  [Alx31]
+   * vendor/tipsy/
+4b3cfee  v6.0 Qantelaar week it is  [Alx31]
+1f937b2  Remove SlimOTA [2/2]  [Alx31]
+0560627  Include GZRoms App into the builds  [Alx31]
+1b61b17  overlay: Enable Wi-Fi by default on first boot  [Alx31]
+235459e  Update example backup-transport resource overlay  [Alx31]
+4bec19c  Show full alarm info  [Alx31]
+
+====================
+     06-03-2017
+====================
+
+
+====================
+     06-02-2017
+====================
+
+
+====================
+     06-01-2017
+====================
+
+   * packages/resources/devicesettings/
+fe6b096  Automatic translation import  [Abhisek Devkota]
+
+====================
+     05-31-2017
+====================
+
+   * external/stagefright-plugins/
+81c40cd  FFmpegExtractor: Don't use our extractor when we agree with StageFright  [Josue Rivera]
+   * packages/apps/Snap/
+73b4209  SnapdragonCamera: Fix torch mode with continuous shot  [Josue Rivera]
+5428e59  Revert "Snap: CaptureModule: lock exposure also when precapture trigger is started"  [Josue Rivera]
+0259dea  SnapdragonCamera: Camera2 force close after focused  [Josue Rivera]
+77237ea  SnapdragonCamera: GPS location can't be turn On in camera settings  [Josue Rivera]
+0e7009a  Fixed camera crash on exit  [Josue Rivera]
+   * packages/resources/devicesettings/
+1935d69  Add fingerprint sleep strings  [Alberto97]
+
+====================
+     05-30-2017
+====================
+
+
+====================
+     05-29-2017
+====================
+
+   * frameworks/av/
+ab0ae50  libcameraservice: add a flag for preventing stream rotation  [oadam11]
+bbcb038  libcameraservice: do not rotate on flag  [oadam11]
+
+====================
+     05-28-2017
+====================
+
+   * build/
+72115a2  build: condition cortex-a53-835769 workaround for the linker  [Prema Chand Alugu]
+bf3a114  Add support for TARGET_CPU_FEATURES.  [Prema Chand Alugu]
+   * frameworks/base/
+5f301f4  Revert "Fix launch music player on headset connect on reboot"  [Prema Chand Alugu]
+a393eae  base: enable power save config of system apps [1/2]  [Prema Chand Alugu]
+11bf9d8  Fix launch music player on headset connect on reboot  [Prema Chand Alugu]
+353c025  Tipsy Logo: Option to locate at right [1/2]  [Prema Chand Alugu]
+f10672f  Tipsy Logo: Remove it from Statusbar Items  [Prema Chand Alugu]
+0da1211  Tipsy Logo: Enable in Tavern, configurable Logo Size [1/2]  [Prema Chand Alugu]
+305aba5  Tipsy Logo: update bottle/letters logos for better visibility  [Prema Chand Alugu]
+88c40f3  Fix permissions for CTS [1/2]  [Prema Chand Alugu]
+b1f7755  Tipsy Logo: Fix overlapped logo (LS and SB)  [Prema Chand Alugu]
+95f5a8e  Tipsy Logo: Add more logos  [Prema Chand Alugu]
+   * manifest/
+6191c16  track contacts testing  [Prema Chand Alugu]
+   * packages/apps/Contacts/
+2fc447a  Revert "Contacts: Check the state of writing system settings permission."  [Prema Chand Alugu]
+a3e7603  Fix contact name disappear when update  [Prema Chand Alugu]
+94b17b0  Fix can copy sim contacts with number more than 40  [Prema Chand Alugu]
+966797f  Contacts: remove the videocall switch button  [Prema Chand Alugu]
+   * packages/apps/Dialer/
+519f3e6  Use TabLayout for DSDA tabs.  [Prema Chand Alugu]
+c4672c5  Revert "Dialer: Check the state of writing system settings permission."  [Prema Chand Alugu]
+c81bbef  Handle secret codes without pressing dial button  [Prema Chand Alugu]
+198b15e  Dialer:Fix FC when it disables READ/WIRTE CALL LOG permission  [Prema Chand Alugu]
+062a76e  Dialer: fix the display issue for VT Call.  [Prema Chand Alugu]
+4e4a108  Dialer: Check the state of writing system settings permission.  [Prema Chand Alugu]
+74c0215  Dialer: Video call icon not sync with the setting in call.  [Prema Chand Alugu]
+572424c  Dailer: Fix dialer app crash issue  [Prema Chand Alugu]
+a8795a7  Fix DialtactsActivity leaks  [Prema Chand Alugu]
+4aea87f  IMS: Support to Dial ConfURI call from call log.  [Prema Chand Alugu]
+e107f69  Adjust display name of call log for 4G conference call  [Prema Chand Alugu]
+   * packages/apps/Settings/
+388d006  ConditionManager: don't crash when trying to add unexpected condition  [Prema Chand Alugu]
+b9cbcb2  Settings: PreviewPagerAdapter: copy the full theme  [Prema Chand Alugu]
+0aaf214  Fix time does not change after rotating device  [Prema Chand Alugu]
+721b05e  Settings: enable power save config of system apps [2/2]  [Prema Chand Alugu]
+6a5c9f4  Reset battery stats [2/2]  [Prema Chand Alugu]
+6fa13e5  Fix LCD density changer SU helpers  [Prema Chand Alugu]
+   * packages/apps/Tavern/
+e740865  Tipsy Logo: Option to locate at right [2/2]$  [Prema Chand Alugu]
+cc01fe2  Tipsy Logo: Enable in Tavern, configurable Logo Size [2/2]  [Prema Chand Alugu]
+   * vendor/tipsy/
+6843093  Add gemini (Xiaomi Mi5)  [Prema Chand Alugu]
+60ac4ab  Its the PETE's Petrus week  [Prema Chand Alugu]
+6b1c64a  Magisk-v13-170526.zip  [Prema Chand Alugu]
+e69c5fc  MagiskManager-v5.0-170526.apk  [Prema Chand Alugu]
+7f61755  Move AmazeFileManager to BUILD_PREBUILT  [Prema Chand Alugu]
+7ee5740  Move Adaway to BUILD_PREBUILT  [Prema Chand Alugu]
+e36fafa  Move Nova to BUILD_PREBUILT  [Prema Chand Alugu]

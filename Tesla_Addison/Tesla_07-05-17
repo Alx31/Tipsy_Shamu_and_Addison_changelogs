@@ -1,0 +1,60 @@
+====================
+     06-05-2017
+====================
+
+
+   * device/motorola/addison/
+97d72c4 cosmetics: MZP shows in about phone menu
+bb874b1 tipsy.mk: don't override product_model plz.
+52c375d addison: enable WiFi Display
+6c5b9f1 addison: livedisplay: do not set night mode as default
+e173cba Addison: Show VoLTE icon
+7bc6eef system.prop: adb at boot and google assistant
+f9a0844 CMActions: Switch to fingerprint sleep
+
+   * kernel/motorola/msm8953/
+551d041 Revert "arm/dts: Addison: TF bringup"
+68b19dd bpf: don't let ldimm64 leak map addresses on unprivileged
+2705a8f ext4: fix data exposure after a crash
+72f5f58 drivers: input: fpc1020: Allow enabling KeyEvents dynamically
+c60e2e2 drivers: input: Drop homebutton code
+d78770c Revert "input: homebutton: handle egis gestures"
+284c5d8 Revert "homebutton: handle VOICE_ASSIST and expose haptic"
+
+   * manifest/
+e74408d add cm's external_bson
+
+   * vendor/motorola/
+533e102 addison: Display blobs update
+
+   * vendor/tesla/
+6454ed8 add gemini for Robert
+
+====================
+     06-04-2017
+====================
+
+
+====================
+     06-03-2017
+====================
+
+
+====================
+     06-02-2017
+====================
+
+
+   * frameworks/base/
+157daf1 daynight: try to fix the ugly white in notifications
+
+   * packages/resources/devicesettings/
+fe6b096 Automatic translation import
+
+====================
+     06-01-2017
+====================
+
+
+   * packages/resources/devicesettings/
+1935d69 Add fingerprint sleep strings

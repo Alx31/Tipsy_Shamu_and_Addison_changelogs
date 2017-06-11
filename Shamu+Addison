@@ -1,0 +1,269 @@
+====================
+     06-11-2017
+====================
+
+   * build/
+f297a3b  [DO NOT MERGE] Update Security String to 2017-06-05 for nyc-dev  [Prema Chand Alugu]
+392437b  [DO NOT MERGE] Update Security String to 2017-06-01 for nyc-dev  [Prema Chand Alugu]
+5197fb7  Version bump to NJH47B  [Prema Chand Alugu]
+   * device/motorola/addison/
+3c4f6cc  don't ship with gzr KA  [Alx31]
+a4f8e66  init.qcom:kang Shivam's Optimus init  [Alx31]
+0a78f73  try to ship again with magisk  [Alx31]
+beb9651  addison: fstab: Add zramstreams  [Alx31]
+   * frameworks/base/
+adf1efc  Add ability to configure battery saver mode color (1/2) Adapted for marshmallow by @KreAch3R  [Prema Chand Alugu]
+9f318f9  fingerprint: Speed up wake-and-unlock scenario  [Prema Chand Alugu]
+3122971  Merge the two night light options into one  [Prema Chand Alugu]
+f605064  Night mode tile brightness: allow to set a different value [1/2]  [Prema Chand Alugu]
+13c00b6  Night tile: automatically set a lower brightness when active [1/2]  [Prema Chand Alugu]
+e4add5f  Night auto brightness: restore user brightness values also after reboot  [Prema Chand Alugu]
+8a2cac9  Wider night light auto low brightness action  [Prema Chand Alugu]
+0a08011  fingerprint: handle PerformanceStats NULL pointers  [Prema Chand Alugu]
+0848a23  Fix issue with saving admins before finishing loading.  [Prema Chand Alugu]
+0688be2  resolve merge conflicts of ad4aa1ce7d3d to nyc-mr1-dev fix conflict in nyc-mr2-release (cherry picked from commit f806d65e615b942c268a5f68d44bde9d55634972)  [Prema Chand Alugu]
+6663382  Reduce hwui CPU time by using glDrawRangeElements  [Prema Chand Alugu]
+713dfcd  Optimised hwui rounded corners shader  [Prema Chand Alugu]
+   * frameworks/opt/slim/
+7db7cf6  Fix actions for screen off gestures  [Prema Chand Alugu]
+   * kernel/motorola/msm8953/
+9859996  defconfigs: sync a bit more with optimus  [Alx31]
+0e5bc8e  defconfigs: regenerate for features additions  [Alx31]
+a724a26  drivers: fp-boost: do not delay boost_wq  [Alx31]
+e8f9796  drivers: fp-boost: we have fp_config  [Alx31]
+6ea5fc0  cpufreq: optimus: cache tunables  [Alx31]
+bfbc8a8  cpufreq: include err.h to fix build error  [Alx31]
+ef7bca5  cpufreq: cache tunables for ondemand and conservative governors  [Alx31]
+dc75ddd  drivers: fp-boost: boost only for unblank  [Alx31]
+29a8e31  cpufreq: Introduce fingerprint boost driver  [Alx31]
+e7ba550  arm/dt: Add channel ID for Retail Morocco  [Alx31]
+eda4e2c  mbhc: remove report of headset btn_5  [Alx31]
+812b750  arm/dt: Create new Channel IDs for CMCC CT CU.  [Alx31]
+ea1b276  nfc: pn544-mot: make device wake capable  [Alx31]
+65a1ebf  wil6210: Block write ioctl to the card by default  [Alx31]
+8f68749  msm: camera: Fix kernel panic in I2C read  [Alx31]
+54ebaee  arm/dt: potter: disable hw strobe for s5k2l7 sensor  [Alx31]
+9a5f07c  drivers:leds: add hw strobe disable flag  [Alx31]
+19f7b16  arm/dt: Add channel ID for TIM italy  [Alx31]
+733e222  arm/dt: camera: S5K2L7-SA sensor bringup  [Alx31]
+a4ea9c8  msm: camera: Change mount angle on Potter/Albus  [Alx31]
+5ed2369  msm: camera: Add sensor model id  [Alx31]
+2f07367  arm/dt: camera: Albus S5K2L7 sensor bringup  [Alx31]
+8357cb0  arm/dt: camera: Potter S5K2L7 sensor bringup  [Alx31]
+78a779b  arm/dts:cedric: Add wakelock_time item in fpc  [Alx31]
+5957c66  input: fps: Add more time to wake lock  [Alx31]
+6038cb6  charger: TurboCharger output 12V in charger only mode  [Alx31]
+83724c7  input: misc: fix security vulnerability  [Alx31]
+d1b6934  msm8953: kernel: config: Select FT TP IC for Sanders  [Alx31]
+81f03d4  msm: camera: sensor: Free power settings on error  [Alx31]
+f05da7f  wake_gestures: add sweep2wake, doubletap2wake and sweep2sleep  [Alx31]
+5519dda7  platform/msm: haptic: expose vibrate function  [Alx31]
+373ef9d  msm: qpnp-haptic: disable vibration when vmax_mv_strong is set to min  [Alx31]
+04aa42a  platform/msm: haptic: add sysfs node for vmax_mv  [Alx31]
+5446881  qpnp-haptic: Dejank the haptics  [Alx31]
+242b95a  sound control: remove speaker control  [Alx31]
+551f8b67  Revert "touch: sweep2sleep"  [Alx31]
+547141b  Revert "qpnp-haptic: expose vibration"  [Alx31]
+917de1e  msm8953: use a lower power level for gpu  [Alx31]
+4c8fcd7  msm: camera2: cpp: Fix out-of-bounds frame or command buffer access  [Alx31]
+5eb8b3b  msm: camera2: cpp: Fix iommu_attach/detach compat_ioctl issue  [Alx31]
+21abffe  UPSTREAM: arm: perf: Fix callchain parse error with kernel tracepoint events  [Alx31]
+5c806f7  UPSTREAM: ARM: 8170/1: Add global named register current_stack_pointer for ARM  [Alx31]
+b98edab  timerfd: Protect the might cancel mechanism proper  [Alx31]
+cac19ad  percpu: acquire pcpu_lock when updating pcpu_nr_empty_pop_pages  [Alx31]
+7114ba1  crypto: improve gcc optimization flags for serpent and wp512  [Alx31]
+5e5bd9e  UPSTREAM: ARM: keystone2: move update of the phys-to-virt constants into generic code  [Alx31]
+f79c8c0  BACKPORT: ARM: re-implement physical address space switching  [Alx31]
+29155d6  fs: Disable fsync by default  [Alx31]
+c73731e  Makefile: basic GCC optimizations  [Alx31]
+0195d87  mdss_fb: add backlight dimmer option  [Alx31]
+92661cf  zram: increase number of compressions streams  [Alx31]
+93d75e4  dm-crypt: increase threads  [Alx31]
+18abf28  ASoC: msm8x16-wcd: add speaker gain and prevent reset  [Alx31]
+d17639a  ASoC: msm8x16-wcd: Sound control: allow further reduction of digital gain  [Alx31]
+7b7fca6  ASoC: msm8x16-wcd: Sound control: add mic gain  [Alx31]
+1a8c945  ASoC: msm8x16-wcd: Sound control  [Alx31]
+7b05e93  touch: sweep2sleep  [Alx31]
+be97c14  cpufreq: optimus: do micro idle accounting  [Alx31]
+f5267fd2  cpufreq: optimus: adjustments for potter  [Alx31]
+8ff2004  cpufreq: add optimus governor  [Alx31]
+c78590d  PM / Suspend: use time_to_tm for printing timestamps  [Alx31]
+1aa4349  perf/core: Fix event inheritance on fork()  [Alx31]
+f1e79a6  zram: do not use copy_page with non-page aligned address  [Alx31]
+97ba6e9  UPSTREAM: PM / sleep: make PM notifiers called symmetrically  [Alx31]
+153630d  block: Disable add_random  [Alx31]
+4618146  msm: kcal: make the invertion method completely no-op and always return false. Would remove entirely but CF.Lumen checks for this node for compatibility  [Alx31]
+a505c1f  kcal: rip color inversion  [Alx31]
+75a8194  msm: mdss: KCAL: disable igc update  [Alx31]
+7ae35b7  msm: mdss: KCAL: Send a pp display commit when changes are made  [Alx31]
+ccbc2ab  mdss mdp: kcal for mdss_mdp_v1_7  [Alx31]
+e24d9a1  msm: vidc: disable CPU L2 cache PC during video sessions  [Alx31]
+be28f3b  Revert "msm: mdss: kcal: Add KCAL support for post processing control [v2]"  [Alx31]
+72e8abb  msm: mdss: kcal: Add KCAL support for post processing control [v2]  [Alx31]
+4604b13  qcom: msm-core: queue work on system_power_efficient_wq  [Alx31]
+1ba9393  msm: ipa: fix makefile so 'make clean' does it job  [Alx31]
+380d7c2  ipv6: fix out of bound writes in __ip6_append_data()  [Alx31]
+1089488  ipv6/dccp: do not inherit ipv6_mc_list from parent  [Alx31]
+e9d40a8  sctp: do not inherit ipv6_{mc|ac|fl}_list from parent  [Alx31]
+6ee6846  ipv6: Prevent overrun when parsing v6 header options  [Alx31]
+ce6dacc  msm: sensor: validating the flash initialization parameters  [Alx31]
+236387a  qseecom: add mutex around qseecom_set_client_mem_param  [Alx31]
+0f2c87b  msm: camera: cpp: Fixing Heap overflow in output buffer  [Alx31]
+   * manifest/
+90333b6  7.1.2_r17  [Prema Chand Alugu]
+3c17164  our libcore  [Prema Chand Alugu]
+4d8b925  our system/bt  [Prema Chand Alugu]
+   * packages/apps/Settings/
+3e789fe  Night light brightness options  [Prema Chand Alugu]
+7cd5e03  Settings: enable fast scroll for all app list views  [Prema Chand Alugu]
+b414407  Settings: fix FC if opening Audio Settings after enabling DND  [Prema Chand Alugu]
+   * packages/apps/Tavern/
+0317e63  GZR Colors into default in the ColorPicker  [Prema Chand Alugu]
+af2d6b8  Add ability to configure battery saver mode color (2/2)  [Prema Chand Alugu]
+   * vendor/tipsy/
+fab15fd  v6.1 RosteJeanne  [Prema Chand Alugu]
+82c4a64  Update GZRApp 3.1  [Prema Chand Alugu]
+95107f4  Update Nova 5.2  [Prema Chand Alugu]
+32cee2a  Do not sign the prebuilt apps again  [Prema Chand Alugu]
+abe29ce  GZRoms App - signed v3.0  [Prema Chand Alugu]
+
+====================
+     06-10-2017
+====================
+
+
+====================
+     06-09-2017
+====================
+
+   * system/core/
+685442d  system: core: sched: Fix missing }  [Martinusbe]
+   * vendor/motorola/
+51c2737  shamu: proprietary blobs for 7.1.1 (N6F27E)  [Mirko]
+
+====================
+     06-08-2017
+====================
+
+   * build/kati/
+a0bfc98  Merge remote-tracking branch 'google-kati/master' into testing  [Prema Chand Alugu]
+   * system/core/
+7f4d84a  sched: Update on par with Lineage  [Martinusbe]
+
+====================
+     06-07-2017
+====================
+
+   * hardware/qcom/audio-caf/msm8996/
+f865aba  msm8996: ultrasound: Initial open source hal for Elliptic Ultrasound  [Martinusbe]
+668a640  audio policy: reduce audio routing commands trafic  [Martinusbe]
+   * hardware/qcom/display-caf/msm8996/
+02bd837  Merge "sdm: Set layer frame rate if not specified."  [Martinusbe]
+a10c771  sdm: Increase SurfaceFlinger fd limits  [Martinusbe]
+   * hardware/qcom/media-caf/msm8996/
+81e888e  mm-video-v4l2: venc: Initialize allocate native handle variable  [Martinusbe]
+6ee7681  mm-video-v4l2: Initialize extradata fd to -1  [Martinusbe]
+6c4b47b  mm-video-v4l2: venc: Fix double close on fd  [Martinusbe]
+80e456d  mm-video-v4l2: Close output buffer dup fd only if valid  [Martinusbe]
+2935552  mm-video-v4l2: create pthread with valid file descriptors  [Martinusbe]
+37abb12  Merge tag 'LA.UM.5.5.r1-03800-8x96.0' into cm-14.1-caf-8996  [Martinusbe]
+3355d5e  mm-video-v4l2: vidc: correct the crop update  [Martinusbe]
+34ed4d5  Merge 69058718422addd0dc9c2ebfc6857d0ebd22d6ca on remote branch  [Martinusbe]
+   * packages/apps/KernelAdiutor/
+d386afb  Merge pull request #1 from Druboo666/n7.1.1  [GitHub]
+
+====================
+     06-06-2017
+====================
+
+   * libcore/
+748ecd8  Reject ftp URLConnection containing /r/n in user info.  [Martinusbe]
+03ea601  Test for rejection of ftp URL with /r/n in userinfo  [Martinusbe]
+   * packages/apps/Bluetooth/
+600d865  Merge remote-tracking branch 'upstream/test' into HEAD  [Martinusbe]
+9d274ac  BluetoothOppTransferActivity: fix after ad46f6a52d7240ed1e2127c4263a5cbcf454df09  [Dan Pasanen]
+9efb588  Merge tag 'android-7.1.2_r17' into cm-14.1  [Dan Pasanen]
+   * system/bt/
+7d25289  Check LE advertising data length before caching advertising records  [Martinusbe]
+   * system/core/
+f373519  Fix out of bound read in libziparchive  [Martinusbe]
+a4cfa59  libcutils: remove schedgroup fds [DO NOT MERGE]  [Martinusbe]
+
+====================
+     06-05-2017
+====================
+
+   * device/motorola/addison/
+1f2a7fb  cosmetics: MZP shows in about phone menu  [Alx31]
+da346bc  tipsy.mk: don't override product_model plz.  [Alx31]
+eb0dec7  addison: enable WiFi Display  [Alx31]
+a45665a  addison: livedisplay: do not set night mode as default  [Alx31]
+421ac9a  Addison: Show VoLTE icon  [Alx31]
+38c9201  system.prop: adb at boot and google assistant  [Alx31]
+   * kernel/motorola/msm8953/
+551d041  Revert "arm/dts: Addison: TF bringup"  [Alx31]
+
+====================
+     06-04-2017
+====================
+
+   * build/
+d1756c7  ro.secure=0 on userdebug builds  [Alx31]
+   * device/motorola/addison/
+c76fa06  CMActions: Switch to fingerprint sleep  [Alx31]
+   * frameworks/base/
+47a27f8  base: Set animation scaling to 0.7  [Alx31]
+b2001aa  daynight: try to fix the ugly white in notifications  [Alx31]
+9bb7608  QS tiles string changes The following tiles all had one thing in common, they all failed to follow AOSP behavior. They all had the label show 'off' when the tile was in the off state. Normal AOSP behavior uses the drawable to indicate whether a tile is off or on. For example the flashlight tile which comes loaded on AOSP doesn't show Flashlight off when the tile is off. You can look at the other tiles such as WiFi, Airplane, Cast, Bluetooth and DND.  [Alx31]
+1c9bef5  base: SystemUI: qs: location tile quickbar press is just toggle  [Alx31]
+35b6c2f  Location tile easy toggle single tap: make it cycle modes  [Alx31]
+0618650  Location tile: add high accuracy state icon  [Alx31]
+ab3f917  Location tile: dynamic icon state also when easy toggle enabled  [Alx31]
+79fd4e83  Add location to Easy toggle [1/2]  [Alx31]
+761d154  Revert "Location tile: add high accuracy state icon"  [Alx31]
+d55d042  Location tile: add high accuracy state icon  [Alx31]
+ba25541  Add advanced location tile  [Alx31]
+1d0a6f7  [1/2] SlimDoze: add hand wave & pocket mode gesture  [Alx31]
+61e13d1  [1/2] SlimDoze: add tilt gesture  [Alx31]
+a572b9b  More visible secondary color on black background  [Alx31]
+   * frameworks/opt/slim/
+275769b  [2/2] SlimDoze: add hand wave & pocket mode gesture  [Alx31]
+acd4cf6  [2/2] SlimDoze: add tilt gesture  [Alx31]
+   * kernel/motorola/msm8953/
+68b19dd  bpf: don't let ldimm64 leak map addresses on unprivileged  [Alx31]
+2705a8f  ext4: fix data exposure after a crash  [Alx31]
+72f5f58  drivers: input: fpc1020: Allow enabling KeyEvents dynamically  [Alx31]
+c60e2e2  drivers: input: Drop homebutton code  [Alx31]
+d78770c  Revert "input: homebutton: handle egis gestures"  [Alx31]
+284c5d8  Revert "homebutton: handle VOICE_ASSIST and expose haptic"  [Alx31]
+   * manifest/
+5d7393f  Remove SlimOTA [1/2]  [Alx31]
+   * packages/apps/KernelAdiutor/
+0033068  CPU: Stop assuming all 4 core cpus are big/little  [Druboo666]
+4f69fcc  Revert "Fix calculation of big.LITTLE cores on SD82*"  [Druboo666]
+   * packages/apps/OmniSwitch/
+13cbc65  Automatic translation import  [Alx31]
+4fca051  OmniSwitch: cleanup BitmapUtils  [Alx31]
+   * packages/apps/Settings/
+8eb264e  Settings: Remove Slim OTA  [Alx31]
+c349dad  Remove description for GZRoms App preference  [Alx31]
+a2190e9  Settings: Add GZRoms App to About phone/device  [Alx31]
+161e291  Revert "Settings: Add GZRoms App to dashboard"  [Alx31]
+7daca02  Settings: Add GZRoms App to dashboard  [Alx31]
+75a8158  move Magisk Manager to Tavern category  [Alx31]
+9e00824  Revert "move substratum and supersu to System category"  [Alx31]
+   * packages/apps/Tavern/
+06d5941  Add location to Easy toggle [2/2]  [Alx31]
+13b0930  Fix Max values for CustomSeekBarPreference in some settings  [Alx31]
+   * packages/services/OmniJaws/
+017c3b7  Automatic translation import  [Alx31]
+efe3cb0  OmniJaws: update README.md to include OWM API key usage info  [Alx31]
+   * vendor/motorola/
+533e102  addison: Display blobs update  [Alx31]
+   * vendor/tipsy/
+4b3cfee  v6.0 Qantelaar week it is  [Alx31]
+1f937b2  Remove SlimOTA [2/2]  [Alx31]
+0560627  Include GZRoms App into the builds  [Alx31]
+1b61b17  overlay: Enable Wi-Fi by default on first boot  [Alx31]
+235459e  Update example backup-transport resource overlay  [Alx31]
+4bec19c  Show full alarm info  [Alx31]

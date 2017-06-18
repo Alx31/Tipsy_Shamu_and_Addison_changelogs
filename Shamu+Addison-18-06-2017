@@ -1,0 +1,263 @@
+====================
+     06-18-2017
+====================
+
+   * device/moto/shamu/
+6609697  revert no block ota n' use no kexec on secondaries  [Alx31]
+944f195  update build fingerprint & description to N6F27E  [Alx31]
+017881b  shamu: set the gpu's default_pwrlevel to 4  [Alx31]
+5ff3647  Shamu : Update interactive profile  [Alx31]
+cf7f560  Fix foreground/boost cpuset  [Alx31]
+   * device/motorola/addison/
+a8e609a  addison: use optimized read-ahead value improve read/write perf  [Alx31]
+12972ba  addison: add AEP support config This change exposes the support for Android extension pack (AEP) in the graphics driver and Change the GLES version string to 3.2 We support GLES version 3.2 so change it to use the 3.2 API  [Alx31]
+   * frameworks/base/
+0a0cc96  QS: make NFC & usb_tether magically appear  [Martinusbe]
+6d58a49  Night mode auto brightness: code cleanup and improvements [1/2]  [Martinusbe]
+8f91cab  Night auto brightness: restore user brightness values also after reboot  [Martinusbe]
+1d5508f  Wider night light auto low brightness action  [Martinusbe]
+f35ff8f  SlimDoze: Fix gesture triggers not following Ambient display  [Martinusbe]
+69e8d26  Revert "Obex: Reduce MTU Size."  [Martinusbe]
+   * kernel/motorola/msm8953/
+57dd0fc  Revert "msm8996: Overclocking with cmdline option"  [Alx31]
+791ed08  defconfigs: ship with sio default  [Alx31]
+5ff3ada  random: backport from Linux 4.2  [Alx31]
+8dd646f  defconfig: Enable JUMP_LABEL Enabling to optimize trace calls by "asm goto".  [Alx31]
+9459f58  mm: Set aggressive read_ahead size for bootup  [Alx31]
+cbdc748  cpufreq: stats: Fix crash if the stats table is null  [Alx31]
+42cb573  blk-mq: update hardware and software queues for sleeping alloc  [Alx31]
+1df0dda  mdss: boost high brightness mode  [Alx31]
+4716a32  msm8996: Overclocking with cmdline option  [Alx31]
+0e73948  msm: mdss: update mdss perf when changing refresh rate  [Alx31]
+6b6912a  Revert "msm: camera: Add sensor model id"  [Alx31]
+7f35e62  Revert "drivers:leds: add hw strobe disable flag"  [Alx31]
+ef4a5da  Revert "msm: camera: Fix kernel panic in I2C read"  [Alx31]
+   * manifest/
+8c931b5  fix abc  [Martinusbe]
+baeca24  Jelly n7.1 branch  [Martinusbe]
+b2fd9b9  track our Snap  [Martinusbe]
+5d564e9  track Snap from Tesla  [Martinusbe]
+a3a3748  change tesla remote to n7.1.2  [Martinusbe]
+33f555e  track Jelly  [Martinusbe]
+   * packages/apps/OmniStyle/
+a87049b  header: add Satan red beer for this weeks release  [Martinusbe]
+   * packages/apps/Settings/
+f4e16a6  Night mode auto brightness: code cleanup and improvements [2/2]  [Martinusbe]
+7c8cb36  Night ligh auto brightness: menu improvements  [Martinusbe]
+046e4d1  ChangeLog: Now points to CL in vendor as hotlink  [Martinusbe]
+   * vendor/tipsy/
+91138a3  Magisk: update zip to v13.0-170617  [Martinusbe]
+df5fecd  Magisk: update Manager apk to 5.0.2-170617  [Martinusbe]
+295ef09  v6.2 Satan Red  cheers  [Martinusbe]
+89973b5  Nova 5.3-Beta 2  [Martinusbe]
+2cabcd6  update changelog  [Martinusbe]
+9a6e3cb  script: give executable permission for changelog  [Martinusbe]
+8e8cc9c  script: generate changelog for last 15days  [Martinusbe]
+5b4a4a7  Add the    *s list  [Martinusbe]
+c525505  Update Nova 5.3-beta1  [Martinusbe]
+16e5b37  build Jelly  [Martinusbe]
+a785577  Magisk: update zip to v13-170612  [Martinusbe]
+10782b5  Magisk: update apk to v5.0-170612  [Martinusbe]
+
+====================
+     06-17-2017
+====================
+
+   * manifest/
+bd6b3cb  Track arm-eabi-5.x from tipsylab  [Prema Chand Alugu]
+   * packages/apps/Dialer/
+b556075  Fixed Dialer crash issue when finish dialpad immediately  [Martinusbe]
+
+====================
+     06-16-2017
+====================
+
+   * packages/apps/Snap/
+3de1d36  SnapdragonCamera: Fix ghosting when non-zsl in VGA/QVGA size  [Martinusbe]
+84e8ffe  SnapdragonCamera: Fix live shot image stretch when recording is 4K  [Martinusbe]
+bfd628d  SnapdragonCamera: Fix photo reversed when enable selfie Mirror  [Martinusbe]
+260b7e2  SnapdragonCamera: Fix photo reversed when enable selfie Mirror  [Martinusbe]
+d88e114  SnapdragonCamera: Fix preview in wrong size  [Martinusbe]
+25412cd  SnapdragonCamera: Fix front camera preview flipped  [Martinusbe]
+bf180f7  SnapdragonCamera: Fix preview is flipped on 8996  [Martinusbe]
+418b113  SnapdragonCamera: Camera1 Selfie Mirror orientation check  [Martinusbe]
+37a114e  SnapdragonCamera: Fix Camera1 force close when refocusing the picture.  [Martinusbe]
+4602c29  SnapdragonCamera: Change video snapshot picture size logic  [Martinusbe]
+6d8a2ef  SnapdragonCamera: Avoid cancel AF shortly after trigger  [Martinusbe]
+6680082  SnapdragonCamera: Fix crash during UI stress test  [Martinusbe]
+d2dbe2a  SnapdragonCamera: Fix OutOfBoundsException in monkey test  [Martinusbe]
+c559745  SnapdragonCamera: Fix FC for NullPointerException  [Martinusbe]
+c4b9240  SnapdragonCamera: Reset zoom value when resuming  [Martinusbe]
+263ae52  SnapdragonCamera: Fix capture with flash will get black image.  [Martinusbe]
+077e7a7  SnapdragonCamera: Fix FC cause by Null pointer  [Martinusbe]
+6058b56  SnapdragonCamera: Make copy of location before altering timestamp  [Martinusbe]
+
+====================
+     06-15-2017
+====================
+
+
+====================
+     06-14-2017
+====================
+
+   * packages/apps/Dialer/
+5aa0e56  Dialer: lock screen appear before incoming call screen  [Martinusbe]
+ae9b155  IMS-VT:Process crash during MT_VT call accept scenario  [Martinusbe]
+   * packages/apps/Jelly/
+fae85ed  Revert "Add support for WebViews that provide the site's theme color."  [Martinusbe]
+   * packages/apps/Snap/
+8d0d4a5  Snap: Sign with platform key  [Josue Rivera]
+   * packages/apps/masquerade/
+de4611a  Add interface to get API version and app authentication status  [Martinusbe]
+   * system/sepolicy/
+6ff3e5d  Add policy to fix interfacer derp on boot  [Martinusbe]
+
+====================
+     06-13-2017
+====================
+
+   * packages/apps/Jelly/
+5563e1b  home: default to google  [Martinusbe]
+   * packages/apps/Snap/
+9795b7f  Add orientation correction for landscape devices  [Josue Rivera]
+   * system/bt/
+7ff8779  bt: Disable AVRCP 1.6  [Martinusbe]
+
+====================
+     06-12-2017
+====================
+
+   * packages/apps/KernelAdiutor/
+a85796f  Merge pull request #2 from TeslaRom-N/n7.1.1  [GitHub]
+   * packages/apps/Snap/
+84e0760  Snap: Simulate back button press when menu back button is pressed  [Josue Rivera]
+
+====================
+     06-11-2017
+====================
+
+   * build/
+f297a3b  [DO NOT MERGE] Update Security String to 2017-06-05 for nyc-dev  [Prema Chand Alugu]
+392437b  [DO NOT MERGE] Update Security String to 2017-06-01 for nyc-dev  [Prema Chand Alugu]
+5197fb7  Version bump to NJH47B  [Prema Chand Alugu]
+   * device/motorola/addison/
+3c4f6cc  don't ship with gzr KA  [Alx31]
+a4f8e66  init.qcom:kang Shivam's Optimus init  [Alx31]
+0a78f73  try to ship again with magisk  [Alx31]
+beb9651  addison: fstab: Add zramstreams  [Alx31]
+   * frameworks/base/
+adf1efc  Add ability to configure battery saver mode color (1/2) Adapted for marshmallow by @KreAch3R  [Prema Chand Alugu]
+9f318f9  fingerprint: Speed up wake-and-unlock scenario  [Prema Chand Alugu]
+3122971  Merge the two night light options into one  [Prema Chand Alugu]
+f605064  Night mode tile brightness: allow to set a different value [1/2]  [Prema Chand Alugu]
+13c00b6  Night tile: automatically set a lower brightness when active [1/2]  [Prema Chand Alugu]
+e4add5f  Night auto brightness: restore user brightness values also after reboot  [Prema Chand Alugu]
+8a2cac9  Wider night light auto low brightness action  [Prema Chand Alugu]
+0a08011  fingerprint: handle PerformanceStats NULL pointers  [Prema Chand Alugu]
+0848a23  Fix issue with saving admins before finishing loading.  [Prema Chand Alugu]
+0688be2  resolve merge conflicts of ad4aa1ce7d3d to nyc-mr1-dev fix conflict in nyc-mr2-release (cherry picked from commit f806d65e615b942c268a5f68d44bde9d55634972)  [Prema Chand Alugu]
+6663382  Reduce hwui CPU time by using glDrawRangeElements  [Prema Chand Alugu]
+713dfcd  Optimised hwui rounded corners shader  [Prema Chand Alugu]
+   * frameworks/opt/slim/
+7db7cf6  Fix actions for screen off gestures  [Prema Chand Alugu]
+   * kernel/motorola/msm8953/
+9859996  defconfigs: sync a bit more with optimus  [Alx31]
+0e5bc8e  defconfigs: regenerate for features additions  [Alx31]
+a724a26  drivers: fp-boost: do not delay boost_wq  [Alx31]
+e8f9796  drivers: fp-boost: we have fp_config  [Alx31]
+6ea5fc0  cpufreq: optimus: cache tunables  [Alx31]
+bfbc8a8  cpufreq: include err.h to fix build error  [Alx31]
+ef7bca5  cpufreq: cache tunables for ondemand and conservative governors  [Alx31]
+dc75ddd  drivers: fp-boost: boost only for unblank  [Alx31]
+29a8e31  cpufreq: Introduce fingerprint boost driver  [Alx31]
+e7ba550  arm/dt: Add channel ID for Retail Morocco  [Alx31]
+eda4e2c  mbhc: remove report of headset btn_5  [Alx31]
+812b750  arm/dt: Create new Channel IDs for CMCC CT CU.  [Alx31]
+ea1b276  nfc: pn544-mot: make device wake capable  [Alx31]
+65a1ebf  wil6210: Block write ioctl to the card by default  [Alx31]
+8f68749  msm: camera: Fix kernel panic in I2C read  [Alx31]
+54ebaee  arm/dt: potter: disable hw strobe for s5k2l7 sensor  [Alx31]
+9a5f07c  drivers:leds: add hw strobe disable flag  [Alx31]
+19f7b16  arm/dt: Add channel ID for TIM italy  [Alx31]
+733e222  arm/dt: camera: S5K2L7-SA sensor bringup  [Alx31]
+a4ea9c8  msm: camera: Change mount angle on Potter/Albus  [Alx31]
+5ed2369  msm: camera: Add sensor model id  [Alx31]
+2f07367  arm/dt: camera: Albus S5K2L7 sensor bringup  [Alx31]
+8357cb0  arm/dt: camera: Potter S5K2L7 sensor bringup  [Alx31]
+78a779b  arm/dts:cedric: Add wakelock_time item in fpc  [Alx31]
+5957c66  input: fps: Add more time to wake lock  [Alx31]
+6038cb6  charger: TurboCharger output 12V in charger only mode  [Alx31]
+83724c7  input: misc: fix security vulnerability  [Alx31]
+d1b6934  msm8953: kernel: config: Select FT TP IC for Sanders  [Alx31]
+81f03d4  msm: camera: sensor: Free power settings on error  [Alx31]
+f05da7f  wake_gestures: add sweep2wake, doubletap2wake and sweep2sleep  [Alx31]
+5519dda7  platform/msm: haptic: expose vibrate function  [Alx31]
+373ef9d  msm: qpnp-haptic: disable vibration when vmax_mv_strong is set to min  [Alx31]
+04aa42a  platform/msm: haptic: add sysfs node for vmax_mv  [Alx31]
+5446881  qpnp-haptic: Dejank the haptics  [Alx31]
+242b95a  sound control: remove speaker control  [Alx31]
+551f8b67  Revert "touch: sweep2sleep"  [Alx31]
+547141b  Revert "qpnp-haptic: expose vibration"  [Alx31]
+917de1e  msm8953: use a lower power level for gpu  [Alx31]
+4c8fcd7  msm: camera2: cpp: Fix out-of-bounds frame or command buffer access  [Alx31]
+5eb8b3b  msm: camera2: cpp: Fix iommu_attach/detach compat_ioctl issue  [Alx31]
+21abffe  UPSTREAM: arm: perf: Fix callchain parse error with kernel tracepoint events  [Alx31]
+5c806f7  UPSTREAM: ARM: 8170/1: Add global named register current_stack_pointer for ARM  [Alx31]
+b98edab  timerfd: Protect the might cancel mechanism proper  [Alx31]
+cac19ad  percpu: acquire pcpu_lock when updating pcpu_nr_empty_pop_pages  [Alx31]
+7114ba1  crypto: improve gcc optimization flags for serpent and wp512  [Alx31]
+5e5bd9e  UPSTREAM: ARM: keystone2: move update of the phys-to-virt constants into generic code  [Alx31]
+f79c8c0  BACKPORT: ARM: re-implement physical address space switching  [Alx31]
+29155d6  fs: Disable fsync by default  [Alx31]
+c73731e  Makefile: basic GCC optimizations  [Alx31]
+0195d87  mdss_fb: add backlight dimmer option  [Alx31]
+92661cf  zram: increase number of compressions streams  [Alx31]
+93d75e4  dm-crypt: increase threads  [Alx31]
+18abf28  ASoC: msm8x16-wcd: add speaker gain and prevent reset  [Alx31]
+d17639a  ASoC: msm8x16-wcd: Sound control: allow further reduction of digital gain  [Alx31]
+7b7fca6  ASoC: msm8x16-wcd: Sound control: add mic gain  [Alx31]
+1a8c945  ASoC: msm8x16-wcd: Sound control  [Alx31]
+7b05e93  touch: sweep2sleep  [Alx31]
+be97c14  cpufreq: optimus: do micro idle accounting  [Alx31]
+f5267fd2  cpufreq: optimus: adjustments for potter  [Alx31]
+8ff2004  cpufreq: add optimus governor  [Alx31]
+c78590d  PM / Suspend: use time_to_tm for printing timestamps  [Alx31]
+1aa4349  perf/core: Fix event inheritance on fork()  [Alx31]
+f1e79a6  zram: do not use copy_page with non-page aligned address  [Alx31]
+97ba6e9  UPSTREAM: PM / sleep: make PM notifiers called symmetrically  [Alx31]
+153630d  block: Disable add_random  [Alx31]
+4618146  msm: kcal: make the invertion method completely no-op and always return false. Would remove entirely but CF.Lumen checks for this node for compatibility  [Alx31]
+a505c1f  kcal: rip color inversion  [Alx31]
+75a8194  msm: mdss: KCAL: disable igc update  [Alx31]
+7ae35b7  msm: mdss: KCAL: Send a pp display commit when changes are made  [Alx31]
+ccbc2ab  mdss mdp: kcal for mdss_mdp_v1_7  [Alx31]
+e24d9a1  msm: vidc: disable CPU L2 cache PC during video sessions  [Alx31]
+be28f3b  Revert "msm: mdss: kcal: Add KCAL support for post processing control [v2]"  [Alx31]
+72e8abb  msm: mdss: kcal: Add KCAL support for post processing control [v2]  [Alx31]
+4604b13  qcom: msm-core: queue work on system_power_efficient_wq  [Alx31]
+1ba9393  msm: ipa: fix makefile so 'make clean' does it job  [Alx31]
+380d7c2  ipv6: fix out of bound writes in __ip6_append_data()  [Alx31]
+1089488  ipv6/dccp: do not inherit ipv6_mc_list from parent  [Alx31]
+e9d40a8  sctp: do not inherit ipv6_{mc|ac|fl}_list from parent  [Alx31]
+6ee6846  ipv6: Prevent overrun when parsing v6 header options  [Alx31]
+ce6dacc  msm: sensor: validating the flash initialization parameters  [Alx31]
+236387a  qseecom: add mutex around qseecom_set_client_mem_param  [Alx31]
+0f2c87b  msm: camera: cpp: Fixing Heap overflow in output buffer  [Alx31]
+   * manifest/
+90333b6  7.1.2_r17  [Prema Chand Alugu]
+3c17164  our libcore  [Prema Chand Alugu]
+4d8b925  our system/bt  [Prema Chand Alugu]
+   * packages/apps/Settings/
+3e789fe  Night light brightness options  [Prema Chand Alugu]
+7cd5e03  Settings: enable fast scroll for all app list views  [Prema Chand Alugu]
+b414407  Settings: fix FC if opening Audio Settings after enabling DND  [Prema Chand Alugu]
+   * packages/apps/Tavern/
+0317e63  GZR Colors into default in the ColorPicker  [Prema Chand Alugu]
+af2d6b8  Add ability to configure battery saver mode color (2/2)  [Prema Chand Alugu]
+   * vendor/tipsy/
+fab15fd  v6.1 RosteJeanne  [Prema Chand Alugu]
+82c4a64  Update GZRApp 3.1  [Prema Chand Alugu]
+95107f4  Update Nova 5.2  [Prema Chand Alugu]
+32cee2a  Do not sign the prebuilt apps again  [Prema Chand Alugu]
+abe29ce  GZRoms App - signed v3.0  [Prema Chand Alugu]

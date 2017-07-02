@@ -1,0 +1,151 @@
+====================
+     07-02-2017
+====================
+
+   * device/motorola/addison/
+4cf7b43  addison: Add qcom proprietary GPS stack  [Alx31]
+971fd8f  addison: Provide ASensor_getHandle for libmdmcutback  [Alx31]
+4c48c03  addison: Updates from NPN26.107 release  [Alx31]
+a71fcc6  ipacm: Fix KW issues  [Alx31]
+05cdee4  ipacm: Fix race condition between nat delete rule and update timestamp  [Alx31]
+ed4d2ac  Fix issue of incorrect set of used_in_fix flag  [Alx31]
+68fa232  Mark SV used_in_fix based on the most recent position report  [Alx31]
+890cc4a  fixing a potential race condition  [Alx31]
+9410a07  fixing a race condition on MsgTask::destroy()  [Alx31]
+   * kernel/motorola/msm8953/
+913dbf3  bad pastie from maple 3.18 update commit  [Alx31]
+192ecc7  maple: Tune presets a bit  [Alx31]
+2e0b3a4  MAPLE: update for linux 3.18 thanks to @flar2 for sio 3.18 update commit there c26f6caa348dc157f402008da0dfdd2d636966cb  [Alx31]
+0db4365  defconfigs: regenerate for maple iosched  [Alx31]
+950dab5  maple-iosched: Fix the -Wdeclaration-after-statement warnings  [Alx31]
+781d2d7  block: maple: Fix inverted logic  [Alx31]
+5a77676  block: maple: Make bools constant across functions  [Alx31]
+026fac9  block: maple: Use native display state instead of PowerSuspend  [Alx31]
+eb70a64  block: maple: Serve asynchronous requests before synchronous ones  [Alx31]
+4536f52  block: maple: Fix some logic, import former/latter request logic from SIO, and use some improved bits of SIO  [Alx31]
+ec72bcf  block: maple: Catch writes_starved sooner, increase limit.  [Alx31]
+ce016e6  block: maple: Clean up and add patchlevel macro to keep track of commits  [Alx31]
+ca9aae0f  block: maple: Remove CONFIG_HZ dependency, assume 300 for interrupt frequency  [Alx31]
+1775698  block: Add Maple I/O Scheduler  [Alx31]
+   * manifest/
+2015c49  press save y before pushing next time u gimp.  [Alx31]
+57a0af3  add & track 8998 HALs from tesla  [Alx31]
+2859d19  track our system_netd,system_ qcom & qcom_camera  [Alx31]
+9447c50  track our mediaprovider  [Alx31]
+   * vendor/motorola/
+cf9e967  addison: Add proprietary GPS stack  [Alx31]
+fb04597  addison: Update proprietary blobs (NPN26.107)  [Alx31]
+   * vendor/tipsy/
+efc9cbd  Satan_Red 1.6 week  [Alx31]
+42cb7ab  tipsy build: add qcom msm8998 target  [Alx31]
+535ba29  Magisk-v13.0-170624.zip  [Alx31]
+342ade3  MagiskManager-v5.0.2-170624.apk  [Alx31]
+6884e4d  let's get an cheeseburger  [Alx31]
+18c5415  changelog generated 06/25  [Alx31]
+
+====================
+     07-01-2017
+====================
+
+   * hardware/qcom/audio-caf/msm8998/
+227036d  hal: Allow building hardware audio encoders  [Martinusbe]
+9e7f3aa  fix build error  [Martinusbe]
+2948e70  audio: Use direct    * pathmap  [Martinusbe]
+   * hardware/qcom/display-caf/msm8998/
+57c7c0e  Don't build lights module if vendor supplies it  [Martinusbe]
+b40bed7  display: Use    * pathmap  [Martinusbe]
+   * hardware/qcom/media-caf/msm8998/
+2e56a44  mm-video: Disable proprietary extension  [Martinusbe]
+efc4d64  venc: Fix VQZip issue  [Martinusbe]
+af5a982  media: Avoid collision with FFMPEG plugin  [Martinusbe]
+ebd720e  vidc: Fix makefiles  [Martinusbe]
+a023385  media: Use    * pathmap  [Martinusbe]
+   * packages/resources/devicesettings/
+1b90917  Automatic translation import  [Abhisek Devkota]
+
+====================
+     06-30-2017
+====================
+
+
+====================
+     06-29-2017
+====================
+
+   * frameworks/base/
+d9068b3  Operator specific SIM icon customisation.  [Prema Chand Alugu]
+9a0d7c3  Add VoLTE preferred function control flag  [Prema Chand Alugu]
+c0d8648  telephony: Make the disconnect cause distinguishable  [Prema Chand Alugu]
+
+====================
+     06-28-2017
+====================
+
+   * frameworks/opt/telephony/
+44bea26  opt_telephony: Inline with LineageOS  [Martinusbe]
+22f233c  Error pop up is displayed when interrogating call forward menu  [Martinusbe]
+c6a0e56  Operator specific sim icon customisation.  [Martinusbe]
+c81f63a  Telephony: Use data and voice states for SPN  [Martinusbe]
+14e084c  Telephony: Reduce back to back same APN activation delay.  [Martinusbe]
+43de86c  MSIM: Clear status counter if session failed  [Martinusbe]
+88eae93  Move main thread in IPBIM to other thread to fix deadlock.  [Martinusbe]
+5f82c6c  Set Cdma roaming preference only for first time.  [Martinusbe]
+af07f00  IMS: Add the support of IMS call preferred capability  [Martinusbe]
+7035a4f  Support for emergency redial in multisim  [Martinusbe]
+52beca4  Telephony: Add CallFailCause values for clear code.  [Martinusbe]
+0ebc513  Add query operation when updated sim contact.  [Martinusbe]
+c5d407d  Telephony: Only one short sms can be read if long sms copied to CT card  [Martinusbe]
+d7c04b0  IMS: Fix call forward indicator issue for video calls  [Martinusbe]
+65d2773  IMS: Unregister for data enabled change with default phone  [Martinusbe]
+
+====================
+     06-27-2017
+====================
+
+   * hardware/qcom/camera/
+a86e83b  msm8998: don't enable sdclang  [Martinusbe]
+   * system/qcom/
+a31dd35  Merge remote-tracking branch 'los/cm-14.1' into HEAD  [Martinusbe]
+
+====================
+     06-26-2017
+====================
+
+   * device/qcom/common/
+98b5e8a  power: add msm8998 support from CAF tag LA.UM.5.7.r2-00900-8x98.0  [Martinusbe]
+   * external/stagefright-plugins/
+0c8eedb  ffmpeg-extractor: StageFright supports Opus files  [Josue Rivera]
+253eb18  Revert "FFmpegExtractor: Don't use our extractor when we agree with StageFright"  [Josue Rivera]
+   * packages/providers/ContactsProvider/
+783b44d  Fix merge derp  [Griffin Millender]
+   * packages/providers/MediaProvider/
+79c49ac  MediaProvider: Fix failure in android.provider.cts.MediaStore_FilesTest  [Martinusbe]
+d27079e  Gallery2: Fix thumbnails of new edit photos display wrongly in Documents.  [Martinusbe]
+7277295  Music: Fix force closed when plug out the SD card while music is playing.  [Martinusbe]
+e8762ae  MediaProvider: Fix SQLiteDiskIOException.  [Martinusbe]
+4fa5f66  Revert "Fix check for existence of parent"  [Martinusbe]
+37e1764  Revert "MediaProvider: Fix where condition of delete queries"  [Martinusbe]
+
+====================
+     06-25-2017
+====================
+
+   * build/
+1c528e7  envi: changelog generation added  [Alx31]
+   * frameworks/base/
+9bade0d  Added NULL check for Action Bar  [Alx31]
+57d2465  Aapt2: Fix png leak  [Alx31]
+43a0304  Destroy Allocation right away on exception  [Alx31]
+2d67694  SymbolComparator operator() is missing const  [Alx31]
+   * kernel/motorola/msm8953/
+1ead46e  clk: msm: gcc: Add support for active clients of SNOC/BIMC  [Alx31]
+c17da2b  msm: camera: Add check to ensure task wont hog CPU  [Alx31]
+5d5c406  msm: camera: Fix kernel panic in I2C read  [Alx31]
+dfd6131  Optimus Drunk now you are.  [Alx31]
+   * packages/services/OmniJaws/
+54269be  Automatic translation import  [Alx31]
+   * vendor/tipsy/
+452d197  Satan_Red_1.5  [Alx31]
+b4c617a  NovaLauncher_5.3-beta3  [Alx31]
+bf3bed4  Nova Google Companion v1.1  [Alx31]
+1d32e24  Add Nova Google Companion 1.0  [Alx31]

@@ -1,0 +1,160 @@
+====================
+     07-09-2017
+====================
+
+   * device/motorola/addison/
+2005b7d  addison: Remove deprecated BT props  [Alx31]
+42cf00f  addison: BT: Sync with CAF  [Alx31]
+   * vendor/tipsy/
+0f4aee0  v6.5 Tempelier  [Prema Chand Alugu]
+
+====================
+     07-08-2017
+====================
+
+   * bionic/
+5b286f4  linker: remove link from external library on unload  [Prema Chand Alugu]
+   * build/
+3e4d8a1  Make change and version bump to NHG47O  [Prema Chand Alugu]
+4dcc529  [DO NOT MERGE]Updating security string to 2017-07-05 on nyc-dev bug:38342695 (cherry picked from commit 96d958c34509a65e5f7787945f9923fb44c42f05)  [Prema Chand Alugu]
+72120d3  [DO NOT MERGE]Updating security string to 2017-07-01 on nyc-dev bug:38342695 (cherry picked from commit 77dad3dfcd677136f6657e1b95dd84ed1be1d728)  [Prema Chand Alugu]
+90d0c42  NHG47N  [Prema Chand Alugu]
+b76d29a  NHG47M  [Prema Chand Alugu]
+   * frameworks/av/
+e6f255e  Modifying MetaData invalidates previous char*  [Prema Chand Alugu]
+033a365  Fix memory leak in error case  [Prema Chand Alugu]
+093f02f  Limit ogg packet size  [Prema Chand Alugu]
+8ce238f  Prevent OOB write in soft_avc encoder  [Prema Chand Alugu]
+b6527f3  Don't allow using or allocating a buffer after the first state transition  [Prema Chand Alugu]
+   * frameworks/base/
+bed0a44  ZygoteInit: Remove CAP_SYS_RESOURCE  [Prema Chand Alugu]
+4e25821  system_server: add CAP_SYS_PTRACE  [Prema Chand Alugu]
+4413cfd  Fix re-enabling alert window appop after leaving VR mode.  [Prema Chand Alugu]
+449c0fa  Make a11y node info parceling more robust  [Prema Chand Alugu]
+f75557a  Theme: restore default colors for Light theme [1/2]  [Prema Chand Alugu]
+   * frameworks/native/
+342aaf9  libgui: check for invalid slot in attachBuffer  [Prema Chand Alugu]
+8fc83c8  libgui: Check slot received from IGBP in Surface  [Prema Chand Alugu]
+794a357  ui: Fix bad size check in Fence::unflatten  [Prema Chand Alugu]
+   * libcore/
+ce982ed  Proper fix for rejecting ftp URL with /r/n.  [Prema Chand Alugu]
+   * manifest/
+6897dce  7.1.2_r23  [Prema Chand Alugu]
+8932bf4  track json-c from Tesla  [Prema Chand Alugu]
+94492e7  track our qcom keymaster  [Prema Chand Alugu]
+   * packages/apps/Jelly/
+7b4ecc7  Jelly: Add save form data setting  [Prema Chand Alugu]
+3e2ed60  Jelly: add Do Not Track setting  [Prema Chand Alugu]
+554f7e8  Jelly: Update android tools build  [Prema Chand Alugu]
+89617fc  Jelly: Enable safe browsing  [Prema Chand Alugu]
+84e2cfd  Automatic translation import  [Prema Chand Alugu]
+b2bd719  Jelly: Guess filename from URL  [Prema Chand Alugu]
+6a5aaa4  Jelly: Allow media scan on download  [Prema Chand Alugu]
+942af3b  Jelly: Show download notification on completed  [Prema Chand Alugu]
+   * packages/apps/Settings/
+f1099c0  Fix phishing attack in ChooseLockGeneric  [Prema Chand Alugu]
+0ebd1fa  resolve merge conflicts of 3964c51bf2 to nyc-dev  [Prema Chand Alugu]
+   * packages/apps/Tavern/
+8530633  Theme: restore default colors for Light theme [2/2]  [Prema Chand Alugu]
+   * packages/providers/MediaProvider/
+76bcbed  [DO NOT MERGE] Enforce user separation on external storage  [Prema Chand Alugu]
+   * system/sepolicy/
+3b7f75d  system_server: replace sys_resource with sys_ptrace  [Prema Chand Alugu]
+   * vendor/motorola/
+a612786  shamu: proprietary blobs for 7.1.1 (N6F27H)  [Mirko]
+   * vendor/tipsy/
+efff88c  build: qcom_target: Define MASTER_SIDE_CP_TARGET_LIST  [Prema Chand Alugu]
+
+====================
+     07-07-2017
+====================
+
+   * hardware/qcom/audio-caf/msm8998/
+6939649  Merge remote-tracking branch 'oss/oneplus/QC8998_N_7.1' into HEAD  [Martinusbe]
+   * hardware/qcom/display-caf/msm8998/
+77543cf  Merge remote-tracking branch 'oss/oneplus/QC8998_N_7.1' into n7.1-caf-8998  [Martinusbe]
+   * hardware/qcom/media-caf/msm8998/
+85921d3  Merge remote-tracking branch 'oss/oneplus/QC8998_N_7.1' into HEAD  [Martinusbe]
+
+====================
+     07-06-2017
+====================
+
+   * external/skia/
+517fcaf  Set a limit on the size for BMP images DO NOT MERGE  [Josue Rivera]
+   * packages/providers/DownloadProvider/
+76227aa  DO NOT MERGE Deleting downloads for removed uids on downloadprovider start  [Josue Rivera]
+
+====================
+     07-05-2017
+====================
+
+   * external/stagefright-plugins/
+f795440  FFmpegExtractor: Fix "supported" typo in logs  [Josue Rivera]
+   * hardware/qcom/audio-caf/msm8998/
+0549bbb  Synchronize codes for OxygenOS 4.5.5  [shankai]
+
+====================
+     07-04-2017
+====================
+
+   * packages/resources/devicesettings/
+bc9d3c1  Automatic translation import  [Abhisek Devkota]
+
+====================
+     07-03-2017
+====================
+
+   * hardware/qcom/audio-caf/msm8916/
+371ff65  Merge remote-tracking branch 'caf/LA.BR.1.2.9_rb1.22' into cm-14.1-caf-8916  [Josue Rivera]
+f1e8e10  aenc-aac: bounds checking  [Josue Rivera]
+
+====================
+     07-02-2017
+====================
+
+   * device/motorola/addison/
+4cf7b43  addison: Add qcom proprietary GPS stack  [Alx31]
+971fd8f  addison: Provide ASensor_getHandle for libmdmcutback  [Alx31]
+4c48c03  addison: Updates from NPN26.107 release  [Alx31]
+a71fcc6  ipacm: Fix KW issues  [Alx31]
+05cdee4  ipacm: Fix race condition between nat delete rule and update timestamp  [Alx31]
+ed4d2ac  Fix issue of incorrect set of used_in_fix flag  [Alx31]
+68fa232  Mark SV used_in_fix based on the most recent position report  [Alx31]
+890cc4a  fixing a potential race condition  [Alx31]
+9410a07  fixing a race condition on MsgTask::destroy()  [Alx31]
+   * hardware/qcom/fm/
+b488cea  Automatic translation import  [Josue Rivera]
+   * hardware/qcom/keymaster/
+c83f560  keymaster: add msm8996 into support list  [Martinusbe]
+79c9048  keymaster: add msm8998 into support list  [Martinusbe]
+   * kernel/motorola/msm8953/
+913dbf3  bad pastie from maple 3.18 update commit  [Alx31]
+192ecc7  maple: Tune presets a bit  [Alx31]
+2e0b3a4  MAPLE: update for linux 3.18 thanks to @flar2 for sio 3.18 update commit there c26f6caa348dc157f402008da0dfdd2d636966cb  [Alx31]
+0db4365  defconfigs: regenerate for maple iosched  [Alx31]
+950dab5  maple-iosched: Fix the -Wdeclaration-after-statement warnings  [Alx31]
+781d2d7  block: maple: Fix inverted logic  [Alx31]
+5a77676  block: maple: Make bools constant across functions  [Alx31]
+026fac9  block: maple: Use native display state instead of PowerSuspend  [Alx31]
+eb70a64  block: maple: Serve asynchronous requests before synchronous ones  [Alx31]
+4536f52  block: maple: Fix some logic, import former/latter request logic from SIO, and use some improved bits of SIO  [Alx31]
+ec72bcf  block: maple: Catch writes_starved sooner, increase limit.  [Alx31]
+ce016e6  block: maple: Clean up and add patchlevel macro to keep track of commits  [Alx31]
+ca9aae0f  block: maple: Remove CONFIG_HZ dependency, assume 300 for interrupt frequency  [Alx31]
+1775698  block: Add Maple I/O Scheduler  [Alx31]
+   * manifest/
+2015c49  press save y before pushing next time u gimp.  [Alx31]
+57a0af3  add & track 8998 HALs from tesla  [Alx31]
+2859d19  track our system_netd,system_ qcom & qcom_camera  [Alx31]
+9447c50  track our mediaprovider  [Alx31]
+   * vendor/motorola/
+cf9e967  addison: Add proprietary GPS stack  [Alx31]
+fb04597  addison: Update proprietary blobs (NPN26.107)  [Alx31]
+   * vendor/tipsy/
+efc9cbd  Satan_Red 1.6 week  [Alx31]
+42cb7ab  tipsy build: add qcom msm8998 target  [Alx31]
+535ba29  Magisk-v13.0-170624.zip  [Alx31]
+342ade3  MagiskManager-v5.0.2-170624.apk  [Alx31]
+6884e4d  let's get an cheeseburger  [Alx31]
+18c5415  changelog generated 06/25  [Alx31]

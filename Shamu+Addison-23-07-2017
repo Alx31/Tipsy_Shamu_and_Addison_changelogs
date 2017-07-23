@@ -1,0 +1,147 @@
+====================
+     07-23-2017
+====================
+
+   * build/
+66a5c3a  releasetools: Delete the obsolete --aslr_mode/-a flag.  [Martinusbe]
+b591311  releasetools: Remove recovery build remnants  [Martinusbe]
+a5ec79c  ota_from_target_files: Don't update recovery image  [Martinusbe]
+b423a81  Fix Build  [Martinusbe]
+e2f7eaf  ota: Remove cruft we don't care about  [Martinusbe]
+   * device/motorola/addison/
+7884a6c  Revert "addison: BT: Sync with CAF"  [Alx31]
+   * frameworks/base/
+a3356e9  Tipsy Logo: Color picker [1/2]  [Martinusbe]
+675494a  BootReceiver: check console-ramoops-0  [Martinusbe]
+02477a4  ScreenCap : Add jpeg support  [Martinusbe]
+c35f67b  SystemUI: Fix Notification Background Color Issue  [Martinusbe]
+f9e3709  frameworks/base: reduce the setTransactions  [Martinusbe]
+168c518  PowerProfile: allow overriding default power profile  [Martinusbe]
+   * frameworks/native/
+e9b014c  Merge pull request #12 from TipsyOs/testing  [GitHub]
+   * manifest/
+11ac8f7  track our vendor_qcom_opensource_bluetooth  [Martinusbe]
+   * packages/apps/Bluetooth/
+b32867b  Merge pull request #1 from TipsyOs/testing  [GitHub]
+   * packages/apps/Settings/
+425857b  Development Settings: Show on all build types  [Martinusbe]
+   * packages/apps/Tavern/
+a39f5dd  Tipsy Logo: Color picker [2/2]  [Martinusbe]
+1e65ce8  Remove menu/dialog from Tavern  [Martinusbe]
+   * packages/resources/devicesettings/
+1ff6d8c  Automatic translation import  [Abhisek Devkota]
+   * vendor/tipsy/
+8d580a8  v6.6 Ultra Blonde  [Martinusbe]
+418df59  Magisk: update zip to 13.3  [Martinusbe]
+039c8fe  Magisk: update apk to 5.1.1  [Martinusbe]
+7281880  magisk: official apk v5.0.5  [Martinusbe]
+e5dc846  magisk: official v13.2.zip  [Martinusbe]
+40f6cf6  qcom: Enable TARGET_USES_QCOM_MM_AUDIO  [Martinusbe]
+a5799b4  tipsy: Use toybox  [Martinusbe]
+
+====================
+     07-22-2017
+====================
+
+   * kernel/motorola/msm8953/
+be2c465  addison: Disable CORESIGHT  [Alx31]
+5420f47  defconfigs: regenerate for 3.18.62  [Alx31]
+2678aa4  Linux 3.18.62  [Alx31]
+8b65da7  tracing: Use SOFTIRQ_OFFSET for softirq dectection for more accurate results  [Alx31]
+a0fc3e9  PM / QoS: return -EINVAL for bogus strings  [Alx31]
+b7632de  sched/topology: Fix overlapping sched_group_mask  [Alx31]
+8661c46  sched/topology: Optimize build_group_mask()  [Alx31]
+d6c2d68  crypto: caam - fix signals handling  [Alx31]
+7b5d91d  crypto: sha1-ssse3 - Disable avx2  [Alx31]
+0a16cf2  crypto: atmel - only treat EBUSY as transient if backlog  [Alx31]
+09271ac  crypto: talitos - Extend max key length for SHA384/512-HMAC and AEAD  [Alx31]
+d66a5ac  mm: fix overflow check in expand_upwards()  [Alx31]
+3762838  vt: fix unchecked __put_user() in tioclinux ioctls  [Alx31]
+60c5aff  exec: Limit arg stack to at most 75% of _STK_LIM  [Alx31]
+e9a375f  checkpatch: silence perl 5.26.0 unescaped left brace warnings  [Alx31]
+29cd9f8  fs/dcache.c: fix spin lockup issue on nlru->lock  [Alx31]
+429cc6e  kernel/extable.c: mark core_kernel_text notrace  [Alx31]
+0b6b769  tools/lib/lockdep: Reduce MAX_LOCK_DEPTH to avoid overflowing lock_chain/: Depth  [Alx31]
+5774cf9  parisc/mm: Ensure IRQs are off in switch_mm()  [Alx31]
+623db36  parisc: DMA API: return error instead of BUG_ON for dma ops on non dma devs  [Alx31]
+645e19a  parisc: use compat_sys_keyctl()  [Alx31]
+fe5d84a  parisc: Report SIGSEGV instead of SIGBUS when running out of stack  [Alx31]
+608625a  irqchip/gic-v3: Fix out-of-bound access in gic_set_affinity  [Alx31]
+a683e73  cfg80211: Check if PMKID attribute is of expected size  [Alx31]
+fbe8666  cfg80211: Validate frequencies nested in NL80211_ATTR_SCAN_FREQUENCIES  [Alx31]
+e513d44  cfg80211: Define nla_policy for NL80211_ATTR_LOCAL_MESH_POWER_MODE  [Alx31]
+2fc6ca8  brcmfmac: fix possible buffer overflow in brcmf_cfg80211_mgmt_tx()  [Alx31]
+6baa955  ipv6: dad: don't remove dynamic addresses if link is down  [Alx31]
+1b926c5  net: prevent sign extension in dev_get_stats()  [Alx31]
+a0eebda  tcp: reset sk_rx_dst in tcp_disconnect()  [Alx31]
+4025008  ipv6: avoid unregistering inet6_dev for loopback  [Alx31]
+
+====================
+     07-21-2017
+====================
+
+   * frameworks/native/
+4ceda1c  Surface: Use async lock/unlock in copyBlt  [Martinusbe]
+1a9d312  Surface: Ensure synchronisation of copyBlt  [Martinusbe]
+4bb3bab  surfaceflinger: Validate setposition parameters  [Martinusbe]
+313cf74  sf: Fix GPU coordinates computation.  [Martinusbe]
+6a98e50  sf: Limit co-ordinates difference fix for high res panel  [Martinusbe]
+7c217e4  surfaceflinger: Fix continuous SF dump.  [Martinusbe]
+   * packages/apps/Snap/
+368e4d4  Revert some permissions related changes  [Martinusbe]
+9be0b52  Add overlay for restarting camera preview for additional cameras  [Martinusbe]
+5279f35  Automatic translation import  [Martinusbe]
+a22ff4a  Automatic translation import  [Martinusbe]
+
+====================
+     07-20-2017
+====================
+
+
+====================
+     07-19-2017
+====================
+
+   * hardware/qcom/audio-caf/msm8998/
+2a73b55  Revert "hal: Allow building hardware audio encoders"  [Martinusbe]
+
+====================
+     07-18-2017
+====================
+
+
+====================
+     07-17-2017
+====================
+
+   * bootable/recovery/
+cae9a3b  updater: Allow devices to suppress BLKDISCARD  [Martinusbe]
+
+====================
+     07-16-2017
+====================
+
+   * kernel/motorola/msm8953/
+47dfd8e  defconfig: regenerate for 3.18.61  [Alx31]
+8310755  Linux 3.18.61  [Alx31]
+ae18373  saa7134: fix warm Medion 7134 EEPROM read  [Alx31]
+24c669e  staging: comedi: fix clean-up of comedi_class in comedi_init()  [Alx31]
+a56e5ec  staging: vt6556: vnt_start Fix missing call to vnt_key_init_table.  [Alx31]
+b6bcf34  md: fix super_offset endianness in super_1_rdev_size_change  [Alx31]
+1aa6d7b  mqueue: fix a use-after-free in sys_mq_notify()  [Alx31]
+f869fa3  KEYS: Fix an error code in request_master_key()  [Alx31]
+25e7d6a  USB: serial: qcserial: new Sierra Wireless EM7305 device ID  [Alx31]
+b550078  USB: serial: option: add two Longcheer device ids  [Alx31]
+524edeb  pinctrl: sh-pfc: Update info pointer after SoC-specific init  [Alx31]
+6545cbe  pinctrl: mxs: atomically switch mux and drive strength config  [Alx31]
+9a020ec  usb: Fix typo in the definition of Endpoint[out]Request  [Alx31]
+dca0eed  usb: usbip: set buffer pointers to NULL after free  [Alx31]
+67685a0  Add USB quirk for HVR-950q to avoid intermittent device resets  [Alx31]
+9217cbf  USB: serial: cp210x: add ID for CEL EM3588 USB ZigBee stick  [Alx31]
+cc126e8  usb: dwc3: replace %p with %pK  [Alx31]
+3f50d17  tracing/kprobes: Allow to create probe with a module name starting with a digit  [Alx31]
+709d9d3  usb: ehci-orion: fix probe for !GENERIC_PHY  [Alx31]
+5d695cc  bgmac: reset & enable Ethernet core before using it  [Alx31]
+5b6c5c6  bgmac: fix device initialization on Northstar SoCs (condition typo)  [Alx31]
+11a414c  MIPS: UAPI: Ignore __arch_swab{16,32,64} when using MIPS16  [Alx31]
+50893a1  driver core: platform: fix race condition with driver_override  [Alx31]

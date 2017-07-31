@@ -1,0 +1,165 @@
+====================
+     07-31-2017
+====================
+
+   * device/moto/shamu/
+05231c0  default root method = SuperSU  [Alx31]
+   * vendor/tipsy/
+f104f4b  v6.6.1  [Alx31]
+
+====================
+     07-30-2017
+====================
+
+   * device/motorola/addison/
+140ffe4  default root method= supersu  [Alx31]
+   * frameworks/base/
+f2c1b8f  Expose screen pinning dialog background and text color  [Alx31]
+   * packages/apps/Settings/
+48e57a4  SimSettings: avoid NPE  [Alx31]
+4c67d30  Optimized Code: call direct method to get integer extra  [Alx31]
+877cd88  MSIM: Fix user set DDS sub in hotswap cases.  [Alx31]
+   * vendor/tipsy/
+8a6914e  fix superSU compilation  [Alx31]
+3949c80  fix supersu... Prema was drunk xD  [Alx31]
+
+====================
+     07-29-2017
+====================
+
+   * device/motorola/addison/
+44465f8  addison: fix camera one permissions  [Alx31]
+15e4e6e  Addison: Add support to install motorola camera as system app  [Alx31]
+21139f3  addison: Deny Moto Camera installation from the Play Store  [Alx31]
+d8c0b89  addison: Fix target header path  [Alx31]
+19a301b  addison: Remove writes to non-existent nodes  [Alx31]
+9458bb0  addison: Remove writes to non-existent IPv6 nodes  [Alx31]
+70d06f3  addison: Update peripheral manager to drop net_raw  [Alx31]
+82e3854  addison: sepolicy: Remove dac_override capability from Moto scripts  [Alx31]
+f1b5255  init: Drop NET_RAW and NET_ADMIN from qti  [Alx31]
+92d98c7  addison: Remove DAC override permission from netmgrd  [Alx31]
+96b56ca  Grant netmgrd proper unix perms  [Alx31]
+53abbd2  addison: sepolicy: Fix rild denials  [Alx31]
+   * kernel/motorola/msm8953/
+397b105  usb: phy: qusb2: Enable phy auto-resume  [Alx31]
+0bc066d  Merge tag 'LA.UM.5.6.r1-05400-89xx.0' into rebase  [Alx31]
+6148afc1  Merge "usb: gadget: Fix incorrect ISOC data transfer PIDs"  [Alx31]
+be075fc  usb: dwc3: gadget: Fix start transfer errors for ISOC endpoints  [Alx31]
+81b9655  Revert "power: qpnp-fg: Coulomb Counting Error"  [Alx31]
+12ab39d  msm: camera: isp: Reserve unified buffer(ub) space for rdi  [Alx31]
+2de4435  msm: camera: don't cut to 8bits for validating enum variable  [Alx31]
+c3bf91e  Revert "msm: jpeg: DMA V4L2 driver changes"  [Alx31]
+165a7d9  Revert "msm: camera: jpegdma: Check for compat config"  [Alx31]
+f084cbb  Revert "msm: camera: Synchronize jpeg ISR and userspace call"  [Alx31]
+58c8eb4  msm: camera: Synchronize jpeg ISR and userspace call  [Alx31]
+da0a70e  msm: camera: jpegdma: Check for compat config  [Alx31]
+0ece88e  msm: jpeg: DMA V4L2 driver changes  [Alx31]
+5d280ce  msm: camera: Optionally include changes for 2017 Motorola devices  [Alx31]
+f4b9340  drivers:leds: add hw strobe disable flag  [Alx31]
+83616ab  msm: camera: Add sensor model id  [Alx31]
+68d1144  defconfigs: regenerate for 3.18.63  [Alx31]
+837b7d1  fp-boost: Decrease duration to 2 seconds  [Alx31]
+0412bd7  Revert "fs: Disable fsync by default"  [Alx31]
+e56a321  Linux 3.18.63  [Alx31]
+d80347f  MIPS: Send SIGILL for BPOSGE32 in `__compute_return_epc_for_insn'  [Alx31]
+4a35e88  alarmtimer: don't rate limit one-shot timers  [Alx31]
+bebdbeb  tracing: Fix kmemleak in instance_rmdir  [Alx31]
+8f09493  spmi: Include OF based modalias in device uevent  [Alx31]
+d3374eb  of: device: Export of_device_{get_modalias, uvent_modalias} to modules  [Alx31]
+5365644  KVM: PPC: Book3S HV: Context-switch EBB registers properly  [Alx31]
+6aabf54  drm/mst: Avoid processing partially received up/down message transactions  [Alx31]
+b66be60  drm/mst: Avoid dereferencing a NULL mstb in drm_dp_mst_handle_up_req()  [Alx31]
+21f5b5b  drm/mst: Fix error handling during MST sideband message reception  [Alx31]
+82f741e  staging: rtl8188eu: add TL-WN722N v2 support  [Alx31]
+60606bf  Revert "perf/core: Drop kernel samples even though :u is specified"  [Alx31]
+ceb91e3  perf annotate: Fix broken arrow at row 0 connecting jmp instruction to its target  [Alx31]
+e1cf324  target: Fix COMPARE_AND_WRITE caw_sem leak during se_cmd quiesce  [Alx31]
+25c8c2e  udf: Fix deadlock between writeback and udf_setsize()  [Alx31]
+c43402d  NFS: only invalidate dentrys that are clearly invalid.  [Alx31]
+c6b8ea2  Input: i8042 - fix crash at boot time  [Alx31]
+eb72be0  MIPS: math-emu: Prevent wrong ISA mode instruction emulation  [Alx31]
+636de81  MIPS: Fix unaligned PC interpretation in `compute_return_epc'  [Alx31]
+28a787f  MIPS: Actually decode JALX in `__compute_return_epc_for_insn'  [Alx31]
+fc6bf5d  MIPS: Save static registers before sysmips  [Alx31]
+f63fb61  x86/acpi: Prevent out of bound access caused by broken ACPI tables  [Alx31]
+90a3c3a  MIPS: Negate error syscall return in trace  [Alx31]
+3a85227  MIPS: Fix mips_atomic_set() with EVA  [Alx31]
+2b64692  MIPS: Fix mips_atomic_set() retry condition  [Alx31]
+1fef606  vfio: New external user group/file match  [Alx31]
+c01b887  vfio: Fix group release deadlock  [Alx31]
+2ed9f9d  f2fs: Don't clear SGID when inheriting ACLs  [Alx31]
+368c734  drm/radeon/ci: disable mclk switching for high refresh rates (v2)  [Alx31]
+6c101eb  s390/syscalls: Fix out of bounds arguments access  [Alx31]
+c383c80  Raid5 should update rdev->sectors after reshape  [Alx31]
+53705f6  md: don't use flush_signals in userspace processes  [Alx31]
+561c111  usb: renesas_usbhs: fix usbhsc_resume() for !USBHSF_RUNTIME_PWCTRL  [Alx31]
+1da0d40  USB: cdc-acm: add device-id for quirky printer  [Alx31]
+70e84b2  usb: storage: return on error to avoid a null pointer dereference  [Alx31]
+53e1aba  xhci: Fix NULL pointer dereference when cleaning up streams for removed host  [Alx31]
+74fc8f2  xhci: fix 20000ms port resume timeout  [Alx31]
+451d814  PCI/PM: Restore the status of PCI devices across hibernation  [Alx31]
+fe2da27  af_key: Fix sadb_x_ipsecrequest parsing  [Alx31]
+52c17fe  powerpc/asm: Mark cr0 as clobbered in mftb()  [Alx31]
+e7ef459  powerpc: Fix emulation of mfocrf in emulate_step()  [Alx31]
+9fd904d  powerpc: Fix emulation of mcrf in emulate_step()  [Alx31]
+295799b  powerpc/64: Fix atomic64_inc_not_zero() to return an int  [Alx31]
+c9dbffe  scsi: ses: do not add a device to an enclosure if enclosure_add_links() fails.  [Alx31]
+fcfe1fa  PM / Domains: Fix unsafe iteration over modified list of domain providers  [Alx31]
+78298e2  PM / Domains: Fix unsafe iteration over modified list of device links  [Alx31]
+bd15b6d  ASoC: compress: Derive substream from stream based on direction  [Alx31]
+e9f108f  Bluetooth: use constant time memory comparison for secret values  [Alx31]
+0001a59  NFC: Add sockaddr length checks before accessing sa_family in bind handlers  [Alx31]
+738e05d  stddef.h: move offsetofend inside #ifndef/#endif guard, neaten  [Alx31]
+5aa3b3a  include/stddef.h: Move offsetofend() from vfio.h to a generic kernel header  [Alx31]
+70ab963  nfc: Fix the sockaddr length sanitization in llcp_sock_connect  [Alx31]
+b385fed  nfc: Ensure presence of required attributes in the activate_target handler  [Alx31]
+9f24615  NFC: fix broken device allocation  [Alx31]
+77df447  ath9k: fix tx99 bus error  [Alx31]
+daa11f8  ath9k: fix tx99 use after free  [Alx31]
+cecb9da  CIFS: Fix handle_cancelled_mid callback initialization  [Alx31]
+fd7c4e0  ir-core: fix gcc-7 warning on bool arithmetic  [Alx31]
+b2519a2  x86/rtc: Remove duplicate const specifier  [Alx31]
+2256151  kvm: x86: memset whole irq_eoi  [Alx31]
+c65e684  disable new gcc-7.1.1 warnings for now  [Alx31]
+
+====================
+     07-28-2017
+====================
+
+
+====================
+     07-27-2017
+====================
+
+
+====================
+     07-26-2017
+====================
+
+   * packages/resources/devicesettings/
+1550893  Automatic translation import  [Abhisek Devkota]
+
+====================
+     07-25-2017
+====================
+
+   * packages/apps/masquerade/
+fc35e92  JobService: Use a ContentObserver to check for force authorisation of packages  [Martinusbe]
+   * system/sepolicy/
+e3456af  interfacer: Allow interfacer to find content_service  [Martinusbe]
+
+====================
+     07-24-2017
+====================
+
+   * hardware/qcom/fm/
+b3b28cc  Automatic translation import  [Josue Rivera]
+a62728c  FM: Use some sane colors  [Josue Rivera]
+   * packages/apps/Camera2/
+af3d518  Automatic translation import  [Josue Rivera]
+2d4becd  Automatic translation import  [Josue Rivera]
+f7167a2  Automatic translation import  [Josue Rivera]
+7cddf2c  Automatic translation import  [Josue Rivera]
+   * vendor/qcom/opensource/dataservices/
+8c598b4  datatop: Remove unused variables from datatop_ip_table_poll.c  [Josue Rivera]
+2e9f0a5  datatop: Fix out_dir array empty content verification  [Josue Rivera]

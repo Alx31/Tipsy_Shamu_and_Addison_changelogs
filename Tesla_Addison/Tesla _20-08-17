@@ -1,0 +1,160 @@
+====================
+     08-20-2017
+====================
+
+
+   * packages/apps/Dialer/
+8f7d953 IMS-VT: Transmit static image when multitasking
+14688f5 IMS-VT: Send static image in a Video Call
+388e06c Use TabLayout for DSDA tabs.
+3cc80be IMS: Do not mute the Mic during add call
+552ada7 IMS-VT: Control display of player, video quality, data usage toasts
+
+   * packages/apps/Jelly/
+3b1f873 Revert "Jelly: Add WebChromeClientCompat"
+5a7eb9b Revert "Jelly: Add "search in page" feature"
+f874925 Jelly: Improve incognito mode privacy
+b26785c Jelly: Enable more HTML5 features
+ef275d4 Jelly: Don't crash on non-http downloads
+1c20e04 Jelly: remove 'Mobile' from desktop user agent
+38b5bd9 Jelly: Add "search in page" feature
+91b0e31 Jelly: Query an already ordered favorite list
+739b35b Jelly: Don't save form data in incognito mode
+b597710 Automatic translation import
+357f473 Jelly: Add non encrypted google search engine
+85e1dec Jelly: Propagate custom request headers to WebClient
+1491f56 Jelly: Add show/hide keyboard utilities
+74005e4 Jelly: Search on Enter key
+2327c9b Jelly: Don't reload on keyboard changes
+bafd88a Jelly: Add WebChromeClientCompat
+
+   * packages/resources/devicesettings/
+9620e09 Automatic translation import
+
+   * vendor/codeaurora/telephony/
+bbf0777 IMS-VT: Add config that controls visibility of static Image UI
+
+   * vendor/motorola/
+6d3af9d addison: Import QTI Telephony blobs from OP3 OB21 / OB12
+c6e7018 addison: Drop batt_health
+b2ec543 addison: Update Proprietary blobs (NPN26.118-22)
+
+====================
+     08-19-2017
+====================
+
+
+   * device/motorola/addison/
+e308ac8 fix build qti_init_shell bluetooth_loader_exec breaks on device/motorola/addison/sepolicy/qti_init_shell.te:2:ERROR 'unknown type bluetooth_loader_exec' at token ';' on line 37282:
+
+   * packages/apps/Bluetooth/
+c4a5267 Directly inform Audio HAL regarding SCO state change
+
+   * system/bt/
+1739c16 AV: Use separate AV sig timeout timer for dual connections.
+8936c7d BT : Introduced an internal queue in hci thread to hold commands
+5f357c8 Fix: btapp will crash when pair request from both DUT & Remote device simultaneously
+d259542 RFCOMM: stop multiplexer disconnect timer while reconnect DLC
+ae1fb27 Fix time consuming doing Bluetooth OFF/ON while a2dp steaming.
+b125b53 Fix timestamp error in btsnoop log
+ee77c63 check controller state before handling gatt client request.
+2dce455 SDP: Dont start SDP search with invalid BD Addr
+5f8c53d Configure correct remote MTU
+b816483 audio_a2dp_hw: add audio_a2dp_check_ready for split A2DP
+250dbfe bt: enable BT_HOST_IPC_ENABLED for msm8998
+
+====================
+     08-18-2017
+====================
+
+
+   * hardware/qcom/bt/
+793f635 libbt-qcom: Allow reading BT address from property
+
+   * hardware/qcom/bt-caf/
+0fbe01c Revert "Merge tag 'LA.UM.5.5.r1-04900-8x96.0' into HEAD"
+084ee04 libbt-qcom: Allow reading BT address from property
+
+====================
+     08-17-2017
+====================
+
+
+   * device/motorola/addison/
+2a7174a fcking derp from mobile smh
+5aef16b addison: Read BT address from property
+e1329ba overlay: Disable non-AOSP Bluetooth-features
+8827e98 overlay: Hide sRGB toggle in developer options
+4c4b9f1 init.qcom.rc: update for sioplus
+347fdb9 addison: rootdir: usb: Remove leading "0x" on idProduct
+eb4aeb3 addison: Actually link ADSP firmware to system/etc/firmware
+aaf3126 addison: wifi: Fix symlink path
+4823e96 addison: Restore hciattach
+3856170 default root method= supersu
+997d1c4 addison: fix camera one permissions
+c121a25 Addison: Add support to install motorola camera as system app
+0d888f1 addison: Deny Moto Camera installation from the Play Store
+077ad22 addison: Fix target header path
+1cde5cc addison: Remove writes to non-existent nodes
+9a7c338 addison: Remove writes to non-existent IPv6 nodes
+94e7606 addison: Update peripheral manager to drop net_raw
+4a0ab43 addison: sepolicy: Remove dac_override capability from Moto scripts
+c8b2909 init: Drop NET_RAW and NET_ADMIN from qti
+fd43180 addison: Remove DAC override permission from netmgrd
+7b8405c Grant netmgrd proper unix perms
+ec27736 addison: sepolicy: Fix rild denials
+d3e6903 addison: Remove deprecated BT props
+2826705 addison: BT: Sync with CAF
+
+   * external/DUtils/
+04baafd DUtils: Migrate from broadcasts to API for some action handling [2/2]
+
+   * frameworks/base/
+dd0c121 base: audioservice: Set BT_SCO status
+aa5e4ab SEEMP: Adding auth framework for outgoing SMS messages.
+4913e60 Fix static analyzer complaints
+a08971e BootReceiver: check console-ramoops-0
+b965013 DUtils: Migrate from broadcasts to API for some action handling [1/2]
+
+   * kernel/motorola/msm8953/
+e649195 defconfigs: regenerate for 3.18.66
+503c884 Linux 3.18.66
+205dc5d pinctrl: samsung: Remove bogus irq_[un]mask from resource management
+7555010 pinctrl: sunxi: add a missing function of A10/A20 pinctrl driver
+d6efaf5 pnfs/blocklayout: require 64-bit sector_t
+c7537f5 iio: adc: vf610_adc: Fix VALT selection value for REFSEL bits
+9547e63 usb:xhci:Add quirk for Certain failing HP keyboard on reset after resume
+df61cef usb: quirks: Add no-lpm quirk for Moshi USB to Ethernet Adapter
+fb5e5f9 USB: Check for dropped connection before switching to full speed
+261b30d uas: Add US_FL_IGNORE_RESIDUE for Initio Corporation INIC-3069
+27d82aa iio: light: tsl2563: use correct event code
+b0c6533 staging:iio:resolver:ad2s1210 fix negative IIO_ANGL_VEL read
+ad1609d USB: hcd: Mark secondary HCD as dead if the primary one died
+7fe76e5 usb: musb: fix tx fifo flush handling again
+c78bf3c USB: serial: cp210x: add support for Qivicon USB ZigBee dongle
+625fc75 USB: serial: option: add D-Link DWM-222 device ID
+0d5a5eb fuse: initialize the flock flag in fuse_file on allocation
+8cc0edd mm: ratelimit PFNs busy info message
+
+   * libcore/
+c6175b8 Fix clang static analyzer warning in libcore
+
+   * packages/apps/MusicFX/
+56bbfd3 MusicFX: make it persistent
+
+   * system/core/
+53b696f logcat: Add missing newline to read failure
+6024945 init.rc: setup console-ramoops-0
+e32b81c healthd: check console-ramoops-0
+083d333 fs_mgr: check console-ramoops-0
+c728872 init.rc: Fix potential task-throttling for regular tasks
+
+   * vendor/tesla/
+427cfb2 apns: correct the mvno_match_data for MasMovil Spain
+334b2e4 APNs: add IMS APNs for Airtel [IN]
+a1b91f6 Update Turbo from August images
+
+====================
+     08-16-2017
+====================
+

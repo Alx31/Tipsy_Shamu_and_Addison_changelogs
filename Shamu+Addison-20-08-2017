@@ -1,0 +1,277 @@
+====================
+     08-20-2017
+====================
+
+   * frameworks/base/
+ef583e4  Tipsy Logo: default logos color filter to white  [Prema Chand Alugu]
+58fbe88  BatteryService: add dash charging support  [Prema Chand Alugu]
+a65e7fc  Camera2: Fix Error Callback if buffer lost.  [Prema Chand Alugu]
+39f6dab  Camera: ignore torch status update for aux or compsite camera  [Prema Chand Alugu]
+180c2c6  base: audioservice: Set BT_SCO status  [Prema Chand Alugu]
+b2dffca  IME Switcher notification [1/2]  [Prema Chand Alugu]
+   * frameworks/native/
+a0a2cf7  native: Increase ART heap limit to 192MB for 1024MB RAM devices  [Prema Chand Alugu]
+c34690e  SF: Improve hwrotation handling  [Prema Chand Alugu]
+a792722  fix race condition that can cause a use after free  [Prema Chand Alugu]
+   * packages/apps/Dialer/
+be68d2a  Dialer: Fix compilation warnings  [Prema Chand Alugu]
+   * packages/apps/Jelly/
+3b1f873  Revert "Jelly: Add WebChromeClientCompat"  [Prema Chand Alugu]
+5a7eb9b  Revert "Jelly: Add "search in page" feature"  [Prema Chand Alugu]
+f874925  Jelly: Improve incognito mode privacy  [Prema Chand Alugu]
+b26785c  Jelly: Enable more HTML5 features  [Prema Chand Alugu]
+ef275d4  Jelly: Don't crash on non-http downloads  [Prema Chand Alugu]
+1c20e04  Jelly: remove 'Mobile' from desktop user agent  [Prema Chand Alugu]
+38b5bd9  Jelly: Add "search in page" feature  [Prema Chand Alugu]
+91b0e31  Jelly: Query an already ordered favorite list  [Prema Chand Alugu]
+739b35b  Jelly: Don't save form data in incognito mode  [Prema Chand Alugu]
+b597710  Automatic translation import  [Prema Chand Alugu]
+357f473  Jelly: Add non encrypted google search engine  [Prema Chand Alugu]
+85e1dec  Jelly: Propagate custom request headers to WebClient  [Prema Chand Alugu]
+1491f56  Jelly: Add show/hide keyboard utilities  [Prema Chand Alugu]
+74005e4  Jelly: Search on Enter key  [Prema Chand Alugu]
+2327c9b  Jelly: Don't reload on keyboard changes  [Prema Chand Alugu]
+bafd88a  Jelly: Add WebChromeClientCompat  [Prema Chand Alugu]
+   * packages/apps/Settings/
+6c59d3b  Revert "Settings[Wifi]: fix the input invalid length for WEP encryption."  [Prema Chand Alugu]
+0498c77  IME Switcher notification [2/2]  [Prema Chand Alugu]
+   * packages/resources/devicesettings/
+9620e09  Automatic translation import  [Abhisek Devkota]
+   * vendor/motorola/
+6d3af9d  addison: Import QTI Telephony blobs from OP3 OB21 / OB12  [Alx31]
+c6e7018  addison: Drop batt_health  [Alx31]
+b2ec543  addison: Update Proprietary blobs (NPN26.118-22)  [Alx31]
+   * vendor/tipsy/
+86684f2  v6.8 Stable  [Prema Chand Alugu]
+a9457c5  build: qcom_target: Add sdm660  [Prema Chand Alugu]
+14d1519  templates: Default to sanitize vendor folder during extraction  [Prema Chand Alugu]
+94bedf0  Add Correios Celular (BR) APN  [Prema Chand Alugu]
+7f2d031  Add Jon's h830  [GitHub]
+
+====================
+     08-19-2017
+====================
+
+   * packages/apps/Bluetooth/
+bd7f4bf  Merge pull request #2 from TipsyOs/testing  [GitHub]
+d2cf079  Directly inform Audio HAL regarding SCO state change  [Martinusbe]
+   * system/bt/
+2a692a1  AV: Use separate AV sig timeout timer for dual connections.  [Martinusbe]
+dc0d017  BT : Introduced an internal queue in hci thread to hold commands  [Martinusbe]
+a9b518c  Fix: btapp will crash when pair request from both DUT & Remote device simultaneously  [Martinusbe]
+aa8554e  RFCOMM: stop multiplexer disconnect timer while reconnect DLC  [Martinusbe]
+20dfba8  Fix time consuming doing Bluetooth OFF/ON while a2dp steaming.  [Martinusbe]
+d05e16e  Fix timestamp error in btsnoop log  [Martinusbe]
+034cf75  check controller state before handling gatt client request.  [Martinusbe]
+eaf2ebb  SDP: Dont start SDP search with invalid BD Addr  [Martinusbe]
+7ecbb9d  Configure correct remote MTU  [Martinusbe]
+379df58  audio_a2dp_hw: add audio_a2dp_check_ready for split A2DP  [Martinusbe]
+8945820  bt: enable BT_HOST_IPC_ENABLED for msm8998  [Martinusbe]
+
+====================
+     08-18-2017
+====================
+
+   * frameworks/av/
+b957ffa  Camera: Add NULL check on mDevice to avoid crash.  [Martinusbe]
+ad06f3c  Camera: Add null check on mDevice to avoid crash  [Martinusbe]
+   * hardware/qcom/bt-caf/
+8dec6dd  Revert "Merge tag 'LA.UM.5.5.r1-04900-8x96.0' into HEAD"  [Josue Rivera]
+
+====================
+     08-17-2017
+====================
+
+   * kernel/motorola/msm8953/
+e649195  defconfigs: regenerate for 3.18.66  [Alx31]
+503c884  Linux 3.18.66  [Alx31]
+205dc5d  pinctrl: samsung: Remove bogus irq_[un]mask from resource management  [Alx31]
+7555010  pinctrl: sunxi: add a missing function of A10/A20 pinctrl driver  [Alx31]
+d6efaf5  pnfs/blocklayout: require 64-bit sector_t  [Alx31]
+c7537f5  iio: adc: vf610_adc: Fix VALT selection value for REFSEL bits  [Alx31]
+9547e63  usb:xhci:Add quirk for Certain failing HP keyboard on reset after resume  [Alx31]
+df61cef  usb: quirks: Add no-lpm quirk for Moshi USB to Ethernet Adapter  [Alx31]
+fb5e5f9  USB: Check for dropped connection before switching to full speed  [Alx31]
+261b30d  uas: Add US_FL_IGNORE_RESIDUE for Initio Corporation INIC-3069  [Alx31]
+27d82aa  iio: light: tsl2563: use correct event code  [Alx31]
+b0c6533  staging:iio:resolver:ad2s1210 fix negative IIO_ANGL_VEL read  [Alx31]
+ad1609d  USB: hcd: Mark secondary HCD as dead if the primary one died  [Alx31]
+7fe76e5  usb: musb: fix tx fifo flush handling again  [Alx31]
+c78bf3c  USB: serial: cp210x: add support for Qivicon USB ZigBee dongle  [Alx31]
+625fc75  USB: serial: option: add D-Link DWM-222 device ID  [Alx31]
+0d5a5eb  fuse: initialize the flock flag in fuse_file on allocation  [Alx31]
+8cc0edd  mm: ratelimit PFNs busy info message  [Alx31]
+   * packages/apps/Snap/
+b82b70a  Snap: add missing null check on isCamera2Supported  [Martinusbe]
+eba4c54  Automatic translation import  [Martinusbe]
+9929e05  Automatic translation import  [Martinusbe]
+
+====================
+     08-16-2017
+====================
+
+   * device/motorola/addison/
+e1c8fc3  addison: Read BT address from property  [Alx31]
+df4aa6a  overlay: Disable non-AOSP Bluetooth-features  [Alx31]
+382bdc5  overlay: Hide sRGB toggle in developer options  [Alx31]
+   * kernel/lge/msm8996/
+c6964f6  h870: Enable tertiary mi2s and DSDP dual audio  [Rashed Abdel-Tawab]
+
+====================
+     08-15-2017
+====================
+
+   * hardware/broadcom/wlan/
+a1d9360  Merge tag 'android-7.1.2_r28' into cm-14.1  [Josue Rivera]
+
+====================
+     08-14-2017
+====================
+
+   * kernel/motorola/msm8953/
+99f65c5  defconfigs: regenerate for 3.18.65  [Alx31]
+a47a96c  Linux 3.18.65  [Alx31]
+9a72342  ipv4: Should use consistent conditional judgement for ip fragment in __ip_append_data and ip_finish_output  [Alx31]
+bde8bef  udp: consistently apply ufo or fragmentation  [Alx31]
+eecc729  revert "ipv4: Should use consistent conditional judgement for ip fragment in __ip_append_data and ip_finish_output"  [Alx31]
+ce1ed7f  packet: fix tp_reserve race in packet_set_ring  [Alx31]
+2a443e6  net: avoid skb_warn_bad_offload false positives on UFO  [Alx31]
+4916cef  tcp: fastopen: tcp_connect() must refresh the route  [Alx31]
+b73ebe5  net: sched: set xt_tgchk_param par.nft_compat as 0 in ipt_init_target  [Alx31]
+716dba2  net: fix keepalive code vs TCP_FASTOPEN_CONNECT  [Alx31]
+4a23fe6  tcp: avoid setting cwnd to invalid ssthresh after cwnd reduction states  [Alx31]
+0ee1130  defconfigs: regenerate for 3.18.64  [Alx31]
+2088ada  Linux 3.18.64  [Alx31]
+76fc8b0  workqueue: implicit ordered attribute should be overridable  [Alx31]
+de42f16e  net: phy: Fix PHY unbind crash  [Alx31]
+e56e6d6  ipv4: Should use consistent conditional judgement for ip fragment in __ip_append_data and ip_finish_output  [Alx31]
+6d2c458  mm: don't dereference struct page fields of invalid pages  [Alx31]
+66074eb  signal: protect SIGNAL_UNKILLABLE from unintentional clearing.  [Alx31]
+afcc579  lib/Kconfig.debug: fix frv build failure  [Alx31]
+15cd5d4  mm, slab: make sure that KMALLOC_MAX_SIZE will fit into MAX_ORDER  [Alx31]
+c2a851e  ARM: 8632/1: ftrace: fix syscall name matching  [Alx31]
+4ef9935  scsi: qla2xxx: Get mutex lock before checking optrom_state  [Alx31]
+61e2def  x86/boot: Add missing declaration of string functions  [Alx31]
+22906cb  tg3: Fix race condition in tg3_get_stats64().  [Alx31]
+4266dab  sh_eth: R8A7740 supports packet shecksumming  [Alx31]
+3328ff2  wext: handle NULL extra data in iwe_stream_add_point better  [Alx31]
+7e655601  xen-netback: correctly schedule rate-limited queues  [Alx31]
+6645bcb  net: phy: Correctly process PHY_HALTED in phy_stop_machine()  [Alx31]
+091784a  sctp: fix the check for _sctp_walk_params and _sctp_walk_errors  [Alx31]
+5ab33ce  sctp: don't dereference ptr before leaving _sctp_walk_{params, errors}()  [Alx31]
+ce3bef2  dccp: fix a memleak for dccp_feat_init err process  [Alx31]
+128ae69  packet: fix use-after-free in prb_retire_rx_blk_timer_expired()  [Alx31]
+91a89ef  mcs7780: Fix initialization when CONFIG_VMAP_STACK is enabled  [Alx31]
+d67b6d6  rtnetlink: allocate more memory for dev_set_mac_address()  [Alx31]
+bb7e1fb  ipv4: initialize fib_trie prior to register_netdev_notifier call.  [Alx31]
+8aaabeb  ipv6: avoid overflow of offset in ip6_find_1stfragopt  [Alx31]
+e49c5d8  net: Zero terminate ifr_name in dev_ifname().  [Alx31]
+53aea6c  f2fs: sanity check checkpoint segno and blkoff  [Alx31]
+0cbf248  iscsi-target: Fix delayed logout processing greater than SECONDS_FOR_LOGOUT_COMP  [Alx31]
+e22350b  iscsi-target: Fix initial login PDU asynchronous socket close OOPs  [Alx31]
+85f6818  iscsi-target: Fix early sk_data_ready LOGIN_FLAGS_READY race  [Alx31]
+160210a  iscsi-target: Always wait for kthread_should_stop() before kthread exit  [Alx31]
+1ac706f  target: Avoid mappedlun symlink creation during lun shutdown  [Alx31]
+dff0f29  media: platform: davinci: return -EINVAL for VPFE_CMD_S_CCDC_RAW_PARAMS ioctl  [Alx31]
+1f0aa2b  ext4: fix overflow caused by missing cast in ext4_resize_fs()  [Alx31]
+05b30ea  ext4: fix SEEK_HOLE/SEEK_DATA for blocksize < pagesize  [Alx31]
+3a4fd8b  mm/page_alloc: Remove kernel address exposure in free_reserved_area()  [Alx31]
+eba7c1f  KVM: async_pf: make rcu irq exit if not triggered from idle task  [Alx31]
+4580c31  ASoC: do not close shared backend dailink  [Alx31]
+88fbab0  ALSA: hda - Fix speaker output from VAIO VPCL14M1R  [Alx31]
+54accb7  workqueue: restore WQ_UNBOUND/max_active==1 to be ordered  [Alx31]
+500edc7  libata: array underflow in ata_find_dev()  [Alx31]
+43b7acc  tile: use global strscpy() rather than private copy  [Alx31]
+a9889c5  arch/powerpc: provide zero_bytemask() for big-endian  [Alx31]
+46778f0  Make asm/word-at-a-time.h available on all architectures  [Alx31]
+d178085  word-at-a-time.h: support zero_bytemask() on alpha and tile  [Alx31]
+cdcb601  tile: add <asm/word-at-a-time.h> and enable support functions  [Alx31]
+1983cf1  xfrm: Don't use sk_family for socket policy lookups  [Alx31]
+ad33e8d  vlan: Propagate MAC address to VLANs  [Alx31]
+0d8a208  spi: dw: Make debugfs name unique between instances  [Alx31]
+028ebe7  ASoC: tlv320aic3x: Mark the RESET register as volatile  [Alx31]
+3669a71  vfio-pci: use 32-bit comparisons for register address for gcc-4.5  [Alx31]
+82beeb55  drm/msm: Verify that MSM_SUBMIT_BO_FLAGS are set  [Alx31]
+c8e8e2c  drm/msm: Ensure that the hardware write pointer is valid  [Alx31]
+7958b59  net/mlx4: Remove BUG_ON from ICM allocation routine  [Alx31]
+5881153  ipv6: Should use consistent conditional judgement for ip6 fragment between __ip6_append_data and ip6_finish_output  [Alx31]
+8546bb0  ARM: dts: n900: Mark eMMC slot with no-sdio and no-sd flags  [Alx31]
+0d6dd8d  r8169: add support for RTL8168 series add-on card.  [Alx31]
+32865ac  x86/mce/AMD: Make the init code more robust  [Alx31]
+9f3f808  tpm: fix a kernel memory leak in tpm-sysfs.c  [Alx31]
+0da8242  net: skb_needs_check() accepts CHECKSUM_NONE for tx  [Alx31]
+dc4255a  pstore: Use dynamic spinlock initializer  [Alx31]
+4771030  pstore: Correctly initialize spinlock and flags  [Alx31]
+2f13352  pstore: Allow prz to control need for locking  [Alx31]
+90eeeee  v4l: s5c73m3: fix negation operator  [Alx31]
+c3e697d  dentry name snapshots  [Alx31]
+aaf422f  ipmi/watchdog: fix watchdog timeout set on reboot  [Alx31]
+04db1e7  net, sched: fix soft lockup in tc_classify  [Alx31]
+9512e28  sh_eth: Fix ethtool operation crash when net device is down  [Alx31]
+895715a  net: sctp: fix race for one-to-many sockets in sendmsg's auto associate  [Alx31]
+d5e621f  ipv6: fix possible deadlock in ip6_fl_purge / ip6_fl_gc  [Alx31]
+067d6bf  kaweth: fix oops upon failed memory allocation  [Alx31]
+a329c85  kaweth: fix firmware download  [Alx31]
+7fae70e  mpt3sas: Don't overreach ioc->reply_post[] during initialization  [Alx31]
+df3eb7c  mailbox: handle empty message in tx_tick  [Alx31]
+8fd4f79  mailbox: skip complete wait event if timer expired  [Alx31]
+589656e  mailbox: always wait in mbox_send_message for blocking Tx mode  [Alx31]
+9e48ef1  wil6210: fix deadlock when using fw_no_recovery option  [Alx31]
+f93e2a2  isdn/i4l: fix buffer overflow  [Alx31]
+c2ed98b  strscpy: zero any trailing garbage bytes in the destination  [Alx31]
+b275504  string: provide strscpy()  [Alx31]
+ff2c42a  isdn: Fix a sleep-in-atomic bug  [Alx31]
+809144f  net: phy: Do not perform software reset for Generic PHY  [Alx31]
+24e7fda  Bluetooth: cmtp: cmtp_add_connection() should verify that it's dealing with l2cap socket  [Alx31]
+9af73e4  Bluetooth: Fix potential NULL dereference  [Alx31]
+04bc377  Bluetooth: bnep: bnep_add_connection() should verify that it's dealing with l2cap socket  [Alx31]
+99cf3c4  Staging: comedi: comedi_fops: Avoid orphaned proc entry  [Alx31]
+519e303  Revert "powerpc/numa: Fix percpu allocations to be NUMA aware"  [Alx31]
+264d22e  KVM: PPC: Book3S HV: Save/restore host values of debug registers  [Alx31]
+9e55cc4  KVM: PPC: Book3S HV: Reload HTM registers explicitly  [Alx31]
+f706cc1  KVM: PPC: Book3S HV: Restore critical SPRs to host values on guest exit  [Alx31]
+012c78a  drm/vmwgfx: Fix gcc-7.1.1 warning  [Alx31]
+1f08fb1  md/raid5: add thread_group worker async_tx_issue_pending_all  [Alx31]
+b866ba9  powerpc/pseries: Fix of_node_put() underflow during reconfig remove  [Alx31]
+e23b328  net: reduce skb_warn_bad_offload() noise  [Alx31]
+9b3570a  pstore: Make spinlock per zone instead of global  [Alx31]
+a01d6e7  af_key: Add lock to key dump  [Alx31]
+   * vendor/lge/
+332e3fa  v521: Update blobs from v521 v20i  [Rashed Abdel-Tawab]
+fcd6a8b  us997: Update adreno firmware from v14a  [Rashed Abdel-Tawab]
+6d4709e  g5: Update camera and fingerprint from h830 v20k  [Rashed Abdel-Tawab]
+0ca4373  h870: Update adreno firmware from v10t  [Rashed Abdel-Tawab]
+fa95a57  h830: Update adreno firmware from v20k  [Rashed Abdel-Tawab]
+
+====================
+     08-13-2017
+====================
+
+   * build/
+d24cc3d  Version bump to NJH47F  [Martinusbe]
+05113ca  [DO NOT MERGE] Updating Security String to 2017-08-05 on nyc-dev bug:62388772 (cherry picked from commit 2b93753bc4025e92e6b6c8ed510bc9b3f8faff4d)  [Martinusbe]
+edecc3f  [DO NOT MERGE] Updating Security String to 2017-08-01 on nyc-dev bug:62388772 (cherry picked from commit a847c0b23ce761b09148f4f8fd6c9b473a46f531)  [Martinusbe]
+b9ab856  Version bump to NJH47D  [Martinusbe]
+   * frameworks/base/
+fcb300e  Close connection before retrying  [Martinusbe]
+424d509  Fix issue with saving admins before finishing loading.  [Martinusbe]
+2c8faa6  resolve merge conflicts of ad4aa1ce7d3d to nyc-mr1-dev fix conflict in nyc-mr2-release  [Martinusbe]
+0fdde52  Camera2 legacy: retry EGL config without EGL_RECORDABLE_ANDROID  [Martinusbe]
+393f347  hardware: Camera: Return -1 if value does not exist  [Martinusbe]
+f384080  SEEMP: Adding auth framework for outgoing SMS messages.  [Martinusbe]
+   * hardware/qcom/bt-caf/
+af5bad2  libbt-qcom: Allow reading BT address from property  [Josue Rivera]
+   * manifest/
+b14de45  android-7.1.2_r33  [GitHub]
+   * vendor/tipsy/
+fa26cee  qcom: Allow setting custom audio, display, and media HALs  [Martinusbe]
+3b9f602  templates: Update to show usage for new extract_files features  [Martinusbe]
+291ad63  extract_files: Add support for paths without system/  [Martinusbe]
+8d6aaca  extract_files: Add support for specifying blob sections  [Martinusbe]
+d8fd9f8  extract_utils: support extracting directly from an ota zip  [Martinusbe]
+348b271  Revert "Revert "vendor: tipsy: sepolicy: Allow rw-access to system_app_data_file""  [Martinusbe]
+82285ea  extract_utils: Fix cleanup variables assigment  [Martinusbe]
+84de696  templates: Remove empty cat << EOF  [Martinusbe]
+40967cc  charger: Fix small battery capacity font  [Martinusbe]
+2eec098  kernel: Add savedefconfig target  [Martinusbe]
+141ee8b  v6.7 Vedett  [GitHub]

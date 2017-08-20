@@ -1,0 +1,108 @@
+====================
+     08-20-2017
+====================
+
+
+   * packages/resources/devicesettings/
+9620e09 Automatic translation import
+
+   * vendor/codeaurora/telephony/
+bbf0777 IMS-VT: Add config that controls visibility of static Image UI
+
+   * vendor/motorola/
+6d3af9d addison: Import QTI Telephony blobs from OP3 OB21 / OB12
+c6e7018 addison: Drop batt_health
+b2ec543 addison: Update Proprietary blobs (NPN26.118-22)
+
+====================
+     08-19-2017
+====================
+
+
+   * frameworks/base/
+77de4cb camera: Import missing packages
+
+   * packages/apps/Bluetooth/
+c4a5267 Directly inform Audio HAL regarding SCO state change
+
+   * system/bt/
+1739c16 AV: Use separate AV sig timeout timer for dual connections.
+8936c7d BT : Introduced an internal queue in hci thread to hold commands
+5f357c8 Fix: btapp will crash when pair request from both DUT & Remote device simultaneously
+d259542 RFCOMM: stop multiplexer disconnect timer while reconnect DLC
+ae1fb27 Fix time consuming doing Bluetooth OFF/ON while a2dp steaming.
+b125b53 Fix timestamp error in btsnoop log
+ee77c63 check controller state before handling gatt client request.
+2dce455 SDP: Dont start SDP search with invalid BD Addr
+5f8c53d Configure correct remote MTU
+b816483 audio_a2dp_hw: add audio_a2dp_check_ready for split A2DP
+250dbfe bt: enable BT_HOST_IPC_ENABLED for msm8998
+
+====================
+     08-18-2017
+====================
+
+
+   * frameworks/av/
+80e6ba2 Camera: Add NULL check on mDevice to avoid crash.
+036dc24 Camera: Add null check on mDevice to avoid crash
+
+   * frameworks/base/
+33d12c2 Camera2: Fix Error Callback if buffer lost.
+eedeff3 Camera: ignore torch status update for aux or compsite camera
+
+   * hardware/qcom/bt/
+793f635 libbt-qcom: Allow reading BT address from property
+
+   * hardware/qcom/bt-caf/
+0fbe01c Revert "Merge tag 'LA.UM.5.5.r1-04900-8x96.0' into HEAD"
+084ee04 libbt-qcom: Allow reading BT address from property
+
+====================
+     08-17-2017
+====================
+
+
+   * frameworks/base/
+aebbf82 SEEMP: Adding auth framework for outgoing SMS messages.
+6959c1c base: audioservice: Set BT_SCO status
+
+   * kernel/motorola/msm8953/
+e649195 defconfigs: regenerate for 3.18.66
+503c884 Linux 3.18.66
+205dc5d pinctrl: samsung: Remove bogus irq_[un]mask from resource management
+7555010 pinctrl: sunxi: add a missing function of A10/A20 pinctrl driver
+d6efaf5 pnfs/blocklayout: require 64-bit sector_t
+c7537f5 iio: adc: vf610_adc: Fix VALT selection value for REFSEL bits
+9547e63 usb:xhci:Add quirk for Certain failing HP keyboard on reset after resume
+df61cef usb: quirks: Add no-lpm quirk for Moshi USB to Ethernet Adapter
+fb5e5f9 USB: Check for dropped connection before switching to full speed
+261b30d uas: Add US_FL_IGNORE_RESIDUE for Initio Corporation INIC-3069
+27d82aa iio: light: tsl2563: use correct event code
+b0c6533 staging:iio:resolver:ad2s1210 fix negative IIO_ANGL_VEL read
+ad1609d USB: hcd: Mark secondary HCD as dead if the primary one died
+7fe76e5 usb: musb: fix tx fifo flush handling again
+c78bf3c USB: serial: cp210x: add support for Qivicon USB ZigBee dongle
+625fc75 USB: serial: option: add D-Link DWM-222 device ID
+0d5a5eb fuse: initialize the flock flag in fuse_file on allocation
+8cc0edd mm: ratelimit PFNs busy info message
+
+====================
+     08-16-2017
+====================
+
+
+   * device/motorola/addison/
+d89295c addison: Read BT address from property
+538782a overlay: Disable non-AOSP Bluetooth-features
+0fece93 overlay: Hide sRGB toggle in developer options
+
+   * frameworks/base/
+81907a5 Power connection notification: fix sound playing when set to silent
+60ec836 Frameworks: follow charging notification settings also for wireless charging
+c05318d Revert "Base: charger sounds also for wired"
+fca10bf SystemUI: fix notification on charger
+df1a353 Forward port power connect/disconnect notification support
+
+   * packages/apps/Settings/
+af165d7 Forward port power connect/disconnect notification support
